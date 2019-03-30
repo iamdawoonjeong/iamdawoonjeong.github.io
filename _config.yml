@@ -1,5 +1,5 @@
 title: developer dawoonjeong
-email: iamdawoonjeong@gmail.com
+email: iamdawoonjeong@gamil.com
 description: >-
   Write an awesome description for your new site here. You can edit this line in
   _config.yml. It will appear in your document head meta (for Google search
@@ -9,6 +9,6 @@ url: ''
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
-theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
