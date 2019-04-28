@@ -1,0 +1,87 @@
+---
+layout: single
+title: WS(Web Server) - Apache  VS WAS(Web Application Server) - Tomcat
+date: 2018-07-22 23:08:25.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+- learn, unlearn and relearn
+tags:
+- apache
+- server
+- tomcat
+- was
+- webapplicationserver
+- webserver
+- ws
+meta:
+  _edit_last: '2'
+  _oembed_a85f6edceec1e33aa5288b97940961fe: "{{unknown}}"
+  _oembed_1bbe7968e799d3e645a2566bbe13926a: "{{unknown}}"
+  _oembed_5e794bc1dc55a2ad7b202ecc7524d9d4: "{{unknown}}"
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/wsvswas/"
+---
+<p>클라이언트가 요청한 정보나 서비스를 제공하는 컴퓨터를 ‘Server’라고 한다.<br />
+흔히 server라는 단어를 들었을때,<br />
+엄청나게 넓은 방에 랙에 칸칸히 들어가 있는 서버가 꽉찬 룸을 떠오를 수 있다.<br />
+아마, 영화에서 서버실에 몰래 들어가서 꼭 무언갈 고장내거나 정보를 빼오거나 하는 장면이<br />
+많이 나오기도 해서 쉽게 이미지가 연상이 될 것이다.<br />
+실제 서버/서버실도 영화에 보았던 장면과 비슷하게 구성되어 있다.<br />
+물론, 규모의 차이는 있겠지만.</p>
+<p>이러한 장면들에서 본 서버용 컴퓨터는 우리가 흔히 사용하는 windows와 같은 OS가 아닌<br />
+리눅스/유닉스 OS의 고성능으로 서버가 사용되는 목적에 맞게 갖추어져 있다.<br />
+이런 서버의 종류는 web server/ database server / file sever 등 용도에 맞게 다양하게 구성된다.</p>
+<p>이중에서 우리가 매일 접하는 웹페이지를 통해서 유저들에게 서비스를 제공하는 Web Server가 있다.<br />
+대표적인 웹 서버 종류로는 Apache HTTP Server, IIS(Internet Information Server), Nginx, GWS(Google Web Server) 가 있다.<br />
+IIS는 마이크로소프트사에서 제공하는 웹서버이고,<br />
+오픈소스로 무료로 배포되어 가장 많이 사용 되고있는 Apache HTTP Server가(이하 아파치/Apache) 있다.<br />
+아파치소프트웨어재단(Apache Software Foundation)에서 제공하는 서버로<br />
+흔히 우리가 많이 사용하는 MySQL와 PHP 로 개발되는 웹서비스에서 가장 많이 사용된다.<br />
+(APM이라고 부른다. Apache+ MySQL + PHP)</p>
+<p>Web Server(WS)의 주된 기능으로는 웹페이지를 클라이언트로 전달한다.<br />
+주로 정적인 html같은 정적인 컨텐츠를 처리한다.<br />
+WS가 처리하지 못한 JSP나 서블릿에 대한 요청은 WAS(Web Application Server)로 전달되어 처리된다.</p>
+<p>WAS는 아파치소프트웨어재단에 제공하는 Apache Tomcat이 가장 많이 사용 되며,<br />
+미들웨어로 웹서버와 같이 사용 할 수 있다. 혹은 소규모 프로젝트에서는 단독으로 사용되기도 한다.</p>
+<p>각 역할을 더 자세히 들여다 보면 WS와 WAS의 차이를 알 수 있다.</p>
+<p><strong>WS (Web Server)</strong><br />
+Apache HTTP Server의 이름에서 알 수 있듯이 웹서버는 HTTP 프로토콜에 따른다.</p>
+<p>HTTP 프로토콜은 Client의 Request &lt;-&gt; Sever의 Response</p>
+<p>조금만 더 풀어서 얘기하자면,<br />
+Client의 Request가 Sever에 전달되면, Sever는 이 Request를 처리하고,<br />
+해당 결과에 대해 Response 해준다.<br />
+이러한 과정은 HTTP통신규약으로 전달이 되는 것이며,<br />
+정보들이 오고가는 방식은 GET (url에 ?&amp;매개변수=값&amp; 식으로 노출), POST (url노출되지 않음)가 있고,<br />
+통신이 잘되면 내가 원하는 정보를 얻을 수 있으나,<br />
+얻지 못할 경우 404 Not Found와 같은 에러를 마주치는 것이다.</p>
+<p><strong>WAS (Web Application Server)</strong><br />
+WAS는 WS에서 넘어온 주로 동적인 컨텐츠에 대해서 처리해준다.</p>
+<p>Tomcat을 예로 동작하는 것을 들여다보면,<br />
+http요청이 httpd를 통해 아파치에 도착하면, mod_jk가 ajp13프로토콜을 통하여 AP로 전달한다.<br />
+tomcat catalina 불리우는(매우 까달로워서 까탈리나라고 배웠던 기억이..이름이 안잊혀진다...) Container안에서<br />
+JSP, Servelt가 Jasper라는 Engine으로 처리되어<br />
+다시 아파치에 전달되고 이것이 view로 최종 전달된다.</p>
+<p>톰캣을 단독으로 사용할 수 있는데, 굳이 WS와 연동해서 쓰는 이유는<br />
+웹서버와 웹 애플리케이션 서버 각각의 목적에 맞게 제공해주는 기능때문이다.<br />
+소규모 프로젝트에서는 모르겠지만,<br />
+대규모는 분리해서 운용하는 것이 단독으로 이용하는 것보다 훨씬 더 많은 이점을 가져온다.<br />
+각 서버가 목적에 맞게 제공하는 세션, 트랜잭션,데이터베이스 접속관리, 보안 관리등의<br />
+안정성을 꼽을 수 있겠고, 서버를 분리함으로써 요청 처리 부담도 줄일 수 있다.</p>
+<p>이러한 서버들은 주로 잘 만들어진 것을(?) 가지고 와서 사용하기 때문에,<br />
+직접 서버를 만드는 일은 없겠지만,<br />
+각각의 서버의 역할과 기능들을 알고 있다면 어플리케이션을 이해하는데 굉장히 많은 도움이 된다.</p>
+<p>출처)<br />
+https://httpd.apache.org/docs/2.4/ko/<br />
+http://tomcat.apache.org/tomcat-7.0-doc/introduction.html<br />
+https://ko.wikipedia.org/wiki/HTTP</p>

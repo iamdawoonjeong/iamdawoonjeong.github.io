@@ -1,0 +1,193 @@
+---
+layout: single
+title: ".NET Framework 와 C#"
+date: 2018-01-30 20:37:36.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+- learn, unlearn and relearn
+tags:
+- c#
+- csharp
+- netframework
+- oop
+meta:
+  _edit_last: '2'
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/net-framework-and-c/"
+---
+<div>
+<p>어쩌다보니 입사이래 지금 까지 닷넷 프레임워크를 사용하고있다.<br />
+언어는 C#을 사용하고 있다.<br />
+client언어로 C#이 주가 아니고 script가 주 일때도 있었지만,</p>
+<p>여튼 말하고자 하고픈 것은<br />
+.net framework 와 C#을 쓰면서도 한번도 정리해보진 않은 것 같다.<br />
+신입사원당시때 교육받은것 제외하곤?<br />
+물론! 개발당시 닥치는 어려움은 주변의 도움과 구글링과 잘 정리된 api들이 나를 살렸다라는..<br />
+모두다 그렇지요? 호호</p>
+<p>새로운 환경에서 일하기 시작한 요즘,<br />
+한번 쯤 다시 정리해야겠다라는 생각이들었다.<br />
+프로젝트마다 선호하는 개발 스타일이 다르기도 하다.</p>
+<p>그리고 실무 전에 배우는 개념과<br />
+실무를 익히고 나서 정리하는 개념은 다가오는게 .. 뭔가 다른 느낌이니깐?</p>
+<p>특히.. 익히고나서 봐야,<br />
+이해가 가질 않았던 부분들이 무슨 이야길 하려 했던건지 이해하게 된다.<br />
+잊고있었던 언어의 특징들…도 되씹어 봐야겠다.<br />
+(그렇게 외웠었으나 개발당시에는 그냥 일정 맞추고 완성하는게 1순위이다..)</p>
+<p>오늘 정리한 내용은 C#의 대략적인 특징들은<br />
+주로 OOP의 특징이 주를 이루고<br />
+그외에 알아두면 좋을 것 같은 C#만의 간략한 특징이긴한데..<br />
+아직까진 활용도 높게 써보진 않았던 것 같다.</p>
+</div>
+<p>&nbsp;</p>
+<div>
+<p><strong><img class="aligncenter size-medium wp-image-463" src="{{ site.baseurl }}/assets/images/posts/Overview_of_the_Common_Language_Infrastructure-258x300.png" alt="" width="258" height="300" /></strong></p>
+<p><strong>0. 들어가기전</strong></p>
+<p><strong>0.0 </strong>프로그램 만드는 기법<br />
+<strong>0.1 </strong>컴파일러(Compiler)<br />
+- 소스코드(원시코드)를 컴파일 하여 기계어로 번역하여 실행파일(목적코드)을 만듦. 소스코드 필요없음.<br />
+실행파일만있으면 됨<br />
+- 마이크로 소프트 윈도우 응용 프로그램을 개발은 비주얼 스튜디오로 컴파일하면 실행파일 (exe파일) 생성<br />
+- 원시프로그램의 크기가 크다면 컴파일 하는 과정은 시간이 걸림.</p>
+<p><strong>0.2 </strong>인터프리터(Interpreter)<br />
+- 실행 중 소스코드를 실시간으로 읽어가면서 해당 기능에 대응하는 기계어로 해석하여 실행.<br />
+- 빠른 테스트 가능<br />
+- php, python, ruby, perl</p>
+<p><strong>0.3 </strong>JIT(Just In Time) 컴파일<br />
+- 실행하는 시점에 기계어로 번역하는 컴파일 기법<br />
+- 실행속도를 빠르게 하기 위해 사용됨<br />
+- 정적컴파일과 인터프리터 방식을 혼합한 방식<br />
+- JVM(자바가상머신) / .NET / V8<br />
+- 자바? 자바 컴파일러가 자바 코드를 바이트코드(IL)로 변환한 다음, 실제 바이트 코드를 실행하는 시점에서 가상 머신이 바이트 코드를 기계어로 변환</p>
+<p>&nbsp;</p>
+<p><img class="aligncenter size-medium wp-image-464" src="{{ site.baseurl }}/assets/images/posts/netframework-300x159.png" alt="" width="300" height="159" /></p>
+<p><strong>1.</strong> 소개<br />
+<strong> 1.1</strong> .net framework</p>
+<p>.NET Framework<br />
+- MS가 개발한 윈도우 프로그램 개발 및 실행 환경<br />
+- 다양한 컴포넌트로 구성 되어 있으며 MSIL(MicroSoft Intermediate Language = .NET IL) 이라는 중간언어를 사용하여 통합된 프로그래밍 환경 제공<br />
+: 자바의 바이트코드와 동일하지만 바이트 코드는 JVM을 통한 인터프리티브 방법으로 실행되는데 JIT(Just-In Time) 방법에 의해 실행 -&gt; 컴파일하여 native code로 변환<br />
+- 플랫폼에 독립적이며, 프로그램 개발이 쉬움.<br />
+: .NET 프레임 워크는 C#, Visual Basic, .NET, Managed C++등 공통언어스펙(CLS:Common Language Specification) 을 따르는 언어라면 어떠한 프로그래밍 언어라 할지라도 공통언어 런타임 (CLR : Common Language Runtime)이라는 독립적인 환경에서 실행 가능<br />
+* 2017-05-02 .NET Framework 4.7 릴리즈 https://docs.microsoft.com/ko-kr/dotnet/framework/</p>
+<p>&nbsp;</p>
+<p><strong>1.2 </strong>C#<br />
+C#(한국어: 시 샤프)는 마이크로소프트에서 개발한 객체 지향 프로그래밍 언어로, 닷넷 프레임워크의 한 부분으로 만들었으며 나중에 ECMA (ECMA-334)와 ISO (ISO/IEC/23270)의 표준으로 자리잡았다. C++와 자바의 문법과 비슷한 문법을 가지고 있다.<br />
+* 2017-08-16 C# 7.2 릴리즈 https://docs.microsoft.com/ko-kr/dotnet/csharp/whats-new/csharp-7-2</p>
+<p>c# program / VB.NET program / c++ program…<br />
+(.net 언어로 작성한 프로그램들)<br />
+Common Language Runtime<br />
+.Net Framework<br />
+O/S<br />
+- C#은 컴파일러가 만들어 낸 실행 파일 또한 운영체제가 이해할 수 없는 코드로 구성<br />
+-&gt; 실행하지 못함.<br />
+-&gt; C#컴파일러는 C# 코드를 읽어서 IL(Intermediate Language/중간언어)로 작성 된 실행 파일을 만듦. 확장자는 exe나 dll<br />
+-&gt; 사용자가 이 파일을 실행 시키면 CLR이 IL을 읽어 들여<br />
+-&gt; OS가 이해할 수 있는 네이티브 코드로 컴파일 한 후 실행</p>
+<p>&nbsp;</p>
+<p><strong>2 </strong>C# 으로 작성된 응용프로그램의 종류</p>
+<p><strong>2.1</strong><br />
+-콘솔 애플리케이션 (Console Application)<br />
+: 키보드를 통해 데이터를 입력하고, 실행결과를 화면에 문자로 출력</p>
+<p>- 윈폼 애플리케이션 (winform Application)<br />
+: 윈도우 응용 프로그램과 같이 그래픽 사용자 인터페이스를 통해 입출력 수행, 이벤트 처리방식을 통해 실행되는 윈도운 폼</p>
+<p><strong>2.2</strong> C# 개발 환경<br />
+- SDK (Software Development Kit) : 윈도우 업데이트를 이용하여 .NET 프레임 워크를 설치. C#의 컴파일러와 실행 엔진, 클래스 라이브러리 등이 포함.<br />
+- IDE (Intergrated Development Enviroment) : Visual Studio .NET과 같은 통합 개발 환경 사용.</p>
+<p><strong>2.3</strong> 콘솔개발 환경<br />
+System - namespace<br />
+Console - class</p>
+<p>&nbsp;</p>
+<p><strong>3</strong> 기본특징<br />
+C#은 C,C++,JAVA를 기본언어로 설계되어 연산자와 문장의 구조/의미는 모두 표준 C와 비슷/ 객체지향은 C++이나 JAVA 와 유사.</p>
+<p><strong>3.1</strong> 자료형<br />
+- Value Type : 값형식 (스택메모리영역)<br />
+숫자형<br />
+정수형<br />
+- signed : sbyte(8bit), short(16bit), int(32bit), long(64bit) -&gt; 2의보수법으로 음수 표현<br />
+- unsigned : byte(8bit), ushort(16bit), uint(32bit), ulong(64bit)<br />
+실수형 : float(32bit), double(64bit), decimal(128bit)<br />
+문자형 : char(16bit)<br />
+부울형 : true 1/ false 0<br />
+열거형<br />
+구조체형</p>
+<p>- Reference Type : 참조형식( 스택영역에는 데이터가 저장되어있는 힙메모리영역의 주소를 저장)<br />
+클래스형<br />
+인터페이스형<br />
+배열형<br />
+델리게이트형</p>
+<p>*스택메모리 영역<br />
+: 코드 블록이 종료되는 시점에 메모리에서 제거 됨</p>
+<p>*힙메모리 영역<br />
+: CLR의 가비지컬렉터를 이용하여 사용하지 않는 객체를 수거<br />
+: 힙에 데이터를 올려 놓으면 코드 블록이 종료되는 시점과 상관없이 데이터 유지.</p>
+<p>- object 형식 : 모든 데이터를 다를 수 있는 형식 =&gt; 박싱되어 저장되어 있는 힙을 참조형식<br />
+boxing<br />
+unboxing</p>
+<p>- nullable : 데이터형식? 변수이름; 값형식<br />
+int? a = null;<br />
+int? b = null;<br />
+double? c = null;</p>
+<p><strong>3.2</strong> 연산자<br />
+논리곱연산자 &amp;&amp;: AND<br />
+논리합연산자 ||:OR<br />
+부정연산자!NOT<br />
+조건식 ? 참일때 값 : 거짓일때 값</p>
+<p><strong>3.4</strong> 배열</p>
+<p>int[] vector;<br />
+short[,] matrix;<br />
+long[][] arrayOfArray;<br />
+object[] myArray1, myArray2</p>
+<p><strong>3.4</strong> 스트링 : c#에서는 String은 객체</p>
+<p>&nbsp;</p>
+<p><strong>4 </strong>주요 특징 (주로 OOP 특징들)</p>
+<p><strong>4.1</strong> 클래스<br />
+- 같은 유형을 가진 객체들로 분류<br />
+: 각 객체가 어떤 유형에 속하는지를 객체지향 언어에서는 객체 자료형 또는 객체 클래스라 함.<br />
+: 임의의 클래스에 속하는 각각의 객체를 클래스에 대한 인스턴스. 클래스는 객체를 정의하는 template<br />
+- 필드 : 속성을 나타냄<br />
+- 메소드 : 객체의 행위 정의.</p>
+<p><strong>4.2</strong> 프로퍼티<br />
+- 클래스의 private 필드를 형식적으로 다루는 일종의 메소드로 간주<br />
+- 임의로 접근 허용되지 않지만, 대응되는 프로퍼티를 통하여 다른 클래스에서 형식적으로 접근 할 수 있는 방법이 제공<br />
+- 필드처럼 참조할 수 있으며 배정문의 왼쪽에서 사용되면 셋 접근자 호출, 배정문의 오른쪽에서 사용되면 겟 접근자 호출</p>
+<p><strong>4.3</strong> 연산자 중복(operator overloading)<br />
+- 시스템에서 제공한 연산자를 프로그래머가 정의한 클래스에서 새로운 의미를 갖도록 재정의 하는 것( 이름은 같으나, 매개변수 갯수가 다름)</p>
+<p><strong>4.4</strong> 델리게이트(delegate) 메소드를 참조하기 위한 방법론. 주로 이벤트와 스레드를 처리하기 위한 프로그래밍 기법.<br />
+- 객체를 통하여 메소드를 호출<br />
+- 델리게이트에 메소드의 주소를 할당한 후 델리게이트를 호출하면 델리게이트가 메소르르 호출</p>
+<p><strong>4.5</strong> 이벤트<br />
+- 이벤트 처리 담당하는 메소드 작성<br />
+- 이벤트 처리기와 일치하는 델리게이트 정의<br />
+- 델리게이트를 이용하여 이벤트 선언<br />
+- 이벤트에 이벤트 처리기를 등록<br />
+- 이벤트 발생</p>
+<p><strong>4.6</strong> 스레드(thread) : 프로그램 처리 할 수 있는 최소단위, 프로세스</p>
+<p><strong>4.7</strong> 제네릭(generics):<br />
+- 자료형에 따라 자료를 표현/저장/연산하는 방법이 다르기 때문에 동일한 작업도 자료형에 따라 각기 다른 프로그램을 작성해야 한다.<br />
+- 같은 기능을 하지만 자료형에 따라 중복된 프로그램 작성을 해소하기 위한 개념.<br />
+- 자료형을 매개변수로 가질 수 있다.</p>
+<p>제네릭 프로그램 단위 : 클래스, 구조체, 인터페이스, 메소드</p>
+<p>- 자료형에 해당하는 매개변수를 형 매개변수(type parameter) 라고 함, &lt;&gt; 안에 기술</p>
+<p><strong>4.8</strong> 람다식<br />
+- 매개_변수_목록 =&gt; 식<br />
+- 익명 메소드를 만들기 위해 사용</p>
+<p><strong>4.9</strong> LINQ(Language Integrated Query)<br />
+- 데이터 질의 기능<br />
+- from<br />
+where<br />
+order by<br />
+elect</p>
+</div>
+<p>출처: 위키피디아 , 마이크로소프트/net</p>
+<p>&nbsp;</p>

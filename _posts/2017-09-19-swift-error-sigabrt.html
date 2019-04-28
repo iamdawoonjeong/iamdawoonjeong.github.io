@@ -1,0 +1,41 @@
+---
+layout: single
+title: SIGABRT
+date: 2017-09-19 18:18:11.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+tags:
+- app
+- ios
+- iphone
+- sigabrt
+- swift
+- xcode
+meta:
+  _edit_last: '2'
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/swift-error-sigabrt/"
+---
+<p>xcode 에서 swift로 iOS 개발 중 만난 에러<br />
+Thread1: signal SIGABRT</p>
+<p><img src="{{ site.baseurl }}/assets/images/posts/SIGABRT-1-300x300.jpg" alt="" width="600" height="600" class="aligncenter size-medium wp-image-310" /></p>
+<p>심지어 AppDelegate.swift 에서 만나는 에러이다.<br />
+아니.. 저 소스는 만진적도 없는데..</p>
+<p>원인은, outlet이나 action등의 연결이 끊겼을때 나는 에러이다.</p>
+<p>storyboard로 찾아가 controller에 연결이 끊긴 것 들을 찾아서 삭제해주면된다.<br />
+혹은 다시 연결해주거나.</p>
+<p><img src="{{ site.baseurl }}/assets/images/posts/controller-1-300x300.jpg" alt="" width="600" height="600" class="aligncenter size-medium wp-image-309" /></p>
+<p>textField를 Actions으로 Editing Did End연결했었다가,<br />
+소스에서 훅 지웠었는데, 연결이 남아있어서 저렇게 노란세모로 흔적이(?) 남아있다.</p>
+<p>저 연결만 끊어주고 다시 빌드하면 성공~</p>

@@ -1,0 +1,77 @@
+---
+layout: single
+title: "[JAVA] Write once, run anywhere"
+date: 2018-08-26 17:57:32.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+- learn, unlearn and relearn
+tags:
+- java
+meta:
+  _oembed_07deb029a974c478b46abe4aa9f8d78f: "{{unknown}}"
+  _edit_last: '2'
+  _oembed_114e3b87ca1c7fb5b900f0024f529ec3: "{{unknown}}"
+  _oembed_cb5007630707475e341ac129e2400b8f: "{{unknown}}"
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/java-write-once-run-anywhere/"
+---
+<blockquote>
+<h1 style="text-align: center;"><em><strong>"Write once, run anywhere" (WORA)</strong></em></h1>
+<h1 style="text-align: center;"><em><strong>"write once, run everywhere" (WORE)</strong></em></h1>
+</blockquote>
+<p>썬 마이크로시스템즈에 의해 만들어진 자바의 크로스/플랫폼에 의한 이익을 표현하기 위한 표어이다. 이상적으로, 이것은 자바가 어떤 장비에서도 개발될 수 있고, 표준 바이트코드로 컴파일되고, 자바 가상 머신이 장착된 어떤 장비에서도 실행될 수 있음을 의미한다. 자바 가상 머신 또는 칩, 장비 또는 소프트웨어 패키지에서의 자바 인터프리터의 설치는 산업 표준안이 되었다.</p>
+<p>https://en.wikipedia.org/wiki/Write_once,_run_anywhere</p>
+<h2><strong><img class="aligncenter size-medium wp-image-586" src="{{ site.baseurl }}/assets/images/posts/javaLogo-164x300.png" alt="" width="164" height="300" /></strong></h2>
+<h2><strong>[자바 JAVA]</strong></h2>
+<p>- 테스트주도 개발 (Test Driven Development, TDD) 방법론 기반<br />
+- 객체지향프로그래밍 (Object-Oriented Programming, OOP)</p>
+<h2></h2>
+<h2>[자바 가상머신 (Java Virtual Machine, JVM) ]</h2>
+<p>JAVA의 슬로건이 JVM을 정말 딱! 설명해주고 있다.</p>
+<p>자바가상머신은 프로그램이 실행되는 플랫폼으로 운영체제와 어플리케이션 사이에 위치해 있으며,<br />
+플랫폼에 상관없이 독립적으로 실행 된다.</p>
+<p>JAVA파일은 javac를 이용해 bytecode로 컴파일 되며, 이를 실행하는 주체가 JVM이 된다.</p>
+<p>클래스로더: 클래스 파일을 추상화해 디스크, 네트워크, jar같은 압축 파일 불러옴. class 바이너리 파일을 가져와서 메모리에 저장<br />
+(클래스로딩 : 바이트코드를 실행중인 JVM의 메모리로 가져옴 )</p>
+<p>1. 클래스 로더<br />
+2. JVM은 바이트코드 유효한지 검증<br />
+3. JIT 컴파일러는 직접 동적으로 실행중인 바이트코드를 명령어로 변화</p>
+<p>&nbsp;</p>
+<p><img class="aligncenter wp-image-582 size-large" src="{{ site.baseurl }}/assets/images/posts/JvmSpec7-1024x620.png" alt="" width="720" height="436" /></p>
+<p>출처 : 위키피디아</p>
+<p>&nbsp;</p>
+<h2>[가비지 컬렉션 (Garbage Collection, GC)]</h2>
+<p>메모리 관리 기법 중의 하나로, 프로그램이 동적으로 할당했던 메모리 영역 중에서 필요없게 된 영역을 해제하는 기능이다.<br />
+JAVA나 C# 같은 프로그래밍 언어에서 효율을 높이기 위해 사용되며, 즉, 메모리를 재사용하는 매커니즘이다.<br />
+자동으로 메모리 관리를 해주기 때문에, 개발자가 신경쓸 필요는 없으나 버그나 메모리 누수가 없는 것은 아니다.</p>
+<p>c.f) C/C++은 malloc와 free함수를 호출해서 이런 메모리 할당을 수동으로 직접 관리.</p>
+<p>&nbsp;</p>
+<p><strong>메모리 할당 스택 vs 힙</strong></p>
+<p><strong>Stack</strong><br />
+Stack에는 기본값, 객체의 참조, 메서드가 저장. scope(for, while에서 선언된 변수들)에 영향을 받는다.<br />
+메서드를 너무 많이 호출하여 스택메모리 영역이 가득차게 되면 StackOverFlowError가 발생된다.<br />
+우리가 그렇게 극히 들었던 overflow</p>
+<p><strong>Heap</strong><br />
+힙은 애플리케이션 영역에 접근할 수 있는 메모리의 메인 영역으로 자바의 new 키워드는 자바 힙영역에 메모리를 할당한다.</p>
+<p>객체를 할당할때 메모리가 충분치 않으면 JVM은 가비지 컬렉션을 이용해 힙에서 메모리를 재사용하려고 시도하는데,<br />
+그래도 충분한 메모리 영역을 확보할 수 없다면 OutOfMemoryError가 발생되면서 JVM이 종료된다.</p>
+<p><img class="aligncenter wp-image-583 size-full" src="{{ site.baseurl }}/assets/images/posts/Heap-vs-Stack-in-Java.jpg" alt="" width="289" height="174" /></p>
+<p>http://www.java67.com/2016/10/difference-between-heap-and-stack-memory-in-java-JVM.html</p>
+<p>&nbsp;</p>
+<h2>[JUnit Test]</h2>
+<p>system.out.println() 이나 logger.debug()로 코드를 이해하려기 보다<br />
+assertion을 만들고 이 assertion을 JUnit프레임워크에 사용하는것이 좋다.</p>
+<p><strong>Mock</strong><br />
+클래스와 외부 의존성을 끊기 위해서 Dependency injection / Mock 두가지 사용 할 수 있는데,<br />
+여기서 Mock은 실제의 모듈을 흉내내는 가짜모듈을 작성하여 테스트의 효용성을 높이는데 사용하는 객체이다.</p>

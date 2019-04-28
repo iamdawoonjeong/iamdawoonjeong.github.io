@@ -1,0 +1,86 @@
+---
+layout: single
+title: Developing iOS10 Apps with Swift ; 1강~3강
+date: 2017-08-29 18:05:37.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+tags:
+- inflearn
+- iphone
+- iso
+- stanford
+- swift
+meta:
+  _edit_last: '2'
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/developing-ios-9-apps-with-swift-1-3/"
+---
+<div><strong>1. 세미콜론이 필요없는 swift</strong></div>
+<div>스위프트에서 명령어 뒤에 ; (세미콜론)은 안 붙여도 된다!</div>
+<div>세미코론 빠뜨려서 에러났던 기억들이여 안녕..</div>
+<div>대신, 구문 구분시 엔터는 필수!</div>
+<div><strong>2. let : 상수(변치 않을 값) 선언</strong></div>
+<div>스위프트에서 상수 선언은 let으로!</div>
+<div>즉, array나 dictionary를 let을 선언해서 사용하게 된다면</div>
+<div>추후 추가로 들어가거나 빼낼 수 없다는 걸 의미 한다.</div>
+<div><strong>3. optional type (어려움 ㅠㅠ)</strong></div>
+<div></div>
+<div>3-1. not set  ; nil로 표현</div>
+<div>( 값이 없음 0도 아님.</div>
+<div>set되지 않은 상태에서는 associated된 값도 없음)</div>
+<div>3-2. set ; associated된 값을 가지고 있음</div>
+<div>강의 중</div>
+<div>Main.storyboard에서 만든 숫자 3 버튼생성 후, 클릭하고</div>
+<div>그 값을 digit라는 변수로 받아서 console로 출력하는 코드를 보면 ,</div>
+<div></div>
+<div></div>
+<div><em>let digit = sender.currentTitle</em></div>
+<div>
+<p class="p1"><em><span class="s1">print("touched \(digit) digit")</span></em></p>
+</div>
+<div></div>
+<div>이 코드에서 <em>currentTitle</em>에 option + 좌클릭하면</div>
+<div><em>var currentTitle : String?</em></div>
+<div>(swift는 항상 타입을 자동으로 추정하는데, 이는 코드를 간편하게 해줌.  )</div>
+<div>라고 되어있는데,</div>
+<div>이는 optional타입인데, associated된 값이 String이란 뜻이다.</div>
+<div>(값이 set되지 않을 경우를 대비해서 set해 주는 것이다.)</div>
+<div>위에 코드로는,</div>
+<div>console 창에 버튼을 눌러 출력했을때,</div>
+<div>“touched (optional)3 digit”라고 "optional"이 붙어서 출력이 된다.</div>
+<div>만약, digit에 값이 없다면, (화면 버튼에서 숫자를 지움)</div>
+<div>그냥 “nil” 이라고 출력된다.</div>
+<div></div>
+<div><img class="aligncenter size-full wp-image-257" src="{{ site.baseurl }}/assets/images/posts/nil.45.png" alt="" width="284" height="114" /></div>
+<div></div>
+<div></div>
+<div>이를 수정하고자, unwrapping을 해주면 된다.<em>  </em></div>
+<div><em>let digit = sender.currentTitle!</em></div>
+<div>선언하면 되는데,</div>
+<div>digit에 값이 있다면(화면 버튼에서 숫자 존재) optional이란 글자는 사라진다.</div>
+<div>“touched 3 digit” 라고 출력된다.</div>
+<div>하지만, 값이 없다면(화면 버튼에서 숫자 지움) 에러를 낸다.</div>
+<div></div>
+<div><img class="aligncenter size-medium wp-image-255" src="{{ site.baseurl }}/assets/images/posts/error-300x32.png" alt="" width="300" height="32" /></div>
+<div></div>
+<div></div>
+<div>다시 한 번 정리하자면,</div>
+<div>! 강제적으로  associated된 값을 가지고 오는데,</div>
+<div>!로 된 값을 가져올때 값이 없다면? 이때 에러가 나는 것이다.</div>
+<div>(강의에서는 앱이 크러쉬 된다고 표현하였다.)</div>
+<div>에러를 내는것과 안내는 것은 개발자 성향의 차이 일수 있으나,</div>
+<div>강의에서 교수님이 말씀하신것처럼 사용자가 에러를 겪기 전에</div>
+<div>에러를 개발자가 확인할 수 있게 ! 를 선언해서 사용하는 것도 하나의 방법이다.</div>
+<div>에러 난 줄 모르고 한참 사용하다가 나중에 치명타로 돌아올 수 있으니,</div>
+<div>반드시 값이 요구되어야 한다면, 에러를 감수 하더라도 적절하게 사용하자는 것이다.</div>

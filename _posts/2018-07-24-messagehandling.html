@@ -1,0 +1,52 @@
+---
+layout: single
+title: 변수명 정하기 만큼 어려운 메시지 문구 정하기
+date: 2018-07-24 22:16:33.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+- log
+tags:
+- issue
+- message
+meta:
+  _edit_last: '2'
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/messagehandling/"
+---
+<p> <img class="aligncenter size-medium wp-image-543" src="{{ site.baseurl }}/assets/images/posts/messageHandling-300x300.jpeg" alt="" width="300" height="300" /></p>
+<p>메시지문구에 대한 피드백이 왔다.<br />
+메시지 표현이 어색해서 조금 바꿔달라는 것이다.</p>
+<p>화면을 열어보니 한 다섯달 전쯤에 개발했던 화면인데,<br />
+그때도 이거 뭔가 피드백 올 수도 있겠다 싶은거였는데 역시나였다.</p>
+<p>어떤 상황이냐면, 단순한 조회/저장 알림 메시지가 아닌<br />
+화면에서 사용자가 입력한 수에 대한 유효성을 검증하는 메시지였다.</p>
+<p>합/ 크다/ 작다/ 절대값/ 음수/ 양수 여부 등을 체크를 해주고<br />
+각 입력한 값에 대해서<br />
+"큽니다.", "합을 확인하세요.", "음수입니다." 등등으로 뿌려주고 있었다.</p>
+<p>주석으로는 간략하지만 명료하게</p>
+<p><em>// 1-1. 합 체크 </em><br />
+<em>// 1-2. 절대값 체크 </em><br />
+으로 나름(?) 잘 적어놔서 문제가 되진 않을 것 같았다.</p>
+<p>하지만, 이 수의 단위가 "명/인원"인 상황에서<br />
+저러한 표현은 사용자가 이해하기에는 어색한 것이다.</p>
+<p>결국에는<br />
+크다 -&gt; 인원이 많을 수 없습니다.<br />
+합을 확인하세요 -&gt; 인원의 합계를 확인해주세요. 정원만큼만 조정할 수 있습니다.<br />
+음수입니다. -&gt; 조정할 수 있는 정원이 없습니다.<br />
+여러번 고민고민하고 풀어썼다.</p>
+<p>생각해보면 어떠한 메시지를 짧고 간결하지만, 정확한게 전달할 수 있을까?는 정말 어려운 문제같다.<br />
+마치 변수명을 무엇으로 정해야할지 고민하는 것처럼 말이다.<br />
+간혹, 사용자와 문구하나하나 협의하에 개발할 수 있기도 하지만<br />
+대부분의 상황이 이렇다 할 수 없으니 말이다.</p>
+<p>결론적으로 나의 어휘실력 향상을 위해 힘써야 할 것 같다.</p>

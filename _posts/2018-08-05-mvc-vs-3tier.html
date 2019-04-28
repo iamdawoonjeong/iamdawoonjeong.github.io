@@ -1,0 +1,121 @@
+---
+layout: single
+title: MVC vs 3Tier
+date: 2018-08-05 16:25:06.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+- learn, unlearn and relearn
+tags:
+- Architecture
+- designpattern
+- mvc
+- tier
+- 디자인패턴
+- 아키텍쳐
+meta:
+  _edit_last: '2'
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/mvc-vs-3tier/"
+---
+<div>
+<p>"MVC패턴을 적용하였고 3tier 구조로 되어있는 프레임워크를 갖추고 있다"라는 기술설명서는 우리나라에서 흔하게 접해볼 수 있는 애플리케이션 설명문이다.<br />
+아마 이 MVC와 3Tier는 엔터프라이즈급 산업에서는 가장 많이 채택되고 있는 구조일 것이다.<br />
+사실, 배울때에는 2개의 개념이 비슷하게 와 닿았다.<br />
+MVC로 설명하나 3Tier로 설명하나 같은 말 같은데, 굳이 왜 두개의 개념을 다 써주는 걸까?</p>
+<p>응.. 그렇다.. 이유가 있다.<br />
+한번에 써주는 데는 두 개념이 소프트웨어를 정의하는 관점이 다르기 때문이다.</p>
+<h3></h3>
+<h3><strong>0.1) Software Architecture (소프트웨어 아키텍쳐)</strong></h3>
+<p>소프트웨어 구조(software architecture)는 소프트웨어의 구성요소들 사이에서 유기적 관계를 표현하고 소프트웨어의 설계와 업그레이드를 통제하는 지침과 원칙이다.</p>
+<p><em>"Software architecture refers to the high level structures of a software system, the discipline of creating such structures, and system. Each structure comprises software elements, relations among them, and properties of both elements and relations. The architecture of a software system is a metaphor, analogous to the architecture of a building. It functions as a blueprint for the system and the developing project, laying out the tasks necessary to be executed by the design teams."</em></p>
+<p>위키피디아에 설명된 소프트웨어 아키텍쳐에 관한 설명을 보면, blueprint라고 비유해 두었다.<br />
+그만큼 소프트웨어 아키텍처는 프로그램에 있어 기초이자 근본이다.<br />
+그리고 설계단계에서 어떤 아키텍처를 선택하여 설계를 진행할 것인지는 결국엔 프로그램의 전체적인 방향성, 비용과 시간에 직결된 문제이기 때문에 매우 신중하게 결정하고 진행되어야 한다.</p>
+<p><em>소프트웨어 아케텍처 중요성에 관한 이야기</em><br />
+<em>https://msdn.microsoft.com/ko-kr/hh144976.aspx</em></p>
+<h4></h4>
+<h4><strong>0.1.1) Layering Model (계층모델) : Multi-tier Architecture 또는 n-tier Architecture</strong></h4>
+<p>비즈니스 로직을 완전히 분리하여 데이터베이스 시스템과 클라이언트의 사이에 배치한 클라이언트 서버 시스템의 일종이다.<br />
+예를 들어 사용자와 데이터베이스간의 데이터 요구 서비스에 미들웨어를 이용하는 것을 들 수 있다. 일반적으로는 3-tier 구조가 널리 쓰인다.</p>
+<p>3-tier의 분류를 보고 n-tier architecture 또는 multi architecture 라고하여 software architecture를 정의하여 구분을 하기도 하지만,<br />
+client - server architecture 라고 분류하기도 하다.</p>
+<p>해당 분류에대해서는 서적마다 분류체계마다 다르기도 하다.<br />
+통상적으로 SEI (Software Engenieering Institute) 분류 기준으로 설명이 되어있기도 하다.</p>
+<h4></h4>
+<h4><strong>0.2) Design pattern (디자인패턴)</strong></h4>
+<p>디자인 패턴(Design pattern)은 건축학 및 컴퓨터 과학에서 사용되는 용어로, 설계 문제에 대한 해답을 문서화하기위해 고안된 형식 방법이다.<br />
+이 방식은 건축가 크리스토퍼 알렉산더가 건축학 영역에서 고안한 것을 그 시초로 하며 이후 컴퓨터 과학 등 여러 다른 분야에도 도입되었다.</p>
+<p>MVC는 디자인패턴의 하나로, 이 디자인 패턴 용어 또한 건축학(아키텍쳐라는 용어도 건축용어)에서 먼저 시작된 용어이다.<br />
+건축학을 했던 사람들이라면 “디자인패턴”이라는 용어가 매우 익숙하게 다가올 것이다.<br />
+디자인 패턴뿐 아니라 위에 설명한 아키텍처를 따온 명명이라던지, 프로세스 방법론이라던지.. 건축학과 전산학은 비슷한 점이 참 많은것 같다.</p>
+<p>다시 돌아와서,<br />
+디자인패턴은 물리적으로 구분할 수 없는 설계를 문서화 하면서 고안된 방법이라는 말을 들으면<br />
+아~ 하면서도 뒤돌아서면 응? 하고 까먹을지도 모른다. 실무적으로 다가오는 느낌이 없기에...</p>
+<p>쉽게이야기 하자면,<br />
+프로그램의 규모가 커질수록, 진행해 나갈 수록 구현화 하는데 다양한 문제들을 직면할 수 있다.<br />
+이미 지난 프로그래밍 역사속에서 우리가 현재 겪고 있는 설계에 직면한 다양한 문제들을 겪어왔었고<br />
+이를 효율적으로 적용할 수 있는 해결책을 유형별로 패턴화 한것이 바로 "디자인 패턴”이다.</p>
+<p>패턴의 종류도 많고 다 알수도 없는 노릇에 굳이 디자인 패턴을 적용해야 하나?<br />
+라는 의문이 들곤 하겠지만 음~ 아니다.</p>
+<p>프로젝트마다 띄는 특성은 다르겠지만 기본적으로 디자인 패턴에 대한 이해도가 깊으면<br />
+설계시, 개발시 만나는 문제를 좀 더 “효율적”으로 해결 할 수 있는 아주 좋은 방법이다.<br />
+필요한 디자인패턴을 채택해서 적절한곳에 이식하여 사용하는것 또한 능력이다라고 생각한다.
+</p></div>
+<p>&nbsp;</p>
+<div>
+<h3><strong>1 ) 3Tier ( Presentation Layer, Business Logic Layer, Data Access Layer )</strong></h3>
+<p><strong>3 Tier 란 사용자 인터페이스, 비즈니스 로직, 데이터베이스를 말하며, 이들을 각각 독립된 모듈로 개발하고 유지하는 구조로, 일반적으로 이들은 각각 다른 플랫폼 상에서 구동된다.<br />
+"3tier Architecture” 라고 명명한 것을 보면 알 수 있듯인 3 tier는 아키텍처적인 관점으로 봐라봐야 한다.</strong></p>
+<p><strong>- 프레젠테이션 계층 Presentation Layer</strong><br />
+: 프레젠테이션 계층은 응용 프로그램의 최상위에 위치하고 있는데 이는 서로 다른 층에 있는 데이터 등과 커뮤니케이션을 한다.</p>
+<p><strong>- 비지니스 계층 / 애플리케이션 계층 ( Business Logic Layer / Application Layer)</strong><br />
+: 이 계층은 비즈니스 로직 계층 또는 트랜잭션 계층이라고도 하는데, 비즈니스 로직은 워크스테이션으로부터의 클라이언트 요청에 대해 마치 서버처럼 행동한다.<br />
+그것은 차례로 어떤 데이터가 필요한지를 결정하고, 메인프레임 컴퓨터 상에 위치하고 있을 세 번째 계층의 프로그램에 대해서는 마치 클라이언트처럼 행동한다.</p>
+<p><strong>- 데이터 계층 (Data Access Layer )</strong><br />
+: 데이터 계층은 데이터베이스와 그것에 액세스해서 읽거나 쓰는 것을 관리하는 프로그램을 포함한다.<br />
+애플리케이션의 조직은 이것보다 더욱 복잡해질 수 있지만, 3계층 관점은 대규모 프로그램에서 일부분에 관해 생각하기에 편리한 방법이다.</p>
+<p><em>출처: https://ko.wikipedia.org/</em></p>
+<p><strong>3tier는 물리적인 분리가 되어진 아키텍쳐이다.</p>
+<p>특히, "각각 독립된 모듈하고 유지하는 구조로 일반적으로 이들은 각각 다른 플랫폼 상에서 구동 된다”라는 설명이 핵심적인데,<br />
+각 레이어는 선형적인 구조로 설게되어있으며, 직접적인 하위 레이어만 알면 된다.</p>
+<p>즉, 프레젠테이션 계층은 직접적으로 데이터계층과 통신하지 않는다.<br />
+다시말해, 프레젠테이션/데이터 각 계층은 반드시 미들웨어인 비지니스 계층을 통해서만 통신이 가능하다.</strong>
+</div>
+<p>&nbsp;</p>
+<div>
+<h3><strong>2) Design Pattern MVC (Model View Controller)</strong></h3>
+<p><strong>모델-뷰-컨트롤러(Model–View–Controller, MVC)는 사용자 인터페이스로부터 비즈니스 로직을 분리하여 애플리케이션의 시각적 요소나 그 이면에서 실행되는 비즈니스 로직을 서로 영향 없이 쉽게 고칠 수 있는 애플리케이션을 만들 수 있다. MVC에서 모델은 애플리케이션의 정보(데이터)를 나타내며, 뷰는 텍스트, 체크박스 항목 등과 같은 사용자 인터페이스 요소를 나타내고, 컨트롤러는 데이터와 비즈니스 로직 사이의 상호동작을 관리한다.</strong></p>
+<p><strong>-모델(model)</strong><br />
+:모델(model)이란 어떠한 동작을 수행하는 코드를 말한다. 표시 형식에 의존하지 않는다. 다시 말해, 사용자에게 어떻게 보일지에 대해 신경쓰지 않아도 된다. 모델은 순수하게 public 함수로만 이루어진다. 몇몇 함수들은 사용자의 질의(query)에 대해 상태 정보를 제공하고 나머지 함수들은 상태를 수정한다.</p>
+<p><strong>-뷰(view)</strong><br />
+:MVC에서 모델은 여러 개의 뷰(view)를 가질 수 있다. 뷰는 모델에게 질의를 하여 모델로 부터 값을 가져와 사용자에게 보여준다.</p>
+<p><strong>-컨트롤러(Controller)</strong><br />
+:MVC의 뷰는 여러 개의 컨트롤러(Controller)를 가지고 있다. 사용자는 컨트롤러를 사용하여 모델의 상태를 바꾼다. 컨트롤러는 모델의 mutator 함수를 호출하여 상태를 바꾼다. 이때 모델의 상태가 바뀌면 모델은 등록된 뷰에 자신의 상태가 바뀌었다는 것을 알리고 뷰는 거기에 맞게 사용자에게 모델의 상태를 보여 준다.</p>
+<p><strong>물리적으로 구분할 수 없는 MVC 패턴은, </strong><br />
+<strong>[view -&gt; controller] 사용자의 요청을 view에서 받아 이를 controller에게 전달하고, </strong><br />
+<strong>[controller -&gt; model] controller는 model단에 데이터 처리요청을 하고,</strong><br />
+<strong>[model -&gt; view] 해당 결과를 바로 view로 보여주는 것이 기본 흐름이다. </strong><br />
+<strong>이러한 흐름은 트라이앵글이다.</strong></p>
+<p><strong>3tier와 MVC관계를 보면 </strong><br />
+<strong>presentation layer 에는 controller 와 view 가</strong><br />
+<strong>business layer 에는 Model이</strong><br />
+<strong>data access layer에는 DAO가 있는 것으로 보인다.</strong></p>
+<p>&nbsp;</p>
+<p><strong>아래의 글을 보면 3tier와 MVC패턴을 한눈에 알아볼 수 있다.</strong><br />
+<strong>3계층이 물리적 구분에 의해 나뉘어져 있고 이안에서 MVC가 통신하고 있다.</strong></p>
+<p><img class="aligncenter wp-image-568 size-large" src="{{ site.baseurl }}/assets/images/posts/mvcvs3tier-1024x305.png" alt="" width="720" height="214" /><br />
+<em>http://www.tonymarston.net/php-mysql/3-tier-architecture.html</em></p>
+<p><em>참고) 생활코딩 MVC 패턴 </em><br />
+<em>https://opentutorials.org/course/697/3828</em></p>
+</div>

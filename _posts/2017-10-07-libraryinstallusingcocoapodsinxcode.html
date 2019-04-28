@@ -1,0 +1,59 @@
+---
+layout: single
+title: Xcode에 CocoaPods를 이용하여 라이브러리 설치
+date: 2017-10-07 17:43:39.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+tags:
+- api
+- app
+- cocoapods
+- developer
+- firebase
+- ios
+- library
+- ruby
+- swift
+- xcode
+meta:
+  _edit_last: '2'
+  _oembed_3c55bee5083eeeb6aee269c650be4f83: "{{unknown}}"
+  _oembed_f06de0fd53a48a3bb70965504fad9ea9: "{{unknown}}"
+  _wp_old_slug: xcode%ec%97%90-cocoapods%eb%a5%bc-%ec%9d%b4%ec%9a%a9%ed%95%98%ec%97%ac-%eb%9d%bc%ec%9d%b4%eb%b8%8c%eb%9f%ac%eb%a6%ac-%ec%84%a4%ec%b9%98
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/libraryinstallusingcocoapodsinxcode/"
+---
+<p><img class="aligncenter size-medium wp-image-328" src="{{ site.baseurl }}/assets/images/posts/cocoapods-300x300.jpeg" alt="" width="300" height="300" /></p>
+<p>최근에, google api를 사용해 보려다가 필수적으로 알게된 cocoapods<br />
+<strong>google firebase, map api 등을 iOS에서 이용하고 싶다면, </strong><br />
+<strong>반드시 설치</strong>해야 한다.</p>
+<p>CocoaPods는 Xcode 프로젝트 개발시(Objective-C, Switf)<br />
+라이브러리를 손쉽게 설치할 수 있게<br />
+Ruby로 만들어졌으며, macOS환경이라면 사용가능하다.</p>
+<p>Xcode에 CocoaPods를 이용하여 라이브러리 설치는<br />
+<a href="https://guides.cocoapods.org/using/getting-started.html"><strong><em>CocoaPods홈페이지</em></strong></a>에 자세히 안내되어있다.</p>
+<p>&nbsp;</p>
+<p><strong>1. terminal을 통해서 cocoapods를 설치</strong></p>
+<p><code>$ sudo gem install cocoapods</code></p>
+<p><strong>2. 프로젝트 경로로 이동후, pod를 설치</strong></p>
+<p><code>$ pod init</code></p>
+<p><strong>3. 프로젝트 경레에 Podfile이 생성되는데,<br />
+해당 podfile을 열고<br />
+추가해 줄 라이브러리를 아래와 같이 입력</strong></p>
+<p><code>pod 'Firebase/Core'</code></p>
+<p><strong>4. 터미널 창으로 다시 돌아와서 추가된 라이브러리 설치</strong></p>
+<p><code>$ pod install</code></p>
+<p><strong>5. 반드시 .xcworkspace 로 프로젝트 열어주기 열어주기</strong></p>
+<p><code>$ open your-project.xcworkspace</code></p>
+<p>&nbsp;</p>

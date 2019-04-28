@@ -1,0 +1,251 @@
+---
+layout: single
+title: Linux(리눅스) vs Unix(유닉스), 리눅스 기본명령어
+date: 2019-02-24 23:02:24.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- learn, unlearn and relearn
+tags:
+- linux
+- unix
+- 리눅스
+- 리눅스명령어
+- 명령어
+- 유닉스
+meta:
+  _edit_last: '2'
+  _oembed_fe7d90b098268feca8b0ddf0081ac235: "{{unknown}}"
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/linux-vs-unix/"
+---
+<p>리눅스를 접하게되었다.</p>
+<p>웹개발만 해온지라 리눅스를 접할일이없었는데,<br />
+그리고 따로 공부해야할 필요성을 하나도 못느꼈는데,<br />
+이번에 맡은 파트에서 리눅스도 함께 해볼 기회가 생겼다.<br />
+사실 해볼 기회가 생긴걸 더 해 리눅스 관련 질문을 와다다 받았는데, 제대로 대답한게 있나?</p>
+<p>학부시절에 한 학기정도 임베디드 수업을 들으며 페도라를 하긴 했었는데, 이걸 기억할리가 있나..<br />
+그때 당시에는 어찌어찌 한 학기를 견더보았지만 지금은 뭐 견뎌본다고 넘길 수 있는 일이 아니니, 다시 찾아볼수밖에<br />
+뭐 맥도 유닉스계일인지라 공부하기도 쉬운환경에 이해하면 더 좋겠지..?</p>
+<p>결론은 기초부터..다시.. 해야하는 것...</p>
+<p>&nbsp;</p>
+<h2><b>리눅스(Linux)</b></h2>
+<p><b>리눅스는 오픈소스이며 무료이다.</b><br />
+리누스 토르발스가 커뮤니티 주체로 개발한 컴퓨터 운영 체제이다. 혹은 커널을 뜻하기도 한다. 리눅스는 자유 소프트웨어와 오픈 소스 개발의 가장 유명한 표본으로 들 수 있다. 리눅스는 다중 사용자, 다중 작업(멀티태스킹), 다중 스레드를 지원하는 네트워크 운영 체제(NOS)이다.<br />
+출처: https://ko.wikipedia.org/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4</p>
+<p>&nbsp;</p>
+<h2><b>유닉스(Unix) </b></h2>
+<p><b>유닉스는 intel이나 hp와 같은 인터넷 서버나 워크스테이션 OS로 사용된다.</b><br />
+교육 및 연구 기관에서 즐겨 사용되는 범용 다중 사용자 방식의 시분할 운영 체제이다. 1970년대 초반 벨 연구소 직원인 켄 톰슨, 데니스 리치 등이 처음 개발하였다. 오늘날의 유닉스 시스템은 여러 회사들과 비영리 단체들이 이 커널로 활용하여 다양한 운영체제을 개발하고 있다.<br />
+일반 텍스트 파일, 명령행 인터프리터, 계층적인 파일 시스템, 장치 및 특정한 형식의 프로세스 간 통신을 파일로 취급 등.<br />
+소프트웨어 공학 측면에서, 유닉스는 C의 사용과 유닉스 철학이라는 부분이 특징이다.<br />
+출처 : <a href="https://www.diffen.com/difference/Linux_vs_Unix">https://www.diffen.com/difference/Linux_vs_Unix</a></p>
+<p>&nbsp;</p>
+<h3><strong>리눅스 기본명령어</strong></h3>
+<h3><img class=" wp-image-631 alignleft" src="{{ site.baseurl }}/assets/images/posts/linux&#4352;&#4469;&#4359;&#4457;&#4523;&#4358;&#4455;&#4540;&#4357;&#4455;&#4540;&#4363;&#4453;ls-al.png" alt="" width="310" height="226" /></h3>
+<p>해당 화면은</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="null">ls -al</pre>
+<p>모든 파일의 정보를 확인하는 명령어이다.<br />
+ls는 파일목록을 보여주고<br />
+-l은 파일정보를 보여주고<br />
+-a은 숨겨진 파일을 출력하는 것이다.</p>
+<p>&nbsp;</p>
+<pre class="EnlighterJSRAW" data-enlighter-language="null">ls
+ls -a
+ls -l</pre>
+<p>도 모두 가능</p>
+<p>파일정보를 확인하게 되면 아래와 같은 퍼미션 정보를 확인 할 수 있는데<br />
+해당 파일의대한 읽기,쓰기, 실행권한을 확일할 수 있다.</p>
+<p>&nbsp;</p>
+<h3>퍼미션(권한) 보기</h3>
+<p><img class="size-full wp-image-637 aligncenter" src="{{ site.baseurl }}/assets/images/posts/linux&#4352;&#4469;&#4359;&#4457;&#4523;&#4358;&#4455;&#4540;&#4357;&#4455;&#4540;&#4363;&#4453;ls-al.jpg" alt="" width="559" height="407" /><br />
+왼쪽부터 3개(rwx)는 소유자, 그 다음(-xr)은 소유그룹, 마지막 3개(r-x)는 그외 기타사용자의 접근 권한이다.</p>
+<ul>
+<li><strong>r : 읽기권한</strong></li>
+<li><strong>w : 쓰기권한</strong></li>
+<li><strong>x : 실행권한</strong></li>
+<li><strong>- : 권한없음</strong></li>
+</ul>
+<p><b><br />
+</b>d가 디렉토리이며 dama는 읽고,쓰고,실행할 권한이 있으나, dama 가 속한 staff 계정 그룹에서는 읽고 실행할 권만 있고, 그 외 사용자 또한 읽고, 실행할 권한만 있다.<br />
+디렉토리의 링크수는 16개이며, 디렉토리크기는 512, 생성날짜는 2017년 10월 6일 이다.<br />
+디렉토리 이름은 atom</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>퍼미션(권한) 변경하기</h3>
+<p><b>chmod [변경될 퍼미션값] [변경할 파일]</b></p>
+<p>퍼미션을 변경하는 방법은 아래와 같은 방법들이 있다.</p>
+<p>1) chmod 755 file1   - 해당파일에 rwxr-xr-x 권한을 주게된다.</p>
+<p><strong>8진법/2진수/캐릭터 표현</strong></p>
+<div>
+<table style="height: 260px;" width="219">
+<colgroup>
+<col />
+<col />
+<col /></colgroup>
+<tbody>
+<tr>
+<td>8진법</td>
+<td>2진법</td>
+<td>파일모드</td>
+</tr>
+<tr>
+<td>0</td>
+<td>000</td>
+<td class="">---</td>
+</tr>
+<tr>
+<td>1</td>
+<td>001</td>
+<td class="">--x</td>
+</tr>
+<tr>
+<td>2</td>
+<td>010</td>
+<td class="">-w-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>011</td>
+<td class="">-wx</td>
+</tr>
+<tr>
+<td>4</td>
+<td>100</td>
+<td class="">r--</td>
+</tr>
+<tr>
+<td>5</td>
+<td>101</td>
+<td>r-x</td>
+</tr>
+<tr>
+<td>6</td>
+<td>110</td>
+<td>rw-</td>
+</tr>
+<tr>
+<td>7</td>
+<td>111</td>
+<td>rwx</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+<p>2) chmod u+x file1</p>
+<table>
+<colgroup>
+<col />
+<col />
+<col /></colgroup>
+<tbody>
+<tr>
+<td>
+<div>레퍼런스</div>
+</td>
+<td>
+<div>클래스</div>
+</td>
+<td>
+<div>설명</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>u</div>
+</td>
+<td>
+<div>사용자</div>
+</td>
+<td>
+<div>파일의 소유자</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>g</div>
+</td>
+<td>
+<div>그룹</div>
+</td>
+<td>
+<div>그 파일의 그룹 멤버인 사용자</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>o</div>
+</td>
+<td>
+<div>다른 사람들</div>
+</td>
+<td>
+<div>그 파일의 소유자나 혹은 그 그룹의 멤버가 아닌 사용자</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>a</div>
+</td>
+<td>
+<div>모든 사람</div>
+</td>
+<td>
+<div>위의 셋 모두, "ugo"와 같다</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div>chmod 프로그램은 파일의 모드들이 어떻게 조정될 수 있는지를 명시하기 위해서 연산자를 사용한다. 허용되는 연산자는 다음과 같다:</div>
+<div></div>
+<table>
+<colgroup>
+<col />
+<col /></colgroup>
+<tbody>
+<tr>
+<td>
+<div>연산자</div>
+</td>
+<td class="">
+<div>설명</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>+</div>
+</td>
+<td class="">
+<div>지정된 모드들은 지정된 클래스들에 더한다</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>-</div>
+</td>
+<td class="">
+<div>지정된 클래스들로부터 지정된 모드들은 지운다</div>
+</td>
+</tr>
+<tr>
+<td class="">
+<div>=</div>
+</td>
+<td class="">
+<div>지정된 클래스들을 위해서 지정된 모드들이 정확한 모드들로 만들어지게 된다</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>출처 : https://ko.wikipedia.org/wiki/Chmod</p>

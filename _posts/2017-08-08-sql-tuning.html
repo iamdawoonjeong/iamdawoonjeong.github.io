@@ -1,0 +1,60 @@
+---
+layout: single
+title: SQL 튜닝
+date: 2017-08-08 19:14:49.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+tags:
+- db
+- excutionplan
+- full
+- hint
+- index
+- optimizer
+- oracle
+- sql
+- tuning
+meta:
+  _edit_last: '2'
+  _oembed_254ac8131a7f4343e566959116719c5d: "{{unknown}}"
+  _oembed_506468d9fa5fc8cb478657e6d1818407: "{{unknown}}"
+  _oembed_c0075ce742b2500cd1dbdfab2249584e: "{{unknown}}"
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/sql-tuning/"
+---
+<p><img class="aligncenter size-medium wp-image-243" src="{{ site.baseurl }}/assets/images/posts/sql-tuning-300x300.jpeg" alt="" width="300" height="300" /></p>
+<p>&nbsp;</p>
+<p>입사한지 얼마 되지 않아 DBA의 튜닝을 한 번 겪고 난 뒤에, DB가 굉장히 재미있게 느껴졌다.</p>
+<p>몇 자 안되게, 아니 그냥 딱 한줄.. 추가되었을 뿐인데, 쿼리문이 엄청나게 빨리 실행되었기 때문이다.</p>
+<p>그때 사용되었던 것이, selet 문에 index를 힌트로 추가해준 것 뿐.</p>
+<p>그때 느꼈다.</p>
+<p>아! 신기해!!!</p>
+<p>&nbsp;</p>
+<p>첫번째  처럼, full scan은 전체 데이터를 대상으로 추출 하고자 할 때 사용되고,</p>
+<p>두번째 처럼 index를 힌트에 넣는 경우는 미리 추가해둔 인덱스를 통해서, 데이터를 추출하고자 할때 사용된다.</p>
+<p>full scan의 경우 내부적으로 한번에 많은 양을 처리하려하는게 목적이여서 실행계획을 해보면cost가 엄청나게 올라가게 된다. 즉, 리소스 엄청 잡아 먹기도 한다.</p>
+<p>index scan의 경우, 인덱스만 scan하기 때문에 적은 cost가 요구된다.</p>
+<p>&nbsp;</p>
+<p>정말인지 힌트는 상황에 따라 알맞게 써주는게 답!</p>
+<p>&nbsp;</p>
+<p>가장 효율적인 방법으로 SQL문을 실행하기 위한 (Optimizer) 실행계획을 짤때 적절한 Hint를 사용한다.<br />
+<strong>optimizer</strong><br />
+Built-in database software that determines the most efficient way to execute a SQL statement by considering factors related to the objects referenced and the conditions specified in the statement.</p>
+<p><strong>execution plan</strong><br />
+The combination of steps used by the database to execute a SQL statement. Each step either retrieves rows of data physically from the database or prepares them for the user issuing the statement. You can override execution plans by using a hint.<br />
+<strong>hint</strong><br />
+An instruction passed to the optimizer through comments in a SQL statement. The optimizer uses hints to choose an execution plan for the statement.</p>
+<p><strong>hint의 종류</strong><br />
+http://docs.oracle.com/cd/B19306_01/server.102/b14211/optimops.htm#g92116</p>
+<p><strong>출처:</strong> http://docs.oracle.com/en/database/</p>
