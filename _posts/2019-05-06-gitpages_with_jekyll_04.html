@@ -1,0 +1,51 @@
+---
+layout: single
+title: github.io 만들기 04 - gitpages jekyll 로 wordpress데이터 이관
+date: 2019-05-06 12:44:11.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+- learnunlearnandrelearn
+tags:
+- github
+- gitpages
+- gitio
+- jekyll
+- minimal-mistakes
+- system
+meta:
+  _edit_last: '2'
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/gitpages_with_jekyll_04/"
+---
+1. 워드프레스 데이터 백업<br />
+워드프레스 관리자모드 - 도구 - 내보내기<br/>
+<p>
+2. 지킬에 임포트 플러그인 설치<br />
+<span style="color:red;">gem install jekyll-import</span><br />
+<p>
+3. 지킬에 임포트<br />
+<span style="color:red;">
+$ ruby -r rubygems -e 'require "jekyll-import";<br />
+    JekyllImport::Importers::WordpressDotCom.run({<br />
+      "source" => "wordpress.xml",<br />
+      "no_fetch_images" => false,<br />
+      "assets_folder" => "assets"<br />
+    })’<br />
+</span>
+<br />
+<p>
+<a href="https://import.jekyllrb.com/docs/wordpressdotcom/">https://import.jekyllrb.com/docs/wordpressdotcom/</a><br />
+<p>
+정상적으로 수행되었다면 _posts 폴더 밑에 .html 파일이 쭉 떨어진다.<br />
+끝!

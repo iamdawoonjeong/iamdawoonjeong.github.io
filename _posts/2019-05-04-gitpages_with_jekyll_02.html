@@ -1,0 +1,50 @@
+---
+layout: single
+title: github.io 만들기 02 - gitpages with jekyll admin plugin 설치
+date: 2019-05-04 22:59:02.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+- learnunlearnandrelearn
+tags:
+- github
+- gitpages
+- gitio
+- jekyll
+- minimal-mistakes
+- system
+meta:
+  _edit_last: '2'
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/gitpages_with_jekyll_02/"
+---
+블로그 글을 쓰는데 관리 페이지가 있다면 얼마나 좋을까? 는 내 생각뿐이 아니다.<br />
+걱정마라. 이미 jekyll은 plugin으로 admin을 제공해주고 있다. <br />
+생각이상으로 jekyll은 좋다.<br />
+<p>
+<p>
+설치하고 jekyll이 잘 설치가 되었다면 gem file 을 열어서 <br />
+<span style="color:red;">gem "jekyll", "~> 3.8.5” </span><br />
+해당 부분 주석 처리 후 <br />
+<p>
+아래코드를 저장시킨 후 <br />
+<span style="color:red;">gem "jekyll-admin", group: :jekyll_plugins</span><br />
+<p>
+빌드 후 서버 재기동  <br />
+<span style="color:red;">bundle exec jekyll serve</span><br />
+<p>
+그리고 아래페이지로 접속하면  page관리를 쉽게 해줄 admin 페이지가 보인다.<br />
+<p>
+http://localhost:4000/admin/<br />
+<p>
+별거 없어서 설명도 필요없을 것 같다.<br />

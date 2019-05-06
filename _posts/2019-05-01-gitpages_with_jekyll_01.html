@@ -1,0 +1,94 @@
+---
+layout: single
+title: github.io 만들기 01 - gitpages with jekyll 환경설정
+date: 2019-05-01 23:11:05.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Archive
+- Blog
+- learnunlearnandrelearn
+tags:
+- github
+- gitpages
+- gitio
+- jekyll
+- minimal-mistakes
+- system
+meta:
+  _edit_last: '2'
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/gitpages_with_jekyll_01/"
+---
+블로그를 워드프레스에서 깃허브로 옮기기로 했다.<br />
+깃허브가 가지고 있는 이슈는 뒤로하고 워드프레스만 계속 쓰다가 안주하는 느낌이 강해져서 게으름을 피하기 위해서,<br />
+그리고 무엇보다 많이들 쓰니깐 뭔지 해보고 싶어졌다.</p>
+
+<p>다행히 깃허브 페이지 자체를 만드는 것은 너무나 쉽다.<br />
+그러나 문제는 jekyll 를 셋팅하는게 꽤 힘들었는데, 가이드 대로 찬찬히 따라오는데 에러가 계속 떴다.<br />
+어? 이 에러만 고치면 될 것 같은 느낌 만으로 1주일을 썼다.<br />
+그래..원래 웹 개발은 환경셋팅만 1주일 아닌가? 늘 겪던 건데 뭐~라는 마음을 먹었지만,<br />
+시작은 언제하나 답답해 죽는 줄 알았다.</p>
+
+<p>다행스럽게도 환경 셋팅이 되었고, 남은 것은 기존 블로그 이관과 jekyll이해하기.<br />
+그 전에 셋팅 하면서 고군분투 했던 여러가지 에러들을 정리해 보았다.<br />
+먼저 Ruby Gem이 설치되어 어야 한다.<br />
+macOS를 라면 당연히 ruby gem 설치는 되지 않는다.</p>
+
+<p><a href="https://jekyllrb.com/docs/installation/">https://jekyllrb.com/docs/installation/</a><br />
+<a href="https://jekyllrb.com/docs/installation/macos/">https://jekyllrb.com/docs/installation/macos/</a></p>
+
+<p>위 링크에 따라 jekyll 설치 가이드에서 보면<br />
+mac OS Mojave 10.14 와 ruby 2.3.x 가 있어야 Homebrew를 통해 Ruby가 설치 가능하다고 한다.<br />
+설치 하다 보면 중간중간에 풀리지 않는 에러들이 수도 없이 나오는데알고 보니 버전 문제였다.</p>
+
+<p>약간 이런 종류의 해결할 수 없는 에러들떴는데,</p>
+
+<p style="color:red;"><strong>Make sure that `gem install ffi -v &#8216;1.10.0&#8217; &#8211;source &#8216;<a href="https://rubygems.org/'%60">https://rubygems.org/&#8217;`</a>succeeds before bundling.</p>
+</strong></color>
+<p>아무리 구글링을 해도 알 수 없었다.</p>
+
+<p>******정리<br />
+1. command line tool 10.0 이상이 필요하다.<br />
+2. Xcode &#8211; preferences 에서 버전 확인 가능한데 하위버전일 경우 반드시 업데이트 해주어야한다.<br />
+3. Xcode 10.0은 mac OS 10.4 Mojave 이상일 경우에만 업데이트가 가능하니 하위 버전일 경우 mac OS부터 업데이트 해줘야하는 큰산..내가 그 경우..<br />
+분명 커맨드에서 저 명령어를 쳤을때에는 딱히 오류가 생기지는 않으나 나중에 끝도 없이 에러나온다.<br />
+그냥 업데이트 해주고 시작하는게 편하다.<br />
+=&gt; 결론 mac OS Mojave 10.14 이상 , Xcode 10.0 이상 의 버전을 준비하고 시작하는게 문제 없다.<br />
+******</p>
+
+<p>그리고.. 시작이다.</p>
+<p>위에 셋팅이 문제 없이 흘러가다가</p>
+
+<p>gem install bundler jekyll</p>
+
+<p>에서 에러를 만났다.</p>
+
+<p style="color:red;"><strong>ERROR: While executing gem &#8230; (Gem::FilePermissionError)<br />
+You don&#8217;t have write permissions for the /Library/Ruby/Gems/2.3.0 directory.<br />
+mac OS 엘케피탄 이후의 버전에서 반드시 sudo로 root권한을 주어야 가능</strong></p>
+
+<p>명령어 앞에 sudo 붙여줘서 권한주기<br />
+sudogem install bundler</p>
+
+<p>jekyll 설치하기<br />
+<a href="https://jekyllrb.com/docs/">https://jekyllrb.com/docs/</a></p>
+<p>jekyll serve 구동 시키고 웹 브라우저에서<br />
+<a href="http://localhost:4000">http://localhost:4000</a>실행시키기</p>
+
+<p>(+추가)</p>
+<p style="color:red;"><strong>You must use Bundler 2 or greater with this lockfile.<br />
+update RubyGems</strong></p>
+<p>설치시 이런 메시지가 뜬다면<br/>
+<p style="color:blue;"><strong>gem update —system</strong></p>
+<p>
+<p>아래와 같은 메시지가 뜬다면 skip<br />
+<p style="color:red;"><strong>Latest version already installed. Done.</strong></p>

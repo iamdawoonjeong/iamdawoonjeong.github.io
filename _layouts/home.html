@@ -1,13 +1,9 @@
 ---
 layout: archive
-paginate_path: /recent/page:num/
 ---
 
-{{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% for post in site.posts limit:5 %}
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Posts" }}</h3>
+{% for post in site.posts limit:10 %}
     {% include archive-single.html type=page.entries_layout %}
     <div class="initial-content">
       {{ content }}
