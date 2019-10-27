@@ -1,0 +1,42 @@
+---
+layout: single
+title: terminal 환경설정 (프롬프트 변경, ll 설정)
+date: 2019-10-27 17:00:00.000000000 +09:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- unix
+tags:
+- linux
+- terminal
+- unix
+meta:
+  _edit_last: '2'
+author:
+  login: DawoonJeong
+  email: iamdawoonjeong@gmail.com
+  display_name: Dawoon Jeong
+  first_name: Dawoon
+  last_name: Jeong
+permalink: "/2019-10-27-terminal_setting/"
+---
+
+* 프롬프트 출력 변경 : 호스트네임:현재위치로 출력됨
+.bash_profile
+PS1="`hostname`:\$PWD>”
+
+
+* unix에서 linux ll 설정해주기
+.bahrc
+alias ll="ls -al”
+
+
+.bash_profile
+.bahrc
+위의 두 파일은 수정하고 난 뒤
+source .bash_profile
+source .bahrc
+로 적용시켜주기 
