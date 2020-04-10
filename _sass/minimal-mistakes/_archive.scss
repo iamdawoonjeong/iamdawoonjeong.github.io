@@ -36,10 +36,11 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: $nanum;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
 
   a::before {
     content: '';
@@ -93,7 +94,7 @@
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: $caption-font-family;
+  font-family: $nanum;
   font-size: $type-size-8;
   background: #000;
   text-align: right;
