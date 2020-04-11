@@ -24,18 +24,19 @@
 
 .archive__subtitle {
   margin: 1.414em 0 0;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
   font-size: $type-size-5;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
-    margin-top: 0.5em;
+    margin-top: 1em;
   }
 }
 
 .archive__item-title {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.8em;
+  margin-top: 3em;
   font-family: $nanum;
   line-height: initial;
   overflow: hidden;
@@ -118,7 +119,7 @@
 
 .list__item {
   .page__meta {
-    margin: 0 0 4px;
+    margin: 0 0 10px;
     font-size: 0.6em;
   }
 }

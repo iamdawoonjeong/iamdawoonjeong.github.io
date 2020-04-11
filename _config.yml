@@ -1,7 +1,7 @@
 # Site Settings
 minimal_mistakes_skin: default
 locale: en-US
-title: DAWOON's devBlog 
+title: DAWOON's devBlog
 title_separator: '-'
 name: Dawoon Jeong
 description: 아름다운 정다운 개발자 블로그
@@ -166,7 +166,7 @@ markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: |+
+excerpt_separator: <!--excerpt_separator-->
 
 incremental: false
 kramdown:
