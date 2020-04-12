@@ -79,10 +79,10 @@ social:
   type: null
   name: null
   links: null
-analytics:
+analytics: "google-gtag"
   provider: false
   google:
-    tracking_id: null
+    tracking_id: "UA-163460910-1"
     anonymize_ip: null
 
 # Site Author
