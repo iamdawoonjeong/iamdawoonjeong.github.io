@@ -79,8 +79,8 @@ social:
   type: null
   name: null
   links: null
-analytics: "google-gtag"
-  provider: false
+analytics:
+  provider: "google-gtag"
   google:
     tracking_id: "UA-163460910-1"
     anonymize_ip: null
