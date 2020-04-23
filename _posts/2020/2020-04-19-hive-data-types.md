@@ -37,7 +37,7 @@ primitive types은 sql을 알고 있다면 크게 어려울 것이 없지만, co
 
 
 ### Numeric Types
-- TINYINT : 1-byte signed integer,  -128 ~ 127ㄷㄱ
+- TINYINT : 1-byte signed integer,  -128 ~ 127
 - SMALLINT : 2-byte signed integer,  -32,768 ~ 32,767
 - INT/INTEGER : 4-byte signed integer,  -2,147,483,648 ~ 2,147,483,647
 - BIGINT : 8-byte signed integer,  -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807
