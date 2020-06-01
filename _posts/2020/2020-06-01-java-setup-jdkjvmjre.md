@@ -60,7 +60,7 @@ permalink: "/java-setup-jdkjvmjre/"
 ---
 ### MAC OS 환경변수 설정
 
-```
+```shell
 # bash_profile 편집
 vi .bash_profile
 
@@ -69,20 +69,21 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
 export PATH=$PATH:$JAVA_HOME/bin
 
 # 수정된 내용 적용
-sourc .bash_profile
+source .bash_profile
 ```
 
 
 ---
 ### 자바 설치 확인 및 환경변수 설정 확인
 - 윈도우는 cmd창, 맥은 terminal 확인
-- 환경변수가 제대로 설정 있다면 아무 위치에서다 명령어가 실행되어야 하며, 환경변수를 미설정시 자바 설치 경로로 이동해서 확인 가능  
+- 환경변수가 제대로 설정되어 있다면 아무 위치(cmd, terminal 키자마자)에서나 자바 명령어가 실행되어야 함
+- 환경변수 미설정시 자바 설치 경로로 이동해야 자바 명령어가 실행 됨
 
-```
-java -version   
-
+```shell
+java -version  
 javac -version
 ```
+
 
 ##### 참고
 - Javac     : 자바 컴파일러
@@ -117,25 +118,33 @@ javac -version
 
 
 ## 자바프로그램 실행
-### 자바파일 직접 compile 후 실행
+### 직접 compile 후 실행
+- 메모장에 코드 직접 적고 .java로 저장 후, 윈도우는 cmd창에서 맥은 terminal 에서 실행
+- 실제로는 직접 컴파일 하지 않고, 이클립스와 같은 툴 사용시, 아래 그림 처럼 java코드 저장시 .class 자동으로 생성됨 (jdk의 실행속도를 느낄 수 없는 거의 실시간 수준)
+
+
 1. 컴파일 : javac 클래스이름.java
-```  
-   javac Example.java
+```shell
+javac Example.java
 ```
 
 2. 자바 실행 : java 클래스이름
-```
-   java Example
+```shell
+java Example
 ```
 
 ![JRE_JDK_JVM]({{ site.baseurl }}/assets/images/posts/2020/java-JRE_JDK_JVM.jpg)
 
 
-### 자바파일 실행원리
+---
+
+
+### 컴파일 및 실행 원리
 1. JDK에서 Compile을 하면서 .class 가 생성 되면서 bytecode가 만들어짐
 2. compile이 제대로 되었다면 bytecode는 JVM에서 실행되며 이때 native code로 컴파일 되면서 실행결과가 나옴   
 
 ![JRE_JDK_JVM_4]({{ site.baseurl }}/assets/images/posts/2020/java-JRE_JDK_JVM_4.jpg)
+
 
 ---
 ##### References
