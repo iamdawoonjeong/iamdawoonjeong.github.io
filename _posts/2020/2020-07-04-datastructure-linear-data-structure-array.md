@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Data Structure] 선형 자료구조(1) - 배열(array)"
-date: 2020-07-03 23:30:00.000000000 +09:00
+date: 2020-07-04 23:30:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true
