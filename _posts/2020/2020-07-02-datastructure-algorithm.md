@@ -8,7 +8,7 @@ published: true
 password: ''
 status: publish
 categories:
-- Algorithm
+- DataStructure
 tags:
 - data structure
 - algorithm
