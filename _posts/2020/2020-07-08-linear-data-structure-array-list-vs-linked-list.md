@@ -22,6 +22,8 @@ author:
   last_name: Jeong
 permalink: "/datastructure-array-list-vs-linked-list/"
 ---
+#[Data Structure] 선형 자료구조(3) - 배열 리스트(array list) VS 연결리스트(linked list)
+
 ## DataStruncture 에서의 Array  VS Linked List
 
 |Algorithm | Array | Linked List |
