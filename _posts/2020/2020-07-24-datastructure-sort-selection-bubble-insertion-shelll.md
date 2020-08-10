@@ -188,8 +188,8 @@ permalink: "/datastructure-sort-selection-bubble-insertion-shell/"
 
 | Complexity | Best Case | Average Case | Worst Case |
 |:--------:|:--------:|:--------:|:--------:|
-| Time  | Ω(n) | θ(n<sup>2</sup>) | O(n<sup>2</sup>) |
-| Space |      |                  | O(1)             |
+| Time | Ω(n) | θ(n<sup>2</sup>) | O(n<sup>2</sup>) |
+| Space | | | O(1) |
 
 
 
@@ -247,7 +247,7 @@ permalink: "/datastructure-sort-selection-bubble-insertion-shell/"
 | Complexity | Best Case | Average Case | Worst Case |
 |:--------:|:--------:|:--------:|:--------:|
 | Time  | Ω(nloegn)	| θ(nlog (n)<sup>2</sup>) | O(n log n<sup>2</sup>) |
-| Space |           |                         | O(1)                   |
+| Space | | | O(1) |
 
 
 ---
