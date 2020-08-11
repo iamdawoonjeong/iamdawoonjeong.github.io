@@ -12,7 +12,7 @@ categories:
 tags:
 - data structure
 - algorithm
-- sortß
+- sort
 meta:
   _edit_last: '2'
 author:
