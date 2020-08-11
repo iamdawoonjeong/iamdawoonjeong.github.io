@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Data Structure] 정렬(Sort)"
+title: "[Algorithm] 정렬(Sort)"
 date: 2020-07-22 23:56:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -8,7 +8,7 @@ published: true
 password: ''
 status: publish
 categories:
-- DataStructure
+- Algorithm
 tags:
 - data structure
 - algorithm
@@ -21,7 +21,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/datastructure-sort/"
+permalink: "/algorithm-sort/"
 ---
 # Sort (정렬)
 - 무질서한 자료들을 일정한 기준에 의하여 재밸열 하는 과정  

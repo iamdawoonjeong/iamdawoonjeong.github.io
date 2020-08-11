@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Data Structure] 정렬(Sort)-퀵 정렬, 힙 정렬, 병합 정렬, 기수 정렬 정의 및 구현"
+title: "[Algorithm] 정렬(Sort)-퀵 정렬, 힙 정렬, 병합 정렬, 기수 정렬 정의 및 구현"
 date: 2020-08-10 21:21:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -8,7 +8,7 @@ published: true
 password: ''
 status: publish
 categories:
-- DataStructure
+- Algorithm
 tags:
 - data structure
 - algorithm
@@ -21,7 +21,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/datastructure-sort-quick-heap-merge-radix/"
+permalink: "/algorithm-sort-quick-heap-merge-radix/"
 ---
 #  Quick Sort, Heap Sort, Merge Sort, Radix Sort
 
@@ -120,7 +120,7 @@ public static void sort(int[] arr, int start, int end) {
 - **Divide and Conquer** 알고리즘
 - 여러 개의 정렬되어있는 배열 자료들을 혼합하여 하나의 정렬된 배열로 합치는 작업
 
-![datastructure-Merge-Sort-Tutorial]({{ site.baseurl }}/assets/images/posts/2020/datastructure-Merge-Sort-Tutorial.png)
+![datastructure-Merge-Sort-Tutorial]({{ site.baseurl }}/assets/images/posts/2020/algorithm-Merge-Sort-Tutorial.png)
 
 
 ### 연산
@@ -256,7 +256,7 @@ public static void sort(int[] arr, int start, int end) {
 4. 2와 3을 반복
 
 
-![datastructure-MinHeapAndMaxHeap]({{ site.baseurl }}/assets/images/posts/2020/datastructure-MinHeapAndMaxHeap.png)
+![algorithm-MinHeapAndMaxHeap]({{ site.baseurl }}/assets/images/posts/2020/algorithm-MinHeapAndMaxHeap.png)
 
 
 ```java

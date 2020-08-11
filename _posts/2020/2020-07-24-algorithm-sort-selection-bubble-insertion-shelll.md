@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Data Structure] 정렬(Sort)-선택정렬, 버블정렬, 삽입정렬, 쉘정렬 정의 및 구현"
+title: "[Algorithm] 정렬(Sort)-선택정렬, 버블정렬, 삽입정렬, 쉘정렬 정의 및 구현"
 date: 2020-07-24 18:43:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -8,7 +8,7 @@ published: true
 password: ''
 status: publish
 categories:
-- DataStructure
+- Algorithm
 tags:
 - data structure
 - algorithm
@@ -21,7 +21,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/datastructure-sort-selection-bubble-insertion-shell/"
+permalink: "/algorithm-sort-selection-bubble-insertion-shell/"
 ---
 # [Data Structure] 정렬(Sort) - selection sort(선택정렬) bubble sort(버블정렬), insertion sort(삽입정렬), shell sort(쉘정렬) 정의 및 구현
 
@@ -48,7 +48,7 @@ permalink: "/datastructure-sort-selection-bubble-insertion-shell/"
 
 ### java로 선택정렬 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/sort/selection/SelectionSort.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/sort/selection/SelectionSort.java)
 
 
 ```java
@@ -101,7 +101,7 @@ permalink: "/datastructure-sort-selection-bubble-insertion-shell/"
 
 ### java로 버블정렬 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/sort/bubble/BubbleSort.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/sort/bubble/BubbleSort.java)
 
 
 ```java
@@ -157,7 +157,7 @@ permalink: "/datastructure-sort-selection-bubble-insertion-shell/"
 
 ### java로 삽입정렬 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/sort/insert/InsertSort.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/sort/insert/InsertSort.java)
 
 
 ```java
@@ -215,7 +215,7 @@ permalink: "/datastructure-sort-selection-bubble-insertion-shell/"
 
 ### java로 쉘 정렬 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/sort/shell/ShellSort.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/sort/shell/ShellSort.java)
 
 ```java
   public void sort(int elementData[]) {
