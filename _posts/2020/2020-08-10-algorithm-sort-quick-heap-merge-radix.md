@@ -52,7 +52,7 @@ permalink: "/algorithm-sort-quick-heap-merge-radix/"
 
 ### java로 퀵 정렬 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/sort/quick/QuickSortMain.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/sort/quick/QuickSortMain.java)
 
 
 ```java
@@ -133,7 +133,7 @@ public static void sort(int[] arr, int start, int end) {
 
 ### java로 병합 정렬 구현
 
-[전소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/sort/merge/MergeSortMain.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/sort/merge/MergeSortMain.java)
 
 
 ```java
