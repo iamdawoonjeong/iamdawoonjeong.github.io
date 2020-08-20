@@ -85,10 +85,10 @@ permalink: "/datastructure-linear-data-structure-array/"
 
 |algorithm | average case | worst case|
 |:--------:|:--------:|:--------:|
-|	access	|	o(1)	|	o(1)	|
-|	search	|	o(n)	|	o(n)	|
-|	insertion	|	o(n)	|	o(n)	|
-|	deletion	|	o(n)	|	o(n)	|
+|	access	|	O(1)	|	O(1)	|
+|	search	|	O(n)	|	O(n)	|
+|	insertion	|	O(n)	|	O(n)	|
+|	deletion	|	O(n)	|	O(n)	|
 
 - 삽입 : (n+1)/2 = O(n)
 - 삭제 : (n-1)/2 = O(n)
@@ -177,7 +177,7 @@ output
 ---
 #### references
 <https://www.geeksforgeeks.org/arrays-in-java/>  
-<https://www.geeksforgeeks.org/array-data-structure/>
+<https://www.geeksforgeeks.org/array-data-structure/>  
 <https://www.javatpoint.com/data-structure-array>  
-<https://www.javatpoint.com/data-structure-2d-array>
+<https://www.javatpoint.com/data-structure-2d-array>  
 <https://opentutorials.org/module/1335/>  

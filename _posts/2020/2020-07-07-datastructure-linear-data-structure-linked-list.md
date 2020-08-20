@@ -240,9 +240,9 @@ false
 #### references
 <https://www.geeksforgeeks.org/data-structures/linked-list/>  
 <https://www.geeksforgeeks.org/linked-list-in-java/>  
-<https://www.javatpoint.com/singly-linked-list>
-<https://www.javatpoint.com/doubly-linked-list>
-<https://www.javatpoint.com/circular-singly-linked-list>
-<https://www.javatpoint.com/circular-doubly-linked-list>
+<https://www.javatpoint.com/singly-linked-list>  
+<https://www.javatpoint.com/doubly-linked-list>  
+<https://www.javatpoint.com/circular-singly-linked-list>  
+<https://www.javatpoint.com/circular-doubly-linked-list>  
 <https://opentutorials.org/module/1335/8636>  
 <https://visualgo.net/>  

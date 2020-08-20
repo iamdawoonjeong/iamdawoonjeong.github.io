@@ -30,7 +30,7 @@ permalink: "/datastructure-linear-data-stack/"
 - 큐 queue
 
 ## 스택 Stack
-- 구조, 첫 번째로 삽입 된 요소는 스택에서 마지막으로 삭제
+- **FILO(First In Last Out), LIFO(Last In First Out) 구조**, 첫 번째로 삽입 된 요소는 스택에서 마지막으로 삭제
 - 순서가 지정된 목록 pushdown list
 - top 이라는 한쪽 끝에서만 삽입 및 삭제가 수행 됨
 - 스택은 최상위 요소를 가리키는 재귀 데이터 구조입니다.
