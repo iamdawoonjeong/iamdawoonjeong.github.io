@@ -125,12 +125,17 @@ E
 
 ```java
 //핵심은 노드를 만드는 것
-Node node(int index) {
-    Node x = head;
-    for (int i = 0; i < index; i++) {
-        x = x.next;
+private Node head;
+private Node tail;
+private int size = 0;
+
+private class Node{
+    private Object data;
+    private Node next;
+    public Node(Object input) {
+        this.data = input;
+        this.next = null;
     }
-    return x;
 }
 ```
 
@@ -159,7 +164,7 @@ output
 15
 ===== indexOf() =====
 -1
-=====Iteration : clasee 생성 =====
+=====Iteration : class 생성 =====
 =====next() =====
 15
 true
@@ -177,7 +182,7 @@ false
 
 ```
 
-## 이중 연결 리스트 (linkDoubly Linked List)
+## 이중 연결 리스트 (Doubly Linked List)
 - 노드에 시퀀스의 이전 노드와 다음 노드에 대한 포인터가 포함
 
 
@@ -197,6 +202,75 @@ false
 ### 이중 연결 리스트 단점
 - 모든 노드에 더 많은 공간을 소비하므로 삽입 및 삭제에서 광범위한 기본 작업이 발생 됨
 
+### 예제
+#### - JAVA로 doubly linked list 구현해보기  
+[전체 소스 보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/list/doublylinkedlist/implementation/DoublyLinkedList.java)
+
+
+
+```java
+//핵심은 노드를 만드는 것
+private Node head;
+private Node tail;
+private int size = 0;
+
+private class Node{
+    private Object data;
+    private Node prev;
+    private Node next;
+
+    public Node(Object input) {
+        this.data = input;
+        this.prev = null;
+        this.next = null;
+    }
+```
+
+
+output
+
+
+```java
+
+===== addFirst() =====
+[10, 20, 30]
+===== addLast() =====
+[10, 20, 30, 40, 50, 60]
+===== add() =====
+[10, 15, 20, 30, 40, 50, 60]
+===== removeFirst() =====
+[15, 20, 30, 40, 50, 60]
+===== remove() =====
+40
+[15, 20, 30, 50, 60]
+===== removeLast() =====
+60
+[15, 20, 30, 50]
+===== size() =====
+4
+===== get() =====
+15
+===== indexOf() =====
+-1
+=====Iteration : class 생성 =====
+=====next() =====
+15
+true
+20
+true
+30
+true
+50
+false
+[15, 20, 30, 50]
+=====addFirst() =====
+[10, 15, 20, 30, 50]
+=====add() =====
+[5, 10, 15, 20, 30, 50]
+
+```
+
+
 
 
 ## 원형 연결 리스트 (Circular Linked List)
@@ -205,10 +279,7 @@ false
 - 운영 체제의 작업 유지 관리에 사용
 
 
-
 ![datastructure-circular-singly-linked-list.png]({{ site.baseurl }}/assets/images/posts/2020/datastructure-circular-singly-linked-list.png)
-
-
 
 
 ### 원형 연결 리스트 장점
@@ -216,6 +287,7 @@ false
 
 ### 원형 연결 리스트 단점
 - 이전노드의 주소를 모름
+
 
 
 
@@ -245,4 +317,5 @@ false
 <https://www.javatpoint.com/circular-singly-linked-list>  
 <https://www.javatpoint.com/circular-doubly-linked-list>  
 <https://opentutorials.org/module/1335/8636>  
+<https://opentutorials.org/module/1335/8941>  
 <https://visualgo.net/>  
