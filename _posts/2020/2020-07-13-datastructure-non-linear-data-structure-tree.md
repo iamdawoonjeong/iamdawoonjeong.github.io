@@ -199,7 +199,7 @@ permalink: "/datastructure-non-linear-data-structure-tree/"
 ### 장점
 - 검색 프로세스에서 array 및 linked list 과 비교할 때, 모든 단계에서 하위 트리의 반을 제거해서 검색함으로 매우 효율적인 데이터 구조로 간주되며, 효율적으로 검색이 진행 됨  
 - **Binary Search Tree 시간복잡도 :  O(logn)**
-- **Binary Search Tree 최악의 경우 : O(n)**
+- **Binary Search Tree 최악의 경우 : O(n)** (최악의 경우는 배열과 시간복잡도가 같게 되는 경우)
 - array 및 linked list에 비해서는 삽입 및 삭제 작업 속도가 향상됨
 
 
