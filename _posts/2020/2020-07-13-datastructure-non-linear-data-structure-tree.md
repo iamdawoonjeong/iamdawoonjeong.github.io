@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Data Structure] 비선형 자료구조(1)  - 트리(Tree), 자바로 이진검색트리 구현"
+title: "[Data Structure] 비선형 자료구조(1)  - 트리(Tree)"
 date: 2020-07-13 19:37:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -25,7 +25,7 @@ author:
   last_name: Jeong
 permalink: "/datastructure-non-linear-data-structure-tree/"
 ---
-# [Data Structure] 비선형 자료구조(1)  - 트리(Tree), 자바로 이진검색트리 구현
+# [Data Structure] 비선형 자료구조(1)  - 트리(Tree)
 - **트리(Tree)**
 - 그래프(Graph)
 
@@ -40,16 +40,16 @@ permalink: "/datastructure-non-linear-data-structure-tree/"
 
 ![datastructure-tree]({{ site.baseurl }}/assets/images/posts/2020/datastructure-tree.png)
 
-- node (노드) : 트리의 기본 구성 요소. 다른 노드를 연결하기 위하여 사용 하는 branch 포함  
+- node (노드) : 트리의 기본 구성 요소. 다른 노드를 연결하기 위하여 사용 하는 branch 포함
 - root : 트리의 가장 높은 레벨, 최상위 노드. root의 레벨은 0. 부모가 없는 노드
 - depth :  트리의 최대 레벨을 깊이  
-- level :트리의 각 노드에는 각 노드가 부모보다 한 레벨 높은 레벨에있는 레벨 번호가 할당.  
+- level :트리의 각 노드에는 각 노드가 부모보다 한 레벨 높은 레벨에있는 레벨 번호가 할당
 - ancestor node : 노드의 조상은 루트에서 해당 노드까지의 경로에있는 모든 선행 노드
-- parent node :
-- child node :
+- parent node : 어떤 노드의 다음 레벨에 연결된 노드
+- child node : 어떤 노드의 상위 레벨에 연결된 노드
 - path : 연속적인 가장자리 시퀀스를 경로
 - brother, sbiling node : 같은 부모노드를 갖는 자식 노드들의 집합
-- subtree : 루트 노드가 null이 아닌 경우 트리 T1, T2 및 T3을 루트 노드7/7/2020 4:36:57 PM 의 하위 트리라고합니다.
+- subtree : 루트 노드가 null이 아닌 경우 트리 T1, T2 및 T3을 루트 노드의 하위 트리라고 함
 - degree of node : 자식 노드의 개수
 - degree of tree : 트리를 구성하고 있는 노드 중에서 degree가 가장 큰 것
 - leaf node , terminal node : 자식 노드가 없는 트리 노드. 트리의 가장 아래쪽 노드. 일반 트리에는 여러 개의 leaf 노드가 있음. leaf 노드는 외부 노드라고도 함.
@@ -187,18 +187,17 @@ permalink: "/datastructure-non-linear-data-structure-tree/"
   왼쪽 하위 트리를 순회 한 다음 오른쪽 하위 트리와 루트를 각각 순회. 트리의 각 하위 트리에 재귀 적으로 적용
 
 ## Binary Search Tree (BST)
-- 순서가 지정된 이진 트리
+- **순서가 지정된 이진 트리**
 - binary tree 구현 중 하나
-- 주어진 node의 값보다 작은 자식은 왼쪽 하위 트리
-- 큰 원소는 오른쪽 하위 트리  
-- 이진 검색 트리는 검색, 정렬 등과 ​​같은 컴퓨터 과학 도메인의 대부분의 응용 프로그램에서 사용 됨
+- 주어진 node의 값보다 **작은 자식은 왼쪽 하위 트리, 큰 원소는 오른쪽 하위 트리**
+- 이진 검색 트리는 **검색, 정렬** 등과 ​​같은 컴퓨터 과학 도메인의 대부분의 응용 프로그램에서 사용 됨
 
 ![datastructure-BSTSearch]({{ site.baseurl }}/assets/images/posts/2020/datastructure-BSTSearch.png)
 
 ### 장점
 - 검색 프로세스에서 array 및 linked list 과 비교할 때, 모든 단계에서 하위 트리의 반을 제거해서 검색함으로 매우 효율적인 데이터 구조로 간주되며, 효율적으로 검색이 진행 됨  
-- Search의 시간복잡도는  o (log 2 n)
-- Search의 최악의 경우 0 (n)
+- Search의 시간복잡도는 O(logn)
+- Search의 최악의 경우 O(n)
 - array 및 linked list에 비해서는 삽입 및 삭제 작업 속도가 향상됨
 
 
@@ -208,14 +207,30 @@ permalink: "/datastructure-non-linear-data-structure-tree/"
 
 output
 ```java
-find root of Binary search tree :
-10
 Binary search tree after insertion :
-10 15 18 20 22 25 30 40 50
+Inorder Traversal :
+10 20 30 40 50 60 70 80 90
+
+Preorder Traversal :
+50 10 20 30 40 60 70 80 90
+
+Postorder Traversal :
+10 20 30 40 60 70 80 90 50
+
+Get size of  Binary search tree :
+9
+
+Find root of Binary search tree :
+50
+
 Binary search tree after deleting node 30 :
-10 15 18 20 22 25 40 50
-Binary search tree after deleting node 50 :
-10 15 18 20 22 25 40
+10 20 40 50 60 70 80 90
+
+Binary search tree after deleting node 60 :
+10 20 40 50 70 80 90
+
+Get size of  Binary search tree :
+7
 ```
 
 
