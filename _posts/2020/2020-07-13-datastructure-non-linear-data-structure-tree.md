@@ -15,6 +15,8 @@ tags:
 - tree
 - binary tree
 - binary search tree
+- BST
+- AVL
 meta:
   _edit_last: '2'
 author:
@@ -186,7 +188,7 @@ permalink: "/datastructure-non-linear-data-structure-tree/"
 - Post-order Traversal (후위) : Left ->  Right -> **Root**   
   왼쪽 하위 트리를 순회 한 다음 오른쪽 하위 트리와 루트를 각각 순회. 트리의 각 하위 트리에 재귀 적으로 적용
 
-## Binary Search Tree (BST)
+## Binary Search Tree (BST : 이진검색트리)
 - **순서가 지정된 이진 트리**
 - binary tree 구현 중 하나
 - 주어진 node의 값보다 **작은 자식은 왼쪽 하위 트리, 큰 원소는 오른쪽 하위 트리**
@@ -196,8 +198,8 @@ permalink: "/datastructure-non-linear-data-structure-tree/"
 
 ### 장점
 - 검색 프로세스에서 array 및 linked list 과 비교할 때, 모든 단계에서 하위 트리의 반을 제거해서 검색함으로 매우 효율적인 데이터 구조로 간주되며, 효율적으로 검색이 진행 됨  
-- Search의 시간복잡도는 O(logn)
-- Search의 최악의 경우 O(n)
+- **Binary Search Tree 시간복잡도 :  O(logn)**
+- **Binary Search Tree 최악의 경우 : O(n)**
 - array 및 linked list에 비해서는 삽입 및 삭제 작업 속도가 향상됨
 
 
@@ -258,6 +260,7 @@ Get size of  Binary search tree :
 
 
 ### 시간복잡도
+
 
 |Algorithm | Average Case | Worst Case|
 |:--------:|:--------:|:--------:|
