@@ -217,6 +217,12 @@ Preorder Traversal :
 Postorder Traversal :
 10 20 30 40 60 70 80 90 50
 
+Search element :
+searched using recursion: 10
+true
+searched using while: 80
+true
+
 Get size of  Binary search tree :
 9
 
