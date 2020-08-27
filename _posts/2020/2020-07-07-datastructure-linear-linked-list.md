@@ -12,6 +12,7 @@ categories:
 tags:
 - data structure
 - algorithm
+- list
 meta:
   _edit_last: '2'
 author:
@@ -20,7 +21,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/datastructure-linear-data-linked-list/"
+permalink: "/datastructure-linear-list/"
 ---
 # [Data Structure] 선형 자료구조(2) - 연결리스트(linked list)
 

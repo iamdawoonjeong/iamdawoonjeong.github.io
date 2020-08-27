@@ -23,7 +23,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/datastructure-non-linear-data-structure-graph/"
+permalink: "/datastructure-non-linear-graph/"
 ---
 # [Data Structure] 비선형 자료구조(2)  - 그래프(Graph)
 - 트리(Tree)

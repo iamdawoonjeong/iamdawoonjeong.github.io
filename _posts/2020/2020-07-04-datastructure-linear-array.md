@@ -12,6 +12,7 @@ categories:
 tags:
 - data structure
 - algorithm
+- array
 meta:
   _edit_last: '2'
 author:
@@ -20,7 +21,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/datastructure-linear-data-structure-array/"
+permalink: "/datastructure-linear-array/"
 ---
 # [Data Structure] 선형 자료구조(1)  - 배열(array)
 

@@ -25,7 +25,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/datastructure-non-linear-data-structure-tree/"
+permalink: "/datastructure-non-linear-tree/"
 ---
 # [Data Structure] 비선형 자료구조(1)  - 트리(Tree)
 - **트리(Tree)**

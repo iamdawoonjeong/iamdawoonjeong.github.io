@@ -21,7 +21,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/datastructure-linear-data-queue/"
+permalink: "/datastructure-linear-queue/"
 ---
 # [Data Structure] 선형 자료구조(5)  - 큐(Queue)
 - 배열 array

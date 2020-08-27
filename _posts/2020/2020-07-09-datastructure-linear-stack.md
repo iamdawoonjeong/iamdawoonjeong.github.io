@@ -21,7 +21,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/datastructure-linear-data-stack/"
+permalink: "/datastructure-linear-stack/"
 ---
 # [Data Structure] 선형 자료구조(4)  - 스택 (Stack)
 - 배열 array
