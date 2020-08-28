@@ -27,30 +27,50 @@ permalink: "/algorithm-sort-heap/"
 # [Data Structure] 정렬(Sort) - 힙 정렬(Heap Sort)
 
 ## Heap Sort(힙 정렬)
+- 내부정렬 알고리즘
+- 키를 비교하여 선택에 의하여 정렬하는 선택방식 정렬
 - Max-Heap(최대 힙) : 루트 노드에 있는 키는 모든 자식에 있는 키 중에서 가장 커야 함
 - Min-Heap(최소 힙) : 루트 노드에 있는 키는 모든 자식에 있는 키 중에서 최소 여야 함
 - 최대 힙 트리나 최소 힙 트리를 구성해 정렬을 하는 방법으로서, 내림차순 정렬을 위해서는 최대 힙을 구성하고 오름차순 정렬을 위해서는 최소 힙을 구성
-
-
-### 연산
-1. n개의 노드에 대한 complete binary tree[^1]를 구성. 이때 루트 노드부터 부모노드, 왼쪽 자식노드, 오른쪽 자식노드 순으로 구성.
-2. 최대 힙을 구성. 최대 힙이란 부모노드가 자식노드보다 큰 트리를 말하는데, 단말 노드를 자식노드로 가진 부모노드부터 구성하며 아래부터 루트까지 올라오며 순차적으로 만들수 있음
-3. 가장 큰 수(루트에 위치)를 가장 작은 수와 교환
-4. 2와 3을 반복
+- 최대값 혹은 최소값을 빠르게 찾아야하는데 사용 됨
+- complete binary tree[^1]로 구성
+- heapify : heap속성을 충족하기 위해, 힙의 위치를 ​​조정하는 과정
 
 
 ![algorithm-MinHeapAndMaxHeap]({{ site.baseurl }}/assets/images/posts/2020/algorithm-MinHeapAndMaxHeap.png)
 
 
+### Complexity
+
+
+| Complexity | Best Case | Average Case | Worst Case |
+|:--------:|:--------:|:--------:|:--------:|
+| Time | Ω(nlogn) | θ(nlogn) | O(nlogn) |
+| Space | | | O(1) |
+
+
+- heapify 의 시간복잡도도 :  O(logn)
+
+
+
+### 연산
+1. 삽입의 경우, complete binary tree로 루트 노드부터 부모노드, 왼쪽 자식노드, 오른쪽 자식노드 순으로 구성하며 채움
+2. 최대 힙인 경우, root node가 가장 커야 하며, parent node가 child node 보다 작을 경우 교환 heapify
+3. 최소 힙인 경우, root node가 가장 작아야 하며, parent node가 child node 보다 클 경우 교환 heapify
+4. 삭제의 경우, 는 root를 삭제하는 것이 일반적으로, 맨 마지막에 위치한 node를 root로 올리고 child node보다 큰/작을 경우 교환 heapify
+5. heapfiy 과정이 끝나면 정렬
+6. 최대 힙인 경우, root node(=array[0])가 가장 큰 값 임으로 맨 뒤에 있는 요소와 교환 후 heapify 반복하면 오름차순 정렬 됨
+7. 최소 힙인 경우, root node(=array[0])가 가장 작은 값 임으로 맨 앞에 있는 요소와 교환 후 heapify 반복하여 내림차순 정렬 됨
+
+
 ```java
 입력 data: 4, 10, 3, 5, 1
+괄호안에 숫자는 index
          4(0)
         /   \
      10(1)   3(2)
     /   \
  5(3)    1(4)
-
-괄호안에 숫자는 index
 
 
 인덱스 1에 heapify 프로 시저 적용 :
@@ -68,11 +88,16 @@ permalink: "/algorithm-sort-heap/"
     /   \
  4(3)    1(4)
 
-heapify 프로시저는  하향식으로 힙을 빌드하기 위해 재귀 적으로 호출 됨
+heapify 프로시저는 하향식으로 힙을 빌드하기 위해 재귀 적으로 호출 됨
 ```
 
 
 ### java로 힙 정렬 구현
+- heap은 array로 구현
+- root는 index는 array[0]
+- index of parent node = array[(i-1)/2]
+- index of the left child node = array[(2*i)+1]
+- index of the right child node = array[(2*i)+2]
 
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/sort/heap/HeapSortMain.java)
@@ -115,7 +140,7 @@ heapify 프로시저는  하향식으로 힙을 빌드하기 위해 재귀 적�
     }
 
     /**
-     * hepify : heap속성을 충족하기 위해, 힙의 위치를 ​​조정하는 과정
+     * heapify : heap속성을 충족하기 위해, 힙의 위치를 ​​조정하는 과정
      * 1. max heap 생성하기 위해 현재 요소를 하위 요소와 비교하여 최대 값을 찾은 후
      * 2. 현재 요소가 최대 값이 아닌 경우 최대 값이 위치한 왼쪽 또는 오른쪽 하위 요소로 교환
      * @param arr
@@ -184,15 +209,6 @@ heapify 프로시저는  하향식으로 힙을 빌드하기 위해 재귀 적�
 [1,2,3,4,5,6,7,8,9]
 
 ```
-
-
-### Complexity
-
-
-| Complexity | Best Case | Average Case | Worst Case |
-|:--------:|:--------:|:--------:|:--------:|
-| Time | Ω(n log (n)) | θ(n log (n)) | O(n log (n)) |
-| Space | | | O(1) |
 
 
 ---
