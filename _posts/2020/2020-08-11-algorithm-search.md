@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Algorithm] 검색(Search) - 선형 검색, 이진 검색정의 및 구현"
+title: "[Algorithm] 검색(Search) - 선형 검색, 이진 검색 정의 및 구현"
 date: 2020-08-11 21:50:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -23,7 +23,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-search/"
 ---
-# Search 검색
+# Search (검색) - Linear Search (선형 검색), Binary Search (이진 검색)
 
 #### 검색이 수행되는 장소에 따라 구분
 - Internal Search : 적은 양의 레코드를 주기억 장치 내부의 배열이나 연결 리스트 등과 같은 테이블에 적재하여 검색하는 방식
@@ -40,7 +40,7 @@ permalink: "/algorithm-search/"
 - Binary Search (이진 검색)
 
 
-## Linear Search (선형 탐색) = Sequential Search (순차 검색)
+## Linear Search (선형 검색) = Sequential Search (순차 검색)
 - 일괄처리 작업 (batch processing operation) 에 사용 됨
 
 
@@ -65,19 +65,19 @@ permalink: "/algorithm-search/"
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/search/linear/LinearSearchMain.java)
 
 ```java
-    public static int linearSearch(int arr[], int x) {
-        int n = arr.length;
+public static int linearSearch(int arr[], int x) {
+    int n = arr.length;
 
-        //순차적으로 arr[]각 요소와 x를 하나씩 비교  
-        for (int i = 0; i < n; i++) {
-			// 일치할경우 인덱스 반환
-            if(arr[i]==x) {
-                return i;
-            }
+    //순차적으로 arr[]각 요소와 x를 하나씩 비교  
+    for (int i = 0; i < n; i++) {
+		// 일치할경우 인덱스 반환
+        if(arr[i]==x) {
+            return i;
         }
-       //일치하지 않을 경우 -1 반환
-        return -1;
     }
+   //일치하지 않을 경우 -1 반환
+    return -1;
+}
 ```
 
 
@@ -108,37 +108,40 @@ permalink: "/algorithm-search/"
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/search/binary/BinarySearch.java)
 
+- 반복문을 이용한 binary search
+
+
 ```java
-   public static int binarySearch(int[] arr, int x) {
-        int left = 0;
-        int right = arr.length -1;
+public static int binarySearch(int[] arr, int x) {
+    int left = 0;
+    int right = arr.length -1;
 
-        //왼쪽위치가 오른쪽 위치보다 커질때까지 반복
-        while (left <= right) {
-            //중간요소 위치 계산
-            int mid = left + (right-left)/2;
+    //왼쪽위치가 오른쪽 위치보다 커질때까지 반복
+    while (left <= right) {
+        //중간요소 위치 계산
+        int mid = left + (right-left)/2;
 
-            // 중간 요소와 일치하면 중간 인덱스를 반환
-            if(arr[mid] == x) {
-                return mid;
-            }
-
-            // x가 중간 요소보다 클 경우
-            if(arr[mid] < x) {
-                // 중간 요소 다음의 오른쪽 절반 하위 배열에만 놓고, 오른쪽 절반을 반복
-                // 왼쪽 위치 재조정
-                left = mid + 1;
-
-            // x가 중간 요소 보다 작은 경우
-            }else {
-                // 왼쪽 절반 하위 배열만 놓고, 왼쪽 절반에 반복
-                // 오른쪽 위치 재조정
-                right = mid - 1;
-            }
+        // 중간 요소와 일치하면 중간 인덱스를 반환
+        if(arr[mid] == x) {
+            return mid;
         }
-        //찾을수 없을 경우 -1 반환
-        return -1;
+
+        // x가 중간 요소보다 클 경우
+        if(arr[mid] < x) {
+            // 중간 요소 다음의 오른쪽 절반 하위 배열에만 놓고, 오른쪽 절반을 반복
+            // 왼쪽 위치 재조정
+            left = mid + 1;
+
+        // x가 중간 요소 보다 작은 경우
+        }else {
+            // 왼쪽 절반 하위 배열만 놓고, 왼쪽 절반에 반복
+            // 오른쪽 위치 재조정
+            right = mid - 1;
+        }
     }
+    //찾을수 없을 경우 -1 반환
+    return -1;
+}
 ```
 
 
@@ -146,24 +149,37 @@ permalink: "/algorithm-search/"
 
 
 ```java
-    public static int binarySearchRecursion(int[] items, int target, int begin, int end){
-        if(begin > end){
-            return -1;
-        }else {
-            int middle = (begin+end)/2;
-            int compResult = Integer.toString(target).compareTo(Integer.toString(items[middle]));
+public static int binarySearchRecursion(int[] items, int target, int begin, int end){
+    if(begin > end){
+        return -1;
+    }else {
+        int middle = (begin+end)/2;
+        int compResult = Integer.toString(target).compareTo(Integer.toString(items[middle]));
 
-            if (compResult == 0){
-                return middle;
-            } else if (compResult<0){
-                return binarySearchRecursion(items, target, begin, middle-1);
-            } else {
-                return binarySearchRecursion(items, target, middle+1, end);
-            }
+        if (compResult == 0){
+            return middle;
+        } else if (compResult<0){
+            return binarySearchRecursion(items, target, begin, middle-1);
+        } else {
+            return binarySearchRecursion(items, target, middle+1, end);
         }
     }
+}
 ```
 
+
+- output
+
+
+```java
+[ * Binary Search * ]
+- elements ----------
+[1,2,3,4,5,6,7,8,9]
+search  : 8
+4 6 7 Element is present at index 7
+- Binary Search using Recursion ----------
+4 6 7 Element is present at index 7
+```
 
 
 ### Complexity
