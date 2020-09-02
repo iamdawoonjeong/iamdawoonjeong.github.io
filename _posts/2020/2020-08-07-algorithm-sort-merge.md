@@ -22,13 +22,14 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/algorithm-sort-quick-heap-merge-radix/"
+permalink: "/algorithm-sort-merge/"
 ---
 # [Data Structure] 정렬(Sort) - 병합정렬(Merge Sort)
 
 ## merge sort (병합 정렬)
 - **Divide and Conquer** 알고리즘
 - 여러 개의 정렬되어있는 배열 자료들을 혼합하여 하나의 정렬된 배열로 합치는 작업
+- 재귀 용법 사용
 
 ![datastructure-Merge-Sort-Tutorial]({{ site.baseurl }}/assets/images/posts/2020/algorithm-Merge-Sort-Tutorial.png)
 
@@ -142,8 +143,30 @@ permalink: "/algorithm-sort-quick-heap-merge-radix/"
 ```
 
 
-#### Complexity
+- output
 
+
+```java
+[ * Merge Sort * ]
+- before merge sort ----------
+[38,27,43,3,9,82,10]
+- sorting ----------
+left right mid : [LEFT] , [RIGHT]  -->  [SORTED]
+0 0 1 : [38] [27]                  -->  [27,38,43,3,9,82,10]
+2 2 3 : [43] [3]                   -->  [27,38,3,43,9,82,10]
+0 1 3 : [27,38] [3,43]             -->  [3,27,38,43,9,82,10]
+4 4 5 : [9] [82]                   -->  [3,27,38,43,9,82,10]
+4 5 6 : [9,82] [10]                -->  [3,27,38,43,9,10,82]
+0 3 6 : [3,27,38,43] [9,10,82]     -->  [3,9,10,27,38,43,82]
+- after merge sort ----------
+[3,9,10,27,38,43,82]
+```
+
+
+#### Complexity
+- 각 단계는  O(n)
+- 단계는 항상 O(log n) 만큼 생성
+- 전체는 O(n)* O(log n) =  O(n log (n))
 
 | Complexity | Best Case | Average Case | Worst Case |
 |:--------:|:--------:|:--------:|:--------:|
