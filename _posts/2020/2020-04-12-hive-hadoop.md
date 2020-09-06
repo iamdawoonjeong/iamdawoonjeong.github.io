@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[hive] Hadoop과 Hadoop ecosystem(HDFS, MapReduce, HIVE)"
+title: "[HIVE] Hadoop과 Hadoop ecosystem(HDFS, MapReduce, HIVE)"
 date: 2020-04-12 17:00:00.000000000 +09:00
 type: post
 parent_id: '0'
