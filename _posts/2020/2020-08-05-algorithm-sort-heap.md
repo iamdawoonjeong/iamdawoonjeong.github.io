@@ -40,19 +40,6 @@ permalink: "/algorithm-sort-heap/"
 ![algorithm-MinHeapAndMaxHeap]({{ site.baseurl }}/assets/images/posts/2020/algorithm-MinHeapAndMaxHeap.png)
 
 
-### Complexity
-
-
-| Complexity | Best Case | Average Case | Worst Case |
-|:--------:|:--------:|:--------:|:--------:|
-| Time | Ω(nlogn) | θ(nlogn) | O(nlogn) |
-| Space | | | O(1) |
-
-
-- heapify 의 시간복잡도도 :  O(logn)
-
-
-
 ### 연산
 1. 삽입의 경우, complete binary tree로 루트 노드부터 부모노드, 왼쪽 자식노드, 오른쪽 자식노드 순으로 구성하며 채움
 2. 최대 힙인 경우, root node가 가장 커야 하며, parent node가 child node 보다 작을 경우 교환 heapify
@@ -209,6 +196,18 @@ heapify 프로시저는 하향식으로 힙을 빌드하기 위해 재귀 적으
 [1,2,3,4,5,6,7,8,9]
 
 ```
+
+
+### Complexity
+
+
+| Complexity | Best Case | Average Case | Worst Case |
+|:--------:|:--------:|:--------:|:--------:|
+| Time | Ω(nlogn) | θ(nlogn) | O(nlogn) |
+| Space | | | O(1) |
+
+
+- heapify 의 시간복잡도도 :  O(logn)
 
 
 ---
