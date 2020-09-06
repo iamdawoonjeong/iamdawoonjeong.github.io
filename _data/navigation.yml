@@ -15,7 +15,7 @@ main:
 
 
 # sidbar link
-docs:
+categories:
   - title: Language
     children:
       - title: "JAVA"

@@ -244,14 +244,14 @@ defaults:
       portfolio:
         output: true
         permalink: /:collection/:path/
-# _docs
+# _categories  : sidebar
   - scope:
       path: ""
-      type: docs
+      type: categories
     values:
       sidebar:
-        nav: "docs"
-# _years
+        nav: "categories"
+# _years : sidebar
   - scope:
       path: ""
       type: years
