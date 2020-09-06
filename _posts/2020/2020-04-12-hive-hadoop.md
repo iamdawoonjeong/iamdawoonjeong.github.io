@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[HADOOP] Hadoop과 Hadoop ecosystem(HDFS, MapReduce, HIVE)"
+title: "[hive] Hadoop과 Hadoop ecosystem(HDFS, MapReduce, HIVE)"
 date: 2020-04-12 17:00:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -8,7 +8,7 @@ published: true
 password: ''
 status: publish
 categories:
-- HADOOP
+- HIVE
 tags:
 - database
 - HADOOP
@@ -23,7 +23,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/hadoop/"
+permalink: "/hive-hadoop/"
 ---
 
 
