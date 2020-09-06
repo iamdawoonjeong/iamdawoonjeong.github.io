@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "[Algorithm] Huffman (허프만)"
-date: 2020-08-20 18:08:00.000000000 +09:00
+title: "[Algorithm] 탐욕 알고리즘 - 허프만 코드 (Huffman Code"
+date: 2020-08-28 23:13:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true
@@ -20,9 +20,10 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/algorithm-huffman/"
+permalink: "/algorithm-greedy-huffman/"
 ---
-# Huffman (허프만)  
+
+# 탐욕 알고리즘 - Huffman Code (허프만 코드)
 - Huffman의 탐욕 알고리즘은 각 문자의 발생 빈도 테이블을 사용하여 각 문자를 이진 문자열로 표현하는 최적의 방법을 구축
 - Huffman의 코딩은 코드 길이가 해당 문자의 상대적 빈도 또는 가중치에 따라 달라 지도록 문자에 코드를 제공
 
@@ -72,6 +73,8 @@ f 101
 ---
 
 #### references
+<https://www.javatpoint.com/greedy-algorithms>  
 <https://www.javatpoint.com/huffman-coding>  
+<https://www.geeksforgeeks.org/greedy-algorithms/>  
 <https://www.geeksforgeeks.org/huffman-coding-greedy-algo-3/>  
 <https://www.tutorialspoint.com/huffman-trees-in-data-structure>    

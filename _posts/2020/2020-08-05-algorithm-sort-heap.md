@@ -24,7 +24,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-sort-heap/"
 ---
-# [Data Structure] 정렬(Sort) - 힙 정렬(Heap Sort)
+# 정렬(Sort) - 힙 정렬(Heap Sort)
 
 ## Heap Sort(힙 정렬)
 - 내부정렬 알고리즘

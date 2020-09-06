@@ -13,7 +13,7 @@ tags:
 - data structure
 - algorithm
 - sort
-- selection
+- selection sort
 meta:
   _edit_last: '2'
 author:
@@ -24,7 +24,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-sort-selection/"
 ---
-# [Data Structure] 정렬(Sort) - selection sort(선택정렬)
+# 정렬(Sort) - selection sort(선택정렬)
 
 
 ## selection sort(선택 정렬)

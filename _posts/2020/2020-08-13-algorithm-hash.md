@@ -22,7 +22,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-hash/"
 ---
-# Hash
+# Hash (해시)
 - hashing 은 데이터를 저장할 index를 간단한 연산으로 구현하는 것
 - hash function을 통해 얻어지는 값이 hash value, hash code, hash라고 함
 

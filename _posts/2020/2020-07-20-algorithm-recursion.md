@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "[Algorithm] 순환적 호출 알고리즘 (Recursion) - 재귀 함수"
-date: 2020-08-15 16:27:00.000000000 +09:00
+title: "[Algorithm] 순환적 호출 / 재귀 호출 알고리즘 (Recursion / Recursive Call)"
+date: 2020-07-20 18:27:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true
@@ -22,10 +22,10 @@ author:
   last_name: Jeong
 permalink: "/algorithm-recursion/"
 ---
-# 순환전 호출 알고리즘 Recursive Call Algorithm
+# 순환적 호출 / 재귀 호출 알고리즘 (Recursion / Recursive Call) Algorithm
+
 
 ## 비순환적 알고리즘 indirect recursion
-
 
 ### 자바로 구현한 indirect recursion  -  for을 이용한 1~n까지의 합 구하기
 

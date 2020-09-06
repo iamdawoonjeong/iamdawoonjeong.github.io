@@ -24,7 +24,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-sort-radix/"
 ---
-# [Data Structure] 정렬(Sort) - 기수 정렬(Radix Sort)
+# 정렬(Sort) - 기수 정렬(Radix Sort)
 
 ## Radix Sort(기수 정렬)
 - bucket(=queue) 에 분배하면서 정렬하는 방법
@@ -126,61 +126,62 @@ permalink: "/algorithm-sort-radix/"
 
 
 ```java
+public static int getMax(int[] arr, int n) {
+    int max = arr[0];
 
-    /**
-     * 배열내 최대값 구하기
-     * @param arr
-     * @param n
-     * @return
-     */
-    public static int getMax(int[] arr, int n) {
-        int max = arr[0];
+    for (int i = 1; i < n; i++) {
+         if (arr[i] > max) {
+            max = arr[i];
+         }
+    }
+    return max;
+}
 
-        for (int i = 1; i < n; i++) {
-             if (arr[i] > max) {
-                max = arr[i];
-             }
-        }
-        return max;
+
+public static void countSort(int[] arr, int n, int exp) {
+    int output[] = new int[n]; // output array
+    int i;
+    int count[] = new int[10];
+    Arrays.fill(count, 0);
+
+    //발생횟수를 count[] 저장
+    for (i = 0; i < n ; i++) {
+        count [(arr[i]/exp)%10]++;
     }
 
-
-    /**
-     * count sort
-     * 각 자리수에 따른 분배
-     * @param arr
-     * @param n
-     * @param exp
-     */
-    public static void countSort(int[] arr, int n, int exp) {
-        int output[] = new int[n]; // output array
-        int i;
-        int count[] = new int[10];
-        Arrays.fill(count, 0);
-
-        //발생횟수를 count[] 저장
-        for (i = 0; i < n ; i++) {
-            count [(arr[i]/exp)%10]++;
-        }
-
-        //count [i]에 output[]의 숫자의 실제 위치가 포함되도록 count[i]를 변경
-        for (i = 1; i < 10; i++) {
-            count[i] += count[i-1];
-        }
-
-        //출력 배열 저장
-        for (i = n-1 ; i >= 0; i--) {
-           output[count[(arr[i]/exp)%10]-1]=arr[i];
-           count[(arr[i]/exp)%10]--;
-        }
-
-        // output[]을 arr[]에 복사
-        // arr []에 현재 배열에 따라 정렬 된 숫자가 포함됨
-        for (i = 0; i < n; i++) {
-            arr[i] = output[i];
-        }
+    //count [i]에 output[]의 숫자의 실제 위치가 포함되도록 count[i]를 변경
+    for (i = 1; i < 10; i++) {
+        count[i] += count[i-1];
     }
 
+    //출력 배열 저장
+    for (i = n-1 ; i >= 0; i--) {
+       output[count[(arr[i]/exp)%10]-1]=arr[i];
+       count[(arr[i]/exp)%10]--;
+    }
+
+    // output[]을 arr[]에 복사
+    // arr []에 현재 배열에 따라 정렬 된 숫자가 포함됨
+    for (i = 0; i < n; i++) {
+        arr[i] = output[i];
+    }
+}
+```
+
+
+- output
+
+
+```java
+[ * Radix Sort * ]
+- before radix sort ----------
+[10,21,17,34,44,11,654,123]
+- sorting ----------
+[10,21,11,123,34,44,654,17]
+[10,11,17,21,123,34,44,654]
+[10,11,17,21,34,44,123,654]
+- after radix sort ----------
+[10,11,17,21,34,44,123,654]
 ```
 
 

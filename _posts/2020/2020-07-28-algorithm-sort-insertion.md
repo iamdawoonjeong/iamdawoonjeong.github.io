@@ -13,6 +13,7 @@ tags:
 - data structure
 - algorithm
 - sort
+- insert sort
 meta:
   _edit_last: '2'
 author:
@@ -23,7 +24,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-sort-insertion/"
 ---
-# [Data Structure] 정렬(Sort) - insertion sort(삽입정렬)
+# 정렬(Sort) - insertion sort(삽입정렬)
 
 
 ## insertion sort(삽입 정렬)

@@ -24,7 +24,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-sort-quick/"
 ---
-# [Data Structure] 정렬(Sort) -  퀵 정렬(Quick Sort)
+# 정렬(Sort) -  퀵 정렬(Quick Sort)
 
 ## Quick Sort(퀵 정렬)
 - **Divide and Conquer** 알고리즘

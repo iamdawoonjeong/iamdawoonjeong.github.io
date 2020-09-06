@@ -22,9 +22,9 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/algorithm-sort-selection-bubble-insertion-shell/"
+permalink: "/algorithm-sort-shell/"
 ---
-# [Data Structure] 정렬(Sort) - shell sort(쉘정렬)
+# 정렬(Sort) - shell sort(쉘정렬)
 
 
 ## shell sort(쉘 정렬)
@@ -74,6 +74,21 @@ permalink: "/algorithm-sort-selection-bubble-insertion-shell/"
     }
 ```
 
+
+- output
+
+
+```java
+[ * Shell Sort * ]
+- before shell sort ----------
+[9, 5, 6, 4, 7, 2, 1, 8, 3]
+- sorting ----------
+[3, 2, 1, 4, 7, 5, 6, 8, 9]
+[1, 2, 3, 4, 6, 5, 7, 8, 9]
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+- after shell sort -----------
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
 
 #### Complexity
 

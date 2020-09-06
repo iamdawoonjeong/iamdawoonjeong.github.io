@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "[Algorithm] Backtracking (되추적, 역추적)"
-date: 2020-08-21 00:30:00.000000000 +09:00
+title: "[Algorithm] 되추적, 역추적 (Backtracking)"
+date: 2020-08-31 00:30:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true

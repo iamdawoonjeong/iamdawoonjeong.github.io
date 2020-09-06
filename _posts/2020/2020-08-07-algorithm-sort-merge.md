@@ -13,7 +13,7 @@ tags:
 - data structure
 - algorithm
 - sort
-- merge
+- merge sort
 meta:
   _edit_last: '2'
 author:
@@ -24,7 +24,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-sort-merge/"
 ---
-# [Data Structure] 정렬(Sort) - 병합정렬(Merge Sort)
+# 정렬(Sort) - 병합정렬(Merge Sort)
 
 ## merge sort (병합 정렬)
 - **Divide and Conquer** 알고리즘

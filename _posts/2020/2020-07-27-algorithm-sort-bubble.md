@@ -24,7 +24,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-sort-bubble/"
 ---
-# [Data Structure] 정렬(Sort) - bubble sort(버블정렬)
+# 정렬(Sort) - bubble sort(버블정렬)
 
 
 ## bubble sort(버블 정렬)
