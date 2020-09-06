@@ -1,7 +1,7 @@
 # Site Settings
 minimal_mistakes_skin: default
 locale: en-US
-title: WOON's devBlog
+title: DW dev blog
 title_separator: '-'
 name: Dawoon Jeong
 description: 아름다운 정다운 개발자 블로그
@@ -214,7 +214,7 @@ compress_html:
   ignore:
     envs: development
 defaults:
-  # _posts
+# _posts
   - scope:
       path: ""
       type: posts
@@ -225,7 +225,7 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
+# _pages
   - scope:
       path: ""
       type: pages
@@ -244,5 +244,19 @@ defaults:
       portfolio:
         output: true
         permalink: /:collection/:path/
+# _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "docs"
+# _years
+  - scope:
+      path: ""
+      type: years
+    values:
+      sidebar:
+        nav: "years"
 github:
   - metadata

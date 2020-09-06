@@ -12,3 +12,67 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+
+# sidbar link
+docs:
+  - title: Language
+    children:
+      - title: "JAVA"
+        url: /categories/#java
+      - title: "C#"
+        url: /categories/#c
+
+  - title: Database
+    children:
+      - title: "SQL"
+        url: /categories/#sql
+      - title: "Hive"
+        url: /categories/#hive
+      - title: "Database"
+        url: /categories/#database
+
+  - title: Web
+    children:
+      - title: "Spring"
+        url: /categories/#spring
+      - title: "Gitpages"
+        url: /categories/#gitpages
+      - title: "Wordpress"
+        url: /categories/#wordpress
+      - title: "Bootstrap"
+        url: /categories/#bootstrap
+      - title: "Web"
+        url: /categories/#web
+
+  - title: Programming
+    children:
+      - title: "Data Structure"
+        url: /categories/#datastructure
+      - title: "Algorithm"
+        url: /categories/#algorithm
+      - title: "Unix/Linux"
+        url: /categories/#unix
+      - title: "iOS"
+        url: /categories/#ios
+      - title: "ETC"
+        url: /categories/#etc
+
+  - title: Archive
+    children:
+      - title: "Archive"
+        url: /categories/#archive
+
+
+# sidbar link
+years:
+  - title: Years
+    children:
+      - title: "2020"
+        url: /year-archive/#2020
+      - title: "2019"
+        url: /year-archive/#2019
+      - title: "2018"
+        url: /year-archive/#2018
+      - title: "2017"
+        url: /year-archive/#2017
