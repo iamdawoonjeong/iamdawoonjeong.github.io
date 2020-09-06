@@ -4,5 +4,5 @@ title: "Posts by Category"
 permalink: /categories/
 author_profile: false
 sidebar:
-  nav: "docs"
+  nav: "categories"
 ---
