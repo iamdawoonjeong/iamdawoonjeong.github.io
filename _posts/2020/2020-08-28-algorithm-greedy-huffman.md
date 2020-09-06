@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Algorithm] 탐욕 알고리즘 - 허프만 코드 (Huffman Code"
+title: "[Algorithm] 탐욕 알고리즘 - 허프만 코드 (Huffman Code)"
 date: 2020-08-28 23:13:00.000000000 +09:00
 type: post
 parent_id: '0'
