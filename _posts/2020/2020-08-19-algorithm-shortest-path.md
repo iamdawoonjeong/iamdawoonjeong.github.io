@@ -50,11 +50,12 @@ permalink: "/algorithm-shortest-path/"
 - MST(Minimum Spanning Tree) 대한 Prim algorithm 과 매우 유사
 - 너비 우선탐색(BFS)와 유사
 - 주어진 소스를 루트로 사용하여 SPT (최단 경로 트리) 를 생성
-
+- 시간복잡도 : O (ElogE) ( E : edge의 수)
 
 ![algorithm-dijkstra]({{ site.baseurl }}/assets/images/posts/2020/algorithm-dijkstra.png)
 
 ![algorithm-dijkstra7]({{ site.baseurl }}/assets/images/posts/2020/algorithm-dijkstra7.png)
+
 
 ### Dijkstra 알고리즘의 단점
 - 블라인드 검색을 수행하므로 처리하는 동안 많은 시간을 낭비
@@ -65,6 +66,12 @@ permalink: "/algorithm-shortest-path/"
 ### 연산
 1. 각 정점위 위에 시작 점으로 부터 자신에게 이르는 경로의 길이를 무한대로 초기화
 2. 시작 정점의 경로길이를 0으로 초기화 하고 최단 경로에 추가
+
+
+![algorithm-Fig-11]({{ site.baseurl }}/assets/images/posts/2020/algorithm-Fig-11.jpg)
+
+
+![algorithm-DIJ5]({{ site.baseurl }}/assets/images/posts/2020/algorithm-DIJ5.jpg)
 
 
 ### 자바를 이용하여 shortest path - Dijkstra algorithm 구현
