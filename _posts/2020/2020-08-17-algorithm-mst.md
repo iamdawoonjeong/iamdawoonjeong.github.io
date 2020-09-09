@@ -94,10 +94,10 @@ permalink: "/algorithm-mst/"
 
 
 
-![algorithm-Fig-0-300x139]({{ site.baseurl }}/assets/images/posts/algorithm-Fig-0-300x139.jpg)
+![algorithm-Fig-0-300x139]({{ site.baseurl }}/assets/images/posts/2020/algorithm-Fig-0-300x139.jpg)
 
 
-![algorithm-fig8new]({{ site.baseurl }}/assets/images/posts/algorithm-fig8new.jpeg)
+![algorithm-fig8new]({{ site.baseurl }}/assets/images/posts/2020/algorithm-fig8new.jpeg)
 
 
 
