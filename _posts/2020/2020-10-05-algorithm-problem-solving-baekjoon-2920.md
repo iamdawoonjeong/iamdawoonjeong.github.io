@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Problem Solving - Baekjoon]  2920 음계"
+title: "[Problem Solving - Baekjoon] 2920 음계"
 date: 2020-10-05 22:36:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -25,7 +25,7 @@ permalink: "/algorithm-problem-solving-baekjoon-2920/"
 # [Baekjoon Online Judge] 2920 음계
 
 
-### 시작하기 전 백준 문제푸는 방법
+### 시작하기 전 백준 문제 푸는 방법
 - 클래스 명은 반드시 Main 으로 해야 함 (컴파일 에러뜸..나..)
 - import도 다 명시해주어야 함
 - 출력은 반드시 문제에 나온 것처럼 그대로 나와야함. 다른것 나오면 에러임 (이쁘게 출력하고픈 마음 알겠으나 쓸데없는 출력은 자제)
