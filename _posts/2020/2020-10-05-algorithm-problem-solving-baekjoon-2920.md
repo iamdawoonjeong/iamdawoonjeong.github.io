@@ -88,14 +88,14 @@ mixed
 
 ### 문제 파악
 1. 8개의 숫자가 한 번씩 등장하는 한 줄이 입력
-2. ****입력된 숫자의 순서가 ascending인지 descending인지 mixed인지를 판단****
+2. **입력된 숫자의 순서가 ascending인지 descending인지 mixed인지를 판단**
 3. 판단 결과 출력
 
 
 ### 연산
 1. 한 줄 입력 받기
 2. 8개의 숫자 array로 변경
-3. ****i 와 i+1 번째 숫자를 비교해서 ascending인지 descending인지 mixed인지 판단****
+3. **i 와 i+1 번째 숫자를 비교해서 ascending인지 descending인지 mixed인지 판단**
 4. 결과 출력
 
 
@@ -113,6 +113,7 @@ Scanner sc = new Scanner(System.in);
 String[] arr = sc.nextLine().split(" ");
 ```
 
+
 2. for문으로 array내 element i와 i-1번째 크기를 비교해서 판단
 ```java
 for (int i = 1; i < arr.length; i++) {
@@ -124,6 +125,7 @@ for (int i = 1; i < arr.length; i++) {
 }
 ```
 
+
 3. 애초에 아래와 같이 입력받은 배열을 int로 한 번 변환했다면, 2와 같이 반복문내 Intger.parseInt를 매번 실행하지 않아도 될 문제
 4. 그러나 숫자가 8개 밖에 없으니.. 그냥 진행해서 풀었음
 ```java
@@ -132,6 +134,7 @@ for (int i = 0; i < arr.length; i++) {
     input[i] = Integer.parseInt(arr[i]);
 }
 ```
+
 
 5. 결과 판단은 boolean으로 해 줌
 ```java
@@ -147,6 +150,8 @@ if (ascending && descending) {
 }
 ```    
 
+
+---
 
 #### references
 <https://www.acmicpc.net/problem/2920>
