@@ -135,6 +135,7 @@ for (int i = 0; i < arr.length; i++) {
 
 6. 결과 판단은 boolean으로 해 줌
 
+
 ```java
 boolean ascending = false;
 boolean descending = false;
