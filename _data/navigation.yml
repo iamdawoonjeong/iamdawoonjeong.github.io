@@ -51,6 +51,8 @@ categories:
         url: /categories/#datastructure
       - title: "Algorithm"
         url: /categories/#algorithm
+      - title: "Problem Solving"
+        url: /categories/#problemsolving
       - title: "Unix/Linux"
         url: /categories/#unix
       - title: "iOS"
