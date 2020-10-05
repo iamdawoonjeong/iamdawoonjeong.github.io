@@ -103,22 +103,17 @@ mixed
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/scale2920/Main.java)
 
-0. system.in 표준 입력을 통해 숫자를 입력 받은 수를 정규식으로 구분하기 위해 scanner로 받음
-
-
+1. system.in 표준 입력을 통해 숫자를 입력 받은 수를 정규식으로 구분하기 위해 scanner로 받음
 ```java
 Scanner sc = new Scanner(System.in);
 ```
 
-1. 입력받은 문자를 array로 변경
+2. 입력받은 문자를 array로 변경
 ```java
 String[] arr = sc.nextLine().split(" ");
 ```
 
-
-2. for문으로 array내 element i와 i-1번째 크기를 비교해서 판단
-
-
+3. for문으로 array내 element i와 i-1번째 크기를 비교해서 판단
 ```java
 for (int i = 1; i < arr.length; i++) {
     if (Integer.parseInt(arr[i]) > Integer.parseInt(arr[i-1])) {
@@ -129,13 +124,8 @@ for (int i = 1; i < arr.length; i++) {
 }
 ```
 
-
-3. 애초에 아래와 같이 입력받은 배열을 int로 한 번 변환했다면, 2와 같이 반복문내 Intger.parseInt를 매번 실행하지 않아도 될 문제
-
-
-4. 그러나 숫자가 8개 밖에 없으니.. 그냥 진행해서 풀었음
-
-
+4. 애초에 아래와 같이 입력받은 배열을 int로 한 번 변환했다면, 바로 위와 같이 반복문내 Intger.parseInt를 매번 실행하지 않아도 될 문제
+5. 그러나 숫자가 8개 밖에 없으니.. 그냥 진행해서 풀었음
 ```java
 int[] input = new int[arr.length];
 for (int i = 0; i < arr.length; i++) {
@@ -143,10 +133,7 @@ for (int i = 0; i < arr.length; i++) {
 }
 ```
 
-
-5. 결과 판단은 boolean으로 해 줌
-
-
+6. 결과 판단은 boolean으로 해 줌
 ```java
 boolean ascending = false;
 boolean descending = false;
