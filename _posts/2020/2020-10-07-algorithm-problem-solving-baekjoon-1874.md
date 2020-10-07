@@ -41,7 +41,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1874/"
 
 
 ### 예제1
--input
+- input
 ```
 8
 4
@@ -54,7 +54,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1874/"
 1
 ```
 
--output
+- output
 ```
 +
 +
@@ -91,9 +91,10 @@ permalink: "/algorithm-problem-solving-baekjoon-1874/"
 NO
 ```
 
+
 ### 분류
--자료 구조
--스택
+- 자료 구조
+- 스택
 
 
 ## 풀이
