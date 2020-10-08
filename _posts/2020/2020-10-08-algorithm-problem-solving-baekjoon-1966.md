@@ -101,25 +101,21 @@ int maxIndex = arr.length-1;
 int max = Integer.parseInt(arr[maxIndex]); //최대값
 ```
 
-3. 반복문에서 따로 관리해주어야할 변수들
+3. 반복문에서 따로 관리해주어야 할 변수들
 ```java
-// 출력횟수 (몇번째로 출력되나?)
-int count = 0;
+int count = 0; // 출력횟수 (몇번째로 출력되나?)
 
 // queue가 index를 지원하지 않아서 출력순서 찾아야할 위치를 따로 관리
 int index = M;   
 
-// 출력순서 결과값 따로 담기
-int result = 0;  
+int result = 0;  // 출력순서 결과값 따로 담기
 
 //M번째 위치해있는 우선순위 (내가 출력순서를 찾아야 할 우선순위)
 int target = Integer.parseInt(arr[M]);  
 ```
 
 4. if 문서가 출력되는 경우 else 출력되지 않는 경우
-
 5. ____문서가 출력되는 경우 if 내가 찾는 문서를 출력하는 경우 else 내가 찾는 문서는 아니나, 순서도가 높아서 출력 하는 경우
-
 6. ____문서가 출력되지 않는 경우 : 우선 순위 작은거 만났을 때 뒤로 보내기 if 내가 찾는 문서 순서도가 낮아서 뒤로 가야하는 경우
 ```java
 while (true) {
