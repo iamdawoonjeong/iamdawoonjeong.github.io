@@ -89,19 +89,21 @@ permalink: "/algorithm-problem-solving-baekjoon-1966/"
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/printQueue1966/Main.java)
 
-1. **queue의 특성을 이용하기 위해 queue를 선언하여 각 테스트 케이스의 문서 중요도를 넣어줌**
+- 1. **queue의 특성을 이용하기 위해 queue를 선언하여 각 테스트 케이스의 문서 중요도를 넣어줌**
+
 ```java
 Queue<Integer> queue =  new LinkedList<Integer>();
 ```
 
-2. 문서들의 중요도를 알기 위해 정렬해서 maxIndex 값을 따로 관리해주면서 사용
+- 2. 문서들의 중요도를 알기 위해 정렬해서 maxIndex 값을 따로 관리해주면서 사용
+
 ```java
 Arrays.sort(arr); // 입력된 배열을 정렬해서 이용해줌 (원래 배열은 queue에 담에서 사용)
 int maxIndex = arr.length-1;
 int max = Integer.parseInt(arr[maxIndex]); //최대값
 ```
 
-3. 반복문에서 따로 관리해주어야 할 변수들
+- 3. 반복문에서 따로 관리해주어야 할 변수들
 
 ```java
 int count = 0; // 출력횟수 (몇번째로 출력되나?)
@@ -115,11 +117,11 @@ int result = 0;  // 출력순서 결과값 따로 담기
 int target = Integer.parseInt(arr[M]);  
 ```
 
-4. if 문서가 출력되는 경우 else 출력되지 않는 경우
+- 4. if 문서가 출력되는 경우 else 출력되지 않는 경우
 
-5. ____문서가 출력되는 경우 if 내가 찾는 문서를 출력하는 경우 else 내가 찾는 문서는 아니나, 순서도가 높아서 출력 하는 경우
+- 5. ____문서가 출력되는 경우 if 내가 찾는 문서를 출력하는 경우 else 내가 찾는 문서는 아니나, 순서도가 높아서 출력 하는 경우
 
-6. ____문서가 출력되지 않는 경우 : 우선 순위 작은거 만났을 때 뒤로 보내기 if 내가 찾는 문서 순서도가 낮아서 뒤로 가야하는 경우
+- 6. ____문서가 출력되지 않는 경우 : 우선 순위 작은거 만났을 때 뒤로 보내기 if 내가 찾는 문서 순서도가 낮아서 뒤로 가야하는 경우
 
 ```java
 while (true) {
