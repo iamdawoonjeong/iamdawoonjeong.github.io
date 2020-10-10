@@ -41,7 +41,7 @@ permalink: "/java-scanner-vs-buffered_reader/"
 - **문자 입력 스트림**으로, 텍스트를 읽고 문자를 버퍼링하여, 문자 시퀀스를 효율적으로 읽을 수 있도록 함 (line단위의 입출력이 편리함)
 - 버퍼 크기를 지정하거나 기본 크기를 사용할 수 있으며, 기본값은 대부분의 목적에 충분히 큼
 - 일반적으로 Reader의 각 읽기 요청은 해당 읽기 요청이 기본 문자 또는 바이트 스트림으로 이루어 지도록 함
-- 따라서 FileReaders 및 InputStreamReaders[^1]와 같이 read () 작업에 비용이 많이들 수 있는 판독기 주위에 BufferedReader를 래핑하는 것이 좋음
+- 따라서 FileReaders 및 **InputStreamReaders[^1]와 같이 read () 작업에 비용이 많이들 수 있는 판독기 주위에 BufferedReader를 래핑하는 것이 좋음**
 - 텍스트 입력에 DataInputStreams를 사용하는 프로그램은 각 DataInputStream을 적절한 BufferedReader로 대체하여 지역화 할 수 있음
 
 ### 생성자  
@@ -115,9 +115,9 @@ you have entered:- 10 and name as JAVA
 
 
 ## 기타 차이점
-- BufferedReader는 동기식 이지만,  Scanner는 아님. 다중 스레드로 작업하는 경우 BufferedReader를 사용해야 함
+- **BufferedReader는 동기식** 이지만,  Scanner는 아님. **다중 스레드로 작업하는 경우 BufferedReader를 사용**해야 함
 - BufferedReader는 Scanner보다 훨씬 더 큰 버퍼 메모리를 가지고 있음
-- Scanner에는 BufferedReader (8KB byte buffer)와 달리 작은 버퍼 (1KB char buffer)가 있지만 충분
+- **BufferedReader (8KB byte buffer)와 달리 Scanner는 작은 버퍼 (1KB char buffer)가 있지만 충분**
 - **Scanner가 입력 데이터를 구문 분석하고, BufferedReader는 단순히 문자 시퀀스를 읽기 때문에 스캐너에 비해 조금 더 빠름**
 
 
@@ -126,8 +126,3 @@ you have entered:- 10 and name as JAVA
 <https://www.geeksforgeeks.org/scanner-class-in-java/?ref=rp>  
 <https://www.geeksforgeeks.org/java-io-bufferedreader-class-java/>  
 <https://www.geeksforgeeks.org/difference-between-scanner-and-bufferreader-class-in-java/>  
-
-
----
-### 주석
-[^1]: 입출력 단위가 1byte, JAVA에서는 문자를 의미하는 char형은 2byte
