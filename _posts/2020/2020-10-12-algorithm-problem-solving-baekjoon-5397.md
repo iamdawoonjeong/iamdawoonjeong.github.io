@@ -94,67 +94,63 @@ ThIsIsS3Cr3t
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/keylogger5397/Main.java)
 
 1. stack 두개 생성해주기
-
-```java
-Stack<Character> leftStack = new Stack<Character>();
-Stack<Character> rightStack = new Stack<Character>();
-StringBuilder sb = new StringBuilder();
-```
+    ```java
+    Stack<Character> leftStack = new Stack<Character>();
+    Stack<Character> rightStack = new Stack<Character>();
+    StringBuilder sb = new StringBuilder();
+    ```
 
 2. 입력받은 문자를 한글자씩 char[] 에 저장(foreach 로 한글자씩 비교하기 위해)
-
-```java
-char[] word = str.toCharArray();
-```
+    ```java
+    char[] word = str.toCharArray();
+    ```
 
 3. foreach문을 이용해 한글자씩 판단해 줌
+    ```java
+    for (char c : word) {
+        switch (c) {
+        case '-': {
+            //'-' 를 만났을때는 왼쪽 스택 pop
+            if (!leftStack.isEmpty()){
+                leftStack.pop();
+            }
+            break;
 
-```java
-for (char c : word) {
-    switch (c) {
-    case '-': {
-        //'-' 를 만났을때는 왼쪽 스택 pop
-        if (!leftStack.isEmpty()){
-            leftStack.pop();
-        }
-        break;
+        } case '<' :{
+            //'<' 를 만났을때는 커서가 왼쪽으로 한칸 이동했기 때문에 왼쪽 스택 pop 한 후 오른쪽 스택에 push
+            if (!leftStack.isEmpty()) {
+                rightStack.push(leftStack.pop());
+            }
+            break;
 
-    } case '<' :{
-        //'<' 를 만났을때는 커서가 왼쪽으로 한칸 이동했기 때문에 왼쪽 스택 pop 한 후 오른쪽 스택에 push
-        if (!leftStack.isEmpty()) {
-            rightStack.push(leftStack.pop());
-        }
-        break;
+        } case '>' :{
+            //'>' 를 만났을때는 커서가 오른쪽으로 한칸 이동했기 때문에 오른쪽 스택 pop 한 후 왼쪽 스택에 push
+            if(!rightStack.isEmpty()) {
+                leftStack.push(rightStack.pop());
+            }
+            break;
 
-    } case '>' :{
-        //'>' 를 만났을때는 커서가 오른쪽으로 한칸 이동했기 때문에 오른쪽 스택 pop 한 후 왼쪽 스택에 push
-        if(!rightStack.isEmpty()) {
-            leftStack.push(rightStack.pop());
         }
-        break;
+        //defualt는 왼쪽 스택에 쌓아주기
+        default:
+            leftStack.push(c);
+            break;
+        }
 
     }
-    //defualt는 왼쪽 스택에 쌓아주기
-    default:
-        leftStack.push(c);
-        break;
-    }
-
-}
-```
+    ```
 
 4. 출력 (스택 FILO : pop할 경우 제일 나중에 입력한 것 부터 나옴)
-
-```java
-//left stack 그냥 append로
-for (Character ch : leftStack) {
-    sb.append(ch);
-}
-// right stack은 pop으로  
-while (!rightStack.isEmpty()) {
-    sb.append(rightStack.pop());
-}
-```
+    ```java
+    //left stack 그냥 append로
+    for (Character ch : leftStack) {
+        sb.append(ch);
+    }
+    // right stack은 pop으로  
+    while (!rightStack.isEmpty()) {
+        sb.append(rightStack.pop());
+    }
+    ```
 
 
 ---
