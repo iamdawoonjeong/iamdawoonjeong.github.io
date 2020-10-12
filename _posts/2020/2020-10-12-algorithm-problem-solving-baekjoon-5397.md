@@ -50,22 +50,26 @@ permalink: "/algorithm-problem-solving-baekjoon-5397/"
 ThIsIsS3Cr3t
 ```
 
-- ouput
+- output
 ```java
 BAPC
 ThIsIsS3Cr3t
 ```
 
 ### 예제2 (반례찾기)
--input
+- input
 ```java
 1
 A<B<C<D<E
 ```
+- output
+```java
+EDCBA
+```
 
 ### 분류
 - 자료 구조
-- 덱
+- 스택
 
 
 ## 풀이
@@ -81,18 +85,19 @@ ThIsIsS3Cr3t
 2.  '<' 마우스 커서가 왼쪽으로 (한칸 앞으로)
 3.  '>' 마우스 커서가 오른쪽으로 (한칸 뒤로)
 4. **스택을 두 개 이용해야 함** (처음에 linked list로 도전했다가 반례 나옴 실패)
-5. 커서가  왼쪽 스택과 오른쪽스택 사이에 있다고 가정 하여 구현 ==> (head)left stack(tail) |(커서)  (tail)right stack(head)   
+5. 커서가  왼쪽 스택과 오른쪽스택 사이에 있다고 가정 하여 구현 => (head)left stack(tail) (커서)  (tail)right stack(head)   
 6. 입력하면 왼쪽 스택에 쌓이고 삭제시 왼쪽스택부터 지움
+
 
 ### 구현
 
-[전체소스보기]()
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/keylogger5397/Main.java)
 
 1. stack 두개 생성해주기
 ```java
 Stack<Character> leftStack = new Stack<Character>();
 Stack<Character> rightStack = new Stack<Character>();
-StringBuilder sb = new StringBuilder();       
+StringBuilder sb = new StringBuilder();
 ```
 
 2. 입력받은 문자를 한글자씩 char[] 에 저장(foreach 로 한글자씩 비교하기 위해)
@@ -141,13 +146,12 @@ for (char c : word) {
 for (Character ch : leftStack) {
     sb.append(ch);
 }
-
 // right stack은 pop으로  
 while (!rightStack.isEmpty()) {
     sb.append(rightStack.pop());
-
 }
 ```
+
 
 ---
 
