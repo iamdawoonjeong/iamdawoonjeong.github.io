@@ -94,6 +94,7 @@ ThIsIsS3Cr3t
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/keylogger5397/Main.java)
 
 1. stack 두개 생성해주기
+
 ```java
 Stack<Character> leftStack = new Stack<Character>();
 Stack<Character> rightStack = new Stack<Character>();
@@ -101,11 +102,13 @@ StringBuilder sb = new StringBuilder();
 ```
 
 2. 입력받은 문자를 한글자씩 char[] 에 저장(foreach 로 한글자씩 비교하기 위해)
+
 ```java
 char[] word = str.toCharArray();
 ```
 
 3. foreach문을 이용해 한글자씩 판단해 줌
+
 ```java
 for (char c : word) {
     switch (c) {
@@ -141,6 +144,7 @@ for (char c : word) {
 ```
 
 4. 출력 (스택 FILO : pop할 경우 제일 나중에 입력한 것 부터 나옴)
+
 ```java
 //left stack 그냥 append로
 for (Character ch : leftStack) {
