@@ -61,6 +61,27 @@ permalink: "/algorithm-problem-solving-baekjoon-1966/"
 5
 ```
 
+### 반례찾기 예제 
+- intput
+```java
+4
+1 0
+5
+4 2
+1 2 3 4
+6 0
+1 1 9 1 1 1
+4 2
+7 1 5 6
+```
+
+- output
+```java
+1
+2
+5
+3
+```
 
 ### 분류
 - 구현
