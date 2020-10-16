@@ -23,7 +23,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-problem-solving-baekjoon-1472/"
 ---
-# [Baekjoon Online Judge] 1472 소트인사이드 
+# [Baekjoon Online Judge] 1472 소트인사이드
 
 
 ## 문제
@@ -35,13 +35,13 @@ permalink: "/algorithm-problem-solving-baekjoon-1472/"
 ### 출력
 첫째 줄에 자리수를 내림차순으로 정렬한 수를 출력한다.
 
-### 예제 
--input 
+### 예제
+- input
 ```
 2143
 ```
 
--output
+- output
 ```
 4321
 ```
@@ -57,17 +57,17 @@ permalink: "/algorithm-problem-solving-baekjoon-1472/"
 
 ### 문제파악
 1. 내림차순 정렬을해보자
-2. Bubble Sort, Arrays.sort() 사용 
+2. Bubble Sort, Arrays.sort() 사용
 
 ### 구현
 
-- bubblesort 구현하여 정렬 
+- bubblesort 구현하여 정렬
 
 ```java
 private static int[] solution(int[] numbers) {
-        
+
     boolean swaped = false;
-    
+
     for (int i = 0; i < numbers.length-1; i++) {
         for (int j = 0; j < numbers.length-1-i; j++) {
             if(numbers[j] < numbers[j+1]) {
@@ -76,15 +76,15 @@ private static int[] solution(int[] numbers) {
                 numbers[j+1] = temp;
                 swaped=true;
             }
-        } 
-        
+        }
+
         if(!swaped) {
             break;
         }
-        
+
     }
     return numbers;
-    
+
 }
 
 ```
@@ -98,7 +98,7 @@ Arrays.sort(arr, new Comparator<Integer>() {
     public int compare(Integer o1, Integer o2) {
         return Integer.compare(o2, o1);
     }
-    
+
 });
 ```
 
@@ -112,15 +112,15 @@ Arrays.sort(arr, new Comparator<Integer>() {
         return o2.compareTo(o1);
     }
 });
-        
+
 ```
 
 
 ### 결론
 - 지난번 [2750 수 정렬하기](http://dawoonjeong.com/algorithm-problem-solving-baekjoon-10930/) 문제에서 정렬 알고리즘을 구현 하는 것보다 api사용이 빠르다는 것을 확인
 - 그러나 이 문제인 경우 버블정렬을 구현했을때와 sort를 사용했을때 비슷한데 이는 문제의 조건으로 추정 됨  
-- 이 문제는 N이 1억개가 주어지고, 지난번에는 1000개임
-- 문제의 조건에 따라 달라질 수 있음을 확인
+- 이 문제는 N이 1억개가 주어지고, 2750 수 정렬하기 문제는 1000개 였음
+- 문제의 조건에 따라 달라질 수 있으니 적절한 것을 사용 
 
 
 ---
