@@ -47,7 +47,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1472/"
 ```
 
 
-##분류
+## 분류
 - 구현
 - 정렬
 
