@@ -70,7 +70,7 @@ Arrays.sort(arr2, new Comparator<String>() {
 
 ### 2차원 정렬
 
--1번째 요소만 정렬
+- 1번째 인덱스 기준으로 오름차순 정렬
 
 ```java
 Arrays.sort(arr, new Comparator<int[]>() {
@@ -83,7 +83,7 @@ Arrays.sort(arr, new Comparator<int[]>() {
 ```
 
 
-- 2번째 요소
+- 1번째 인덱스가 같을때 2번째 인덱스 오름차순 정렬
 
 ```java
 Arrays.sort(arr, new Comparator<int[]>() {
