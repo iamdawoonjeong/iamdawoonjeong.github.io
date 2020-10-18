@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[JAVA] Comparable VS Comparator"
-date: 2020-10-18 23:22:00.000000000 +09:00
+date: 2020-10-18 23:17:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true
