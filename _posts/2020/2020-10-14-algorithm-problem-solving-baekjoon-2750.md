@@ -22,7 +22,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/algorithm-problem-solving-baekjoon-10930/"
+permalink: "/algorithm-problem-solving-baekjoon-2750/"
 ---
 # [Baekjoon Online Judge] 2750 수 정렬하기
 
