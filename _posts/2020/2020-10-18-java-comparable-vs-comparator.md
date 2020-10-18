@@ -76,7 +76,7 @@ public class Test implements Comparator<Object> {
 
 - Comparator 클래스의 인스턴스를 생성
 
-```
+```java
 public int compare(Object obj1, Object obj2):
 ```
 
