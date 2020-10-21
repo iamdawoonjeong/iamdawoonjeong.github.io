@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Problem Solving - Baekjoon] 1074 Z"
-date: 2020-10-08 21:58:00.000000000 +09:00
+date: 2020-10-21 21:58:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true
