@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Problem Solving - Baekjoon] 1074 Z"
-date: 2020-10-08 22:22:00.000000000 +09:00
+date: 2020-10-08 21:58:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true
@@ -77,7 +77,7 @@ N이 주어졌을 때, (r, c)를 몇 번째로 방문하는지 출력하는 프�
 ```java
 2 3 1
 ```
-- 2<sup>2<sup> 행렬의 (3,1)의 몇 번째로 방문하는지 구하기 
+- 2<sup>2<sup> 행렬의 (3,1)의 몇 번째로 방문하는지 구하기
 - (0,0) 부터 시작
 - (0,0)-> (0,1) -> (1,0) -> (1,1) 순으로 방문함 (Z모양)
 
@@ -93,7 +93,7 @@ N이 주어졌을 때, (r, c)를 몇 번째로 방문하는지 출력하는 프�
 
 ```java
 private static void recursion(int n, int x, int y) {
-        
+
     //n=2 가 될때까지 (2*2 사각형 될때 까지 쪼개기)
     if (n == 2) {
         //(0,0)
@@ -102,21 +102,21 @@ private static void recursion(int n, int x, int y) {
             return;
         }
         count++;
-       
+
         //(0,1)
         if (x == r && y+1 == c ) {
             System.out.println(count);
             return;
         }
         count++;
-        
+
        //(1,0)
         if (x+1 == r && y == c) {
             System.out.println(count);
             return;
         }
         count++;
-        
+
         //(1,1)
         if (x+1 == r && y+1 == c) {
             System.out.println(count);
@@ -125,7 +125,7 @@ private static void recursion(int n, int x, int y) {
         count++;
         return;
     }
-    
+
     recursion(n/2 , x, y );        // 1사분면 탐색
     recursion(n/2 , x, y+n/2);     // 2사분면 탐색
     recursion(n/2 , x+n/2, y );    // 3사분면 탐색
@@ -138,8 +138,8 @@ private static void recursion(int n, int x, int y) {
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/z1074/Main2.java)
 
 -  현재위치 (x,y)와 찾는위치 (r,c) 값이 같을 때 방문횟수 증가 (count++)
--  소스가 매우 간단 
--  시간이 오래 걸리는 것이 단점. (재귀함수 호출 횟수가 증가 하기 때문에 오래 걸림) 
+-  소스가 매우 간단
+-  시간이 오래 걸리는 것이 단점. (재귀함수 호출 횟수가 증가 하기 때문에 오래 걸림)
 
 ```java
 private static void recursion(int n, int x, int y) {
@@ -160,8 +160,8 @@ private static void recursion(int n, int x, int y) {
 
 #### 결론
 - 2*2 행렬일때 연산을 하는 것 보다 1*1 행렬일때에는 사실상 모든 수를 재귀 함수를 한번 더 호출하기 때문에 시간이 2배정도 걸림
-- 재귀함수도 적절히 이용해줘야 함 
-  
+- 재귀함수도 적절히 이용해줘야 함
+
 | 항목	   | Dynamic |  Recursion |
 |:--------:|:--------:|:--------:|
 |  코드길이(Byte) |  1834    |  1155 	|
