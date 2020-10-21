@@ -23,7 +23,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/algorithm-problem-solving-baekjoon-1966/"
+permalink: "/algorithm-problem-solving-baekjoon-1074/"
 ---
 # [Baekjoon Online Judge] 1074 Z
 
