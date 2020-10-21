@@ -132,4 +132,4 @@ private static int fibonacci(int n) {
 ---
 
 #### references
-<https://www.acmicpc.net/problem/2474>
+<https://www.acmicpc.net/problem/2747>
