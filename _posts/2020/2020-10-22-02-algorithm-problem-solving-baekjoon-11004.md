@@ -63,10 +63,9 @@ A를 정렬했을 때, 앞에서부터 K번째 있는 수를 출력한다.
 ### 문제 파악
 
 - [퀵](http://dawoonjeong.com/algorithm-sort-quick/), [병합](http://dawoonjeong.com/algorithm-sort-merge/), [힙](http://dawoonjeong.com/algorithm-sort-heap/) 정렬 이용하기(모두다 DAC로 재귀 용법을 이용)
--
+
+
 ### 구현
-
-
 
 #### Quick Sort 구현해서 정렬
 - Merge Sort를 써도 되나 지난 문제에서 썼으니 이번엔 Quick Sort 이용
@@ -113,21 +112,23 @@ private static int[] sort(int[] arr, int start, int end) {
 
 #### Collections.sort() 이용
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/kthnumber11004/MainCollection.java)
+- StringTokenizer() 사용 : br.readline().split(" ") 시간초과로 실패
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/kthnumber11004/MainSort.java)
 
+```java
+StringTokenizer st = new StringTokenizer(br.readLine());
+```
+
 - LinkedList<Integer> 사용 : Arrays.sort(arr) 시간초과로 실패
+
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/kthnumber11004/MainCollection.java)
 
 ```java
 LinkedList<Integer> list = new LinkedList<Integer>();
 ```  
 
-- StringTokenizer() 사용 : br.readline().split(" ") 시간초과로 실패
 
-```java
-StringTokenizer st = new StringTokenizer(br.readLine());
-```
 
 ### 결론
 - QuickSort가 Collecions.sort()에 비해 속도, 메모리에서 훨씬 효율이 좋은 문제
@@ -140,6 +141,7 @@ StringTokenizer st = new StringTokenizer(br.readLine());
 |  시간(ms) 	     |  4928	|  1832   	|
 
 
+----
 
 #### references
 <https://www.acmicpc.net/problem/11004>
