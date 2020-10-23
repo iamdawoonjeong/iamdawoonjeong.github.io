@@ -84,6 +84,7 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 2. 정렬은 bubble sort 구현 or Arrsys.sort 를 사용하여 정렬
 3. 출력
 
+[참고:버블정렬](http://dawoonjeong.com/algorithm-sort-bubble/)
 
 ### 구현
 
