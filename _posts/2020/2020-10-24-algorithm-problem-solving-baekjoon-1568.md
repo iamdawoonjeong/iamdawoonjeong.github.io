@@ -72,6 +72,7 @@ N마리의 새가 나무에 앉아있고, 자연수를 배우기 원한다. 새�
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/bird1568/Main.java)
 
 - k가 남은 n보다 클 경우 다시 1부터 시작
+
 ```java
 int k=1;
 int count=0;
