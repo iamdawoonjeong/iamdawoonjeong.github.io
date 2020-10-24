@@ -14,6 +14,7 @@ tags:
 - algorithm
 - sort
 - quick
+- baekjoon
 meta:
   _edit_last: '2'
 author:

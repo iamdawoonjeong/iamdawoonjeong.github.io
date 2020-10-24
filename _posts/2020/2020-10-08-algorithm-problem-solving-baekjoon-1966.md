@@ -13,6 +13,7 @@ tags:
 - data structure
 - algorithm
 - queue
+- baekjoon
 meta:
   _edit_last: '2'
 author:
@@ -61,7 +62,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1966/"
 5
 ```
 
-### 반례찾기 예제 
+### 반례찾기 예제
 - intput
 ```java
 4

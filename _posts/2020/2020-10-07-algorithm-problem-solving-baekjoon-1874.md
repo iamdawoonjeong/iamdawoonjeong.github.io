@@ -13,6 +13,7 @@ tags:
 - data structure
 - algorithm
 - stack
+- baekjoon
 meta:
   _edit_last: '2'
 author:

@@ -12,6 +12,7 @@ categories:
 tags:
 - data structure
 - algorithm
+- baekjoon
 meta:
   _edit_last: '2'
 author:
