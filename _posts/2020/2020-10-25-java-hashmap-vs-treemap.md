@@ -35,7 +35,7 @@ permalink: "/java-hash_map-vs-hash_table/"
 - 자바 컬렉션 api일부
 
 
-### HashMap
+## HashMap
 - HashMap클래스는 Hash Table을 자바로 구현한 것
 - map인터페이스중 일반적으로 가장 많이 사용
 - 클래스 구현에는 key-value 쌍을 나타내는 Entry라는 내부 클래스 존재
@@ -49,7 +49,7 @@ permalink: "/java-hash_map-vs-hash_table/"
 - 해싱 원칙에 따라 작동
 
 
-### TreeMap
+## TreeMap
 - TreeMap클래스는 map 인터페이스의 구현방법으로 구현하는데 **이진트리 자료구조 이용**
 - 트리의 각 노드가 키-값 쌍이 됨
 - 키를 정렬 가능한 순서에 따라 저장하기 때문에 hashCode 메서드는 전혀 사용되지 않음
