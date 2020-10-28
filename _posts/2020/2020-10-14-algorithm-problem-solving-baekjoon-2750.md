@@ -91,7 +91,7 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 
 #### bubble sort를 직접 구현 해서 정렬
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/sortNumbers2750/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2750/Main.java)
 
 
 ```java
@@ -123,7 +123,7 @@ private static int[] solution(int[] numbers) {
 
 #### Arrays.sort() 를 이용해서 정렬
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/sortNumbers2750/MainAPI.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2750/MainAPI.java)
 
 ```java
 Arrays.sort(numbers);

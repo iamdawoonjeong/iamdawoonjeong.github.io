@@ -74,7 +74,7 @@ permalink: "/algorithm-problem-solving-baekjoon-10814/"
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/sortByAge10814/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem10814/Main.java)
 
 - Arrays.sort() 를 이용하여 1번째 인덱스를 정렬
 

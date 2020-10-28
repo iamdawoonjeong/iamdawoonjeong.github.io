@@ -77,7 +77,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1236/"
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/guardingthecastle1236/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1236/Main.java)
 
 - 경비원있는 위치(X)를 세로(col), 가로(row)에 1로 입력함     
 - col, row를 탐색하면서 경비원이 없는 경우 count 증가

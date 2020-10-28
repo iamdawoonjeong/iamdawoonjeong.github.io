@@ -74,7 +74,7 @@ permalink: "/algorithm-problem-solving-baekjoon-11650/"
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/cordinateAlignment11650/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem11650/Main.java)
 
 ```java
 Arrays.sort(arr, new Comparator<int[]>() {

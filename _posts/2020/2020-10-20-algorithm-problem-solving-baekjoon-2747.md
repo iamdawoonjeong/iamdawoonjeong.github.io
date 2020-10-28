@@ -82,7 +82,7 @@ n이 주어졌을 때, n번째 피보나치 수를 구하는 프로그램을 작
 #### Dynamic 이용
 - 간단하게 dynamic programming을 이용하여 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/fibonacci2747/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2747/Main.java)
 
 ```java
 private static int fibonacci(int n) {
@@ -103,7 +103,7 @@ private static int fibonacci(int n) {
 - 피보나치 수열 재귀적 함수도 많이 이용
 - 그러나 재귀적 함수로 구현해서 제출 했을 경우 **시간초과**
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/fibonacci2747/MainRecursion.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2747/MainRecursion.java)
 
 ```java
 private static int fibonacci(int n) {

@@ -92,7 +92,7 @@ N장의 카드에 써져 있는 숫자가 주어졌을 때, M을 넘지 않으�
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/blackjack2798/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2798/Main.java)
 
 
 1. system.in 표준 입력을 통해 숫자를 입력 받은 수를 정규식으로 구분하기 위해 scanner로 받음

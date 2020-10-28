@@ -83,7 +83,7 @@ N이 주어졌을 때 수식의 결과가 0이 되는 모든 수식을 찾는 �
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/create7490/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem490/Main.java)
 
 - 연산자 경우의 수를 구하는 재귀함수 호출 부분
 - arraylist 의 arraylist를 구현하여 연산자 list를 생성해줌   

@@ -95,7 +95,7 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 
 ### Arrays.sort() 이용
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/sortNumbers10989/MainAPI.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem10989/MainAPI.java)
 
 - 그냥 출력 했더니 시간초과
 
@@ -134,7 +134,7 @@ bw.close();//스트림을 닫음
 
 ### CountingSort 이용
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/sortNumbers10989/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem10989/Main.java)
 
 ```java
 for (int i = 0; i < N; i++) {

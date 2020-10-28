@@ -68,7 +68,7 @@ M개의 줄에 답을 출력한다. 존재하면 1을, 존재하지 않으면 0�
 
 ### 구현
 
-[전체소스보기]()
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1920/Main.java)
 
 
 #### set 이용
@@ -104,6 +104,8 @@ for (int j = 0; j < M; j++) {
 
 
 #### for 이용
+
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1920/MainFor.java)
 
 - for문 사용해서 체크
 

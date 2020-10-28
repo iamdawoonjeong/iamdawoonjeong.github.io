@@ -86,25 +86,25 @@ aba     // 해당 문자열을 윗줄에 입력된 문자열에서 중복되는 
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/documentSearch1543/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1543/Main.java)
 
 - 문자가 중복 되면 안되기 때문에 index를 따로 관리해 줌
 - 단어 찾을 때 마다, 단어 길이만큼 index를 증가 시킴
- 
+
 ```java
 int length = word.length();
-            
+
 int index=0;
 int count=0;
 
 while(index+length <= doc.length() ) {
-    
+
     String str = doc.substring(index, index+length);
 
     if ( word.equals(str)) {
         index += length;
         count++;
-        
+
     }else {
         index++;
     }

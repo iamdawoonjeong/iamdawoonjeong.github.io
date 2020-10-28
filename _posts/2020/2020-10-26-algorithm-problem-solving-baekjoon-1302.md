@@ -74,7 +74,7 @@ kimtop
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/bestSeller1302/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1302/Main.java)
 
 - 갯수와 제목을 담을 수 있는 HashMap함수 이용
 

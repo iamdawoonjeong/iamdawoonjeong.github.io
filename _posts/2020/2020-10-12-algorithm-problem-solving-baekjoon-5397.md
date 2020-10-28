@@ -91,7 +91,7 @@ ThIsIsS3Cr3t
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/keylogger5397/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem5397/Main.java)
 
 1. stack 두개 생성해주기
     ```java

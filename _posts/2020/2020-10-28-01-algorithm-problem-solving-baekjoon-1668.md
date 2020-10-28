@@ -74,7 +74,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1668/"
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/trophyDisplay1688/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1688/Main.java)
 
 - 배열에 입력된 1~끝까지 last에 입력된 수가 비교하는 수보다 작아야 보임
 

@@ -62,7 +62,9 @@ permalink: "/algorithm-problem-solving-baekjoon-1472/"
 
 ### 구현
 
-- bubblesort 구현하여 정렬
+#### bubblesort 구현하여 정렬
+
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1472/Main.java)
 
 ```java
 private static int[] solution(int[] numbers) {
@@ -90,7 +92,9 @@ private static int[] solution(int[] numbers) {
 
 ```
 
-- 내림차순 정렬 방법1
+#### 내림차순 정렬 방법1
+
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1472/MainAPI.java)
 
 ```java
 Arrays.sort(arr, new Comparator<Integer>() {
@@ -103,7 +107,9 @@ Arrays.sort(arr, new Comparator<Integer>() {
 });
 ```
 
-- 내림차순 정렬 방법2
+#### 내림차순 정렬 방법2
+
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1472/MainAPI2.java)
 
 ```java
 Arrays.sort(arr, new Comparator<Integer>() {

@@ -77,7 +77,7 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 
 #### Merge Sort 구현해서 정렬
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/sortNumbers2751/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2751/Main.java)
 
 - 최악의 시간복잡도 O(NlogN)인 merge sort를 구현
 
@@ -139,7 +139,7 @@ private static void merge(int[] arr, int left, int mid, int right) {
 
 #### Collections.sort() 이용
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/sortNumbers2751/MainCollection.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2751/MainCollection.java)
 
 - ArrayList 사용 : Arrays.sort() 사용시  **시간초과**로 실패  
 

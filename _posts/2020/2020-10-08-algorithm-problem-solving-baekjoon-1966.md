@@ -109,7 +109,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1966/"
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/printQueue1966/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1966/Main.java)
 
 - 1. **queue의 특성을 이용하기 위해 queue를 선언하여 각 테스트 케이스의 문서 중요도를 넣어줌**
 

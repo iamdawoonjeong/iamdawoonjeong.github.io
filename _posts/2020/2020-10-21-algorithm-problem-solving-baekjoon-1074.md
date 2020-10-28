@@ -86,7 +86,7 @@ N이 주어졌을 때, (r, c)를 몇 번째로 방문하는지 출력하는 프�
 
 #### 2*2 행렬 될 때까지 재귀적 용법으로 구하는 방법
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/z1074/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1074/Main.java)
 
 - **2*2 행렬일 때 방문순서 ((0,0)-> (0,1) -> (1,0) -> (1,1)) 순으로 방문하고, 방문횟수 증가 (count++)**
 - **방문횟수 찾았을경우 바로 출력 후 return 으로 해당 함수 종료 시켜주기**
@@ -135,7 +135,7 @@ private static void recursion(int n, int x, int y) {
 
 #### 1*1 행렬 될 때까지 재귀적 용법으로 구하는 방법
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/z1074/Main2.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1074/Main2.java)
 
 -  현재위치 (x,y)와 찾는위치 (r,c) 값이 같을 때 방문횟수 증가 (count++)
 -  소스가 매우 간단

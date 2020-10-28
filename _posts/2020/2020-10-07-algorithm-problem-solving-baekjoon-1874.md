@@ -119,7 +119,7 @@ NO
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/stackSequence1874/Main.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1874/Main.java)
 
 1. 입력을 scanner만 써오다가 InputStreamReader, BufferedReader를 이용해서 입력받음 (scanner와의 차이점은 추후 포스팅 예정)
 ```java
