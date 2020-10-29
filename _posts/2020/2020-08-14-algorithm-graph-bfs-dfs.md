@@ -43,7 +43,7 @@ permalink: "/algorithm-graph-bfs-dfs/"
 
 ### JAVA를 이용한 BFS 구현해보기  
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/graph/bfs/implementation/GraphBFS.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/graph/traversal/BFS.java)
 
 
 ## Depth First Search (DFS) 깊이우선 탐색
@@ -59,7 +59,7 @@ permalink: "/algorithm-graph-bfs-dfs/"
 
 ### JAVA를 이용한 DFS 구현해보기  
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-datastructure/src/graph/bfs/implementation/GraphDFS.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/graph/traversal/DFS.java)
 
 
 ---
