@@ -89,7 +89,6 @@ for (Integer num : set) {
 
 ```java
 Arrays.sort(answer);
-
 ```
 
 
