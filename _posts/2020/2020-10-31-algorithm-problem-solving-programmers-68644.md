@@ -41,8 +41,12 @@ numbers의 모든 수는 0 이상 100 이하입니다.
 | [5,0,2,7] | [2,5,7,9,12] |
 
 
-#### 입출력 예 #1
+## 풀이
 
+### 문제 파악
+- 주어진 배열내 겹치지 않는 인덱스 위치의 두수를 더한 값들을 오름차순으로 나열
+
+```
 2 = 1 + 1 입니다. (1이 numbers에 두 개 있습니다.)
 3 = 2 + 1 입니다.
 4 = 1 + 3 입니다.
@@ -50,18 +54,11 @@ numbers의 모든 수는 0 이상 100 이하입니다.
 6 = 2 + 4 입니다.
 7 = 3 + 4 입니다.
 따라서 [2,3,4,5,6,7] 을 return 해야 합니다.
-
-
-## 풀이
-
-### 문제 파악
+```
 
 ### 구현
 
-- 주어진 배열내 겹치지 않는 인덱스 위치의 두수를 더한 값들을 오름차순으로 나열
-
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/programmers/lessons68644/Solution.java)
-
 
 - 겹치지 않는 두수를 선택해서 더해서 넣어줌
 
