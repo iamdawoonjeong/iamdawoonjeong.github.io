@@ -69,7 +69,7 @@ location은 0 이상 (현재 대기목록에 있는 작업 수 - 1) 이하의 �
 - 찾아야할 문서의 값(target)도 따로 구현해 주었으나 index 값 체크로 확인하는 로직으로 수정
 - 코드가 간결해줌  
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/programmers/lessons42586/Solution.java)
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/programmers/lessons42587/Solution.java)
 
 ```java
 int index = location;
