@@ -69,6 +69,7 @@ v의 각 원소는 점의 좌표를 나타내며, 좌표는 [x축 좌표, y축 �
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/programmers/lessons1878/Solution.java)
 
 - hash set을 이용하여 각 x, y좌표의 수를 담음
+
 ```java
 HashMap<Integer, Integer> xMap = new HashMap<>();
 HashMap<Integer, Integer> yMap = new HashMap<>();
@@ -90,7 +91,6 @@ for (int i = 0 ; i < v.length ; i++){
         yMap.put(v[i][1], 1);
     }
 }
-
 ```
 
 - 좌표의 갯수가 한개씩인 것들이 나머지 한 점이 됨
