@@ -170,7 +170,6 @@ static void binarySearch(int n, int startNode, int endNode, int maxWeight, int m
 
 ```java
 static boolean bfs(int n, int mid, int startNode, int endNode) {
-    System.out.println("mid " + mid);
     Queue<Integer> queue = new LinkedList<Integer>();
     boolean visited[] = new boolean[n+1]; //방문여부
 
@@ -181,18 +180,16 @@ static boolean bfs(int n, int mid, int startNode, int endNode) {
     while(!queue.isEmpty()) {
         //queue의 head를 출력
         int head = queue.poll();
-        System.out.println("head : " + head);
+
         //head 부터 트리 순회
         for (Vertex v : graph[head]) {
             //정점의 중량이 현재중량 보다 클 경우 통과 가능
-            System.out.println("v.wieght:  " + v.wieght );
             if (v.wieght >= mid) {
                 //poll한 노드가 도착공장인 경우 방문 완료 했음으로 리턴
                 if (head == endNode) {
                     return true;
                 }
 
-                System.out.println("v.end : " +v.end);
                 if(!visited[v.end]) {
                     //방문여부 체크후 queue에 add
                     visited[v.end] = true;
