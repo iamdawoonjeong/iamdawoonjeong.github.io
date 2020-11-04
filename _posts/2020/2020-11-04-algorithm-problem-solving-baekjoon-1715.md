@@ -61,9 +61,10 @@ permalink: "/algorithm-problem-solving-baekjoon-1715/"
 ## 풀이
 
 ### 문제 파악
--  문제를 잘 읽어보면, 크기가 작은 숫자 카드 묶음들을 먼저 합친 것이 비교 횟수가 제일 적음
--  작은 카드 부터 비교 해야함으로 우선순위 큐를 사용  
-
+- 문제를 잘 읽어보면, 크기가 작은 숫자 카드 묶음들을 먼저 합친 것이 비교 횟수가 제일 적음
+- 작은 카드 부터 비교 해야함으로 우선순위 큐를 사용
+- [최소힙](http://dawoonjeong.com/algorithm-sort-heap/) 기법으로 작은 수를 root에 놓고 작은 수들 끼리 먼저 dequeue후 더한 합을 inqueue
+- 작은 수들 끼리 먼저 dequeue후 더한 합을 inqueue를 반복하여 최종 노드가 1개 남을 때까지 반복
 
 ```java
 3  //n 개의 카드
@@ -72,34 +73,35 @@ permalink: "/algorithm-problem-solving-baekjoon-1715/"
 40
 ```
 
-- [최소힙](http://dawoonjeong.com/algorithm-sort-heap/) 기법으로 작은 수를 root에 놓고 작은 수들 끼리 먼저 dequeue후 더한 합을 inqueue
-- 또 작은 수들 끼리 먼저 dequeue후 더한 합을 inqueue를 반복하여 최종 노드가 1개 남을 때까지 반복
- 
-- queue 에 모든 숫자를 넣음 
-- 10과 20을 poll() 하기 
- 
+
+
+- queue 에 모든 숫자를 넣음
+- 10과 20을 poll() 하기
+
 ```java
      10
     /   \
   20    40
 
-비교횟수 : 0 
+비교횟수 : 0
 ```
 
 - 더한 합을 다시 offer() 로 넣음 (10 + 20 = 30)
+
 ```java
      30
     /   
-  40 
+  40
 
-비교횟수 : 10+20 = 30  
+비교횟수 : 10 + 20 = 30  
 ```
 
 - 30과 40을 poll() 한 후, 더한 합을 다시 offer() 로 넣음 (30+40 = 70)
+
 ```java
     70
 
-비교횟수 : 30 + 30 + 40 = 100 
+비교횟수 : 10 + 20 + 30 + 40 = 100
 ```
 
 
@@ -107,13 +109,13 @@ permalink: "/algorithm-problem-solving-baekjoon-1715/"
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1715/Main.java)
 
-- PriorityQueue 선언 
+- PriorityQueue 선언
 
 ```java
 PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
 ```
 
-- queue 사이즈가 1이 아닐 때까지 2개의 숫자 빼서 더한 후 다시 넣는 과정 반복 
+- queue 사이즈가 1이 아닐 때까지 2개의 숫자 빼서 더한 후 다시 넣는 과정 반복
 
 ```java  
 int result = 0;
