@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Problem Solving - Baekjoon] 11053 가장 긴 증가하는 부분 수열"
-date: 2020-10-08 22:22:00.000000000 +09:00
+date: 2020-11-06 22:40:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Problem Solving - Baekjoon] 12865 평범한 배낭"
-date: 2020-10-08 22:22:00.000000000 +09:00
+date: 2020-11-06 22:33:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true
