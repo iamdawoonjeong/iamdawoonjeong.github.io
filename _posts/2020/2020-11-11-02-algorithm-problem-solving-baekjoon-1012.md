@@ -114,6 +114,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1012/"
 
 
 - 인접 좌표들를 확인하는 dfs메소드를 한번 탈때마다 count 해줘서 그 값을 출력 해주면 됨
+
 ```java
 for (int i = 0; i < testCase; i++) {
     StringTokenizer st = new StringTokenizer(br.readLine());
