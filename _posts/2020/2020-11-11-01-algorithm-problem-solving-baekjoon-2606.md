@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Problem Solving - Baekjoon] [DFS] 2606 바이러스"
+title: "[Problem Solving - Baekjoon] 2606 바이러스"
 date: 2020-11-11 23:05:00.000000000 +09:00
 type: post
 parent_id: '0'

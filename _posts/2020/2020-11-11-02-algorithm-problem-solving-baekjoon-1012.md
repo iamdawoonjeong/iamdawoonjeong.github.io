@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Problem Solving - Baekjoon] [DFS] 1012 유기농 배추"
+title: "[Problem Solving - Baekjoon] 1012 유기농 배추"
 date: 2020-11-11 23:10:00.000000000 +09:00
 type: post
 parent_id: '0'
