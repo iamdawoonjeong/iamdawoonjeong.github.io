@@ -151,6 +151,7 @@ for (int i = 0; i < testCase; i++) {
 private static void dfs(int[][] adjacent, boolean[][] visited, int x, int y) {
 
     visited[x][y] = true;
+    int[][] directions = new int[][] { { -1 , 0 }, { 1 , 0 }, { 0 , -1 }, { 0 , 1 }  } ;
 
     for (int[] is : directions) {
         int nextX = x+is[0];
