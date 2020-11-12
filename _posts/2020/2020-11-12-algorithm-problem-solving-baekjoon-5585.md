@@ -66,6 +66,7 @@ permalink: "/algorithm-problem-solving-baekjoon-5585/"
 
 
 - 잔돈의 종류는 미리 정해주었으므로 내림차순순으로 배열에 담아 둠 (conis[])
+
 ```java
 int changes = 1000 - n;
 int[] coins = new int[]{500,100,50,10,5,1};  // 500엔, 100엔, 50엔, 10엔, 5엔, 1엔
