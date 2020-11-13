@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Problem Solving - Baekjoon] 2012 등수 매기기"
+title: "[Problem Solving - Baekjoon] 2012 배"
 date: 2020-11-13 22:05:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -24,7 +24,7 @@ author:
   last_name: Jeong
 permalink: "/algorithm-problem-solving-baekjoon-2012/"
 ---
-# [Baekjoon Online Judge] 2012 등수 매기기
+# [Baekjoon Online Judge] 2012 배
 
 ## 문제
 2007년 KOI에 N명의 학생들이 참가하였다. 경시일 전날인 예비소집일에, 모든 학생들은 자신이 N명 중에서 몇 등을 할 것인지 예상 등수를 적어서 제출하도록 하였다.
