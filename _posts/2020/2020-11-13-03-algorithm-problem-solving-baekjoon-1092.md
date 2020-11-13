@@ -63,7 +63,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1092/"
 
 ### 구현
 
-[전체소스보기]()
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1092/Main.java)
 
 - 크레인(cranes) 내림 차순으로 정렬
 - 박스(box)를 내림차순으로 정렬
