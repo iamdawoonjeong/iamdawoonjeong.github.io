@@ -82,7 +82,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1774/"
 
 ### 구현
 
-[전체소스보기]()
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1774/Main.java)
 
 
 - 좌표간 거리 계산 : (x1-x2)<sup>2</sup> - (y1-y2)<sup>2</sup> 이 root 값

@@ -67,7 +67,7 @@ ADCB
 
 ### 구현
 
-[전체소스보기]()
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1987/Main.java)
 
 - 상, 하, 좌, 우 이동좌표를 미리 만들어 놓고 한 좌표에서 모두다 체크
 
