@@ -29,8 +29,8 @@ permalink: "/algorithm-backtracking/"
 - Backtracking 은 효과적인 결정을 찾을 때까지 다양한 결정 순서를 시도하는 체계적인 방법
 - 모든 경우의 수를 **상태공간 트리**를 통해 표현
 - DFS( depth-first search ) 을 이용하여 해결
-- Promising
-- Pruning
+- Promising : 해당 루트가 조건에 맞는지 검사
+- Pruning : 조건에 맞지 않는 경우, 다른 루트로 가서 탐색 시간 절약
 
 
 ![algorithm-backtracking]({{ site.baseurl }}/assets/images/posts/2020/algorithm-backtracking.jpg)
