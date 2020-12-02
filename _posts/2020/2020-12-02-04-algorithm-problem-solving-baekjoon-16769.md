@@ -59,14 +59,14 @@ Please print three lines of output, giving the final amount of milk in each buck
 ```
 
 ### 분류
-- 구현 
+- 구현
 
 ## 풀이
 
 ### 문제 파악
 - 컵에 용량제한이 있고cup, 각컵에 우유가 담겨있음 milk
-- 다음 컵에 가득찰때까지 우유를 따라줌 
-- 이와 같은 행동을 100번했을 때의 각 컵에 담긴 우유의 양을 구하는 프로그램 
+- 다음 컵에 가득찰때까지 우유를 따라줌
+- 이와 같은 행동을 100번했을 때의 각 컵에 담긴 우유의 양을 구하는 프로그램
 
 ### 구현
 
@@ -74,35 +74,35 @@ Please print three lines of output, giving the final amount of milk in each buck
 
 
 - 따라주고나면 현재우유양 milk[index], 다음우유 milk[next]를 한 반복문에서 구해주기
-- index = i%3; 
+- index = i%3;
 - next = (i+1)%3 
 - 인덱스 위치를 잘 계산해줌
-- 삼항연산식으로 계산하여 풀이했으나, max,min 으로 구하기도 함 
+- 삼항연산식으로 계산하여 풀이했으나, max,min 으로 구하기도 함
 
 ```java
 int index = 0 ;
 int next = 0 ;
 
 for (int i = 0; i < 100; i++) {
-    
-    index = i%3 ;
-    next = (i+1)%3;
-    
+
+    index = i % 3 ;
+    next = (i+1) % 3;
+
     // 현재 우유양 = 다음컵에 다부어주는 경우와
     // 다음컵용량 남은것 만큼 부어주는 경우 (다음컵용량-다음컵우유양 =다음컵 담을수 있는양)
     int temp = ( cup[next] - milk[next] >= milk[index] ? 0 : milk[index] - (cup[next] - milk[next]));
     //int temp  = Math.max(0,  milk[index] - (cup[next]-milk[next]));
-    
-    // 다음우유양 = 현재우유+다음우유 
+
+    // 다음우유양 = 현재우유+다음우유
     // 현재우유+다음우유양이 다음컵용량보다 큰 경우에는 컵 용량까지만 가능  
     milk[next] = ( cup[next] > milk[index] + milk[next] ? milk[index] + milk[next]: cup[next]);
     //milk[next] = Math.min(cup[next],  milk[next]+ milk[index]);
-    
+
     // 다음 컵연산에서 현재우유를 사용하기에 temp에 담아주었다가 대입
     milk[index] = temp;
-    
+
 }
-        
+
 ```
 
 ---
