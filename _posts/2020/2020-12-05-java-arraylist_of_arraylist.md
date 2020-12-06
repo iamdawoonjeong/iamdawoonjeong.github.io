@@ -125,6 +125,8 @@ for (ArrayList<Integer> al : list) {
 [10, 20, 30, 40, 50]
 ```
 
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-basic/src/arraylistofarraylist/ArrayListOfArrayList.java)
+
 ---
 #### references
 <https://www.geeksforgeeks.org/arraylist-of-arraylist-in-java/>
