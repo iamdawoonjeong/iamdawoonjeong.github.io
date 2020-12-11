@@ -75,8 +75,8 @@ permalink: "/algorithm-problem-solving-baekjoon-1927/"
 - 노드 중 최소 값을 추출하는 [최소힙](http://dawoonjeong.com/algorithm-sort-heap/) 문제
 
 ```java
-9   // n개의 정수 입력 
-0   // 0 이 입력된 경우 가장 작은 값 출력하고 제거. 배열이 비어있는 경우 0출력 
+9   // n개의 정수 입력
+0   // 0 이 입력된 경우 가장 작은 값 출력하고 제거. 배열이 비어있는 경우 0출력
 12345678
 1
 2
@@ -91,15 +91,15 @@ permalink: "/algorithm-problem-solving-baekjoon-1927/"
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem1927/Main.java)
 
-- heap구조를 가진 PriortyQueue 선언
+- 최소 heap구조를 가진 PriortyQueue 선언
 
 ```java
 PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
 ```
 
-- 0이 입력되면 
+- 0이 입력되면
 	- 배열내 제일 작은수를 출력
-	- 배열이 비어있으면 0 출력 
+	- 배열이 비어있으면 0 출력
 
 - 입력된 수가 0이 아니면 queue에 추가   
 
@@ -108,15 +108,15 @@ for (int i = 0; i < n; i++) {
     int number = Integer.parseInt(br.readLine());
 	//0 이 입력되면
     if (number == 0 ) {
-        
+
         if (pq.isEmpty()) {
-			// 배열이 비어있으면 0출력 
+			// 배열이 비어있으면 0출력
             System.out.println(0);
         }else {
-			// 배열내 제일 작은 수를 출력 
+			// 배열내 제일 작은 수를 출력
             System.out.println(pq.poll());
         }
-        
+
     } else {
         pq.offer(number);
     }
