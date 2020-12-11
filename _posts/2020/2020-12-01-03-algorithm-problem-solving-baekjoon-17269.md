@@ -103,6 +103,8 @@ BOJ IN
 
 ### 구현
 
+#### hash map을 이용하여 풀기
+
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem17269/Main.java)
 
 - 알파벳에 횟수를 hashmap 에 넣어줌 (key 값 중복 불가)
@@ -193,6 +195,7 @@ public static void solution(ArrayList list) {
 
 ```
 
+#### 배열만 사용해서 풀기
 
 ---
 
