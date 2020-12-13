@@ -96,5 +96,5 @@ permalink: "/algorithm-hash/"
 ---
 #### references
 <https://www.geeksforgeeks.org/hashing-data-structure/>  
+<https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/>  
 <https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm>  
-<https://youtu.be/Vi0hauJemxA>
