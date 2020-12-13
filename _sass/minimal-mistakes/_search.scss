@@ -48,8 +48,13 @@
     animation-delay: 0.15s;
 
     @include breakpoint($x-large) {
-      max-width: $x-large;
+      max-width: $max-width;
     }
+
+  }
+
+  &__form {
+    background-color: transparent;
   }
 
   .search-input {
@@ -99,7 +104,7 @@
   }
 
   .archive__item-title {
-    margin-top: 3em;
+    margin-top: 0;
   }
 
   .archive__item-excerpt {
@@ -119,6 +124,7 @@
   font-style: normal;
   text-decoration: underline;
 }
+
 .archive__item-excerpt .ais-Highlight {
   color: $primary-color;
   font-style: normal;
