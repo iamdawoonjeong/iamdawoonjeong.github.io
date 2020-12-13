@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Algorithm] 최소신장트리 (MST) - 크루스칼(Kruscal), 프림(Prim)"
+title: "[Algorithm] 최소신장트리 (MST) - 크루스칼(kruskal), 프림(Prim)"
 date: 2020-08-17 21:04:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -14,6 +14,8 @@ tags:
 - algorithm
 - tree
 - MST
+- kruskal
+- prim
 meta:
   _edit_last: '2'
 author:
@@ -87,6 +89,11 @@ permalink: "/algorithm-mst/"
 ![algorithm-fig8new]({{ site.baseurl }}/assets/images/posts/2020/algorithm-fig8new.jpeg)
 
 
+### java로 kruskal 알고리즘 구현
+
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/mst/kruskal/Graph.java)
+
+
 ## **Prim algorithm(프라임/프림 알고리즘)**
 - greedy 알고리즘
 - 빈 스패닝 트리로 시작
@@ -112,6 +119,11 @@ permalink: "/algorithm-mst/"
 
 
 ![algoritm-MST5]({{ site.baseurl }}/assets/images/posts/2020/algoritm-MST5.jpg)
+
+
+### java로 prim 알고리즘 구현
+
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-theory/src/mst/prim/MSTPrim.java)
 
 
 ## 참고 : Union-Find algorithm (유니온-파인드 알고리즘)
