@@ -99,7 +99,7 @@ int[] dy = new int[]{1, 0, -1, 0};
 
 - 늑대의 위치 W에서 (dx,dy) 를 돌면서 양이 있는지 체크  
 
-```
+```java
 boolean check = false;
 
 for (int i = 0; i < r; i++) {
@@ -157,7 +157,7 @@ if (check){
 
 ```
 
-- output
+- output : 출력결과과 예시출력과 다르나 채점 결과는 맞음. 이 문제는 최소 울타리를 구하는 문제가 아니기 때문에 빈 공간을 모두 울타리를 넣어주어도 맞게 됨
 
 ```java
 DDSDDD
