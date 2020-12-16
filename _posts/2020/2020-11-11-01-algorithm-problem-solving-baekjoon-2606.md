@@ -14,6 +14,7 @@ tags:
 - algorithm
 - baekjoon
 - dfs
+- bfs
 meta:
   _edit_last: '2'
 author:
@@ -72,6 +73,8 @@ permalink: "/algorithm-problem-solving-baekjoon-2606/"
 
 ### 구현
 
+### dfs로 구현
+
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2606/Main.java)
 
 ```java
@@ -87,6 +90,30 @@ public static void dfs(int[][] adjacent, boolean[] visited, int vertex) {
 
 }
 ```
+
+#### bfs 로 구현
+
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2606/Main2.java)
+
+```java
+public static void bfs(int[][] adjacent, boolean[] visited, int vertex) {
+    Queue<Integer> queue = new LinkedList<Integer>();
+    queue.add(vertex);
+
+    while(!queue.isEmpty()) {
+        int node = queue.poll();
+
+        for (int i = 1; i < visited.length; i++) {
+            if (adjacent[node][i] == 1 && !visited[i]) {
+                visited[i] = true;
+                queue.add(i);
+            }
+        }
+    }
+}
+
+```
+
 
 ---
 #### references
