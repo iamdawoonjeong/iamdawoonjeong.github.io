@@ -14,6 +14,7 @@ tags:
 - algorithm
 - baekjoon
 - dfs
+- flood fill
 meta:
   _edit_last: '2'
 author:
@@ -107,6 +108,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1012/"
 
 ### 문제 파악
 - 연결되어있는 점들의 집합군의 갯수를 구하는 dfs, bfs문제
+- flood fill 문제
 
 ### 구현
 
