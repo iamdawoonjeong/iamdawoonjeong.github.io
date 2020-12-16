@@ -15,6 +15,7 @@ tags:
 - baekjoon
 - search
 - graph
+- vector
 meta:
   _edit_last: '2'
 author:
@@ -169,6 +170,26 @@ DDDDDD
 
 ```
 
+
+### 벡터문제 방향문제 만났을때
+
+- 시계방향
+
+```java
+dx = {0,1,0,-1}
+dy = {1,0,-1,0}
+```
+
+-  반시계방향
+
+```java
+dx = {0,-1,0,1}
+dy = {1,0,-1,0}
+```
+
+```java
+int[][] directions = new int[][] { { -1 , 0 }, { 1 , 0 }, { 0 , -1 }, { 0 , 1 } } ;
+```
 
 ---
 
