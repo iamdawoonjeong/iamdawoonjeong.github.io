@@ -20,7 +20,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/algorithm-problem-solving-baekjoon-2655/"
+permalink: "/algorithm-problem-solving-baekjoon-1759/"
 ---
 # [Baekjoon Online Judge] 1759 암호 만들기
 
