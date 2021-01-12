@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Problem Solving - Baekjoon] 16676 근우의 다이어리 꾸미기 "
+title: "[Problem Solving - Baekjoon] 16676 근우의 다이어리 꾸미기"
 date: 2021-01-12 22:46:00.000000000 +09:00
 type: post
 parent_id: '0'
