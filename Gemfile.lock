@@ -294,6 +294,7 @@ DEPENDENCIES
   jekyll-admin
   jekyll-data
   jekyll-feed (~> 0.12)
+  jekyll-include-cache
   jekyll-paginate
   minimal-mistakes-jekyll
   tzinfo-data
