@@ -25,9 +25,9 @@
       {% endif %}
     </h2>
 
-    {%- assign date_format = site.minima.date_format | default: "%F" -%}
+    {%- assign date_format = site.minima.date_format | default: "%B %d, %Y" -%}
         <p class="page__meta">{{ post.date | date: date_format }} {{ page.author.display_name }}</p>
 
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 300 }}</p>{% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 150 }}</p>{% endif %}
   </article>
 </div>

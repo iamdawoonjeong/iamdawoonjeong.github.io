@@ -28,7 +28,7 @@ layout: default
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if page.date %}
-              <p class="page__meta"> <time  class="dt-published"  datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%F" }}</time>
+              <p class="page__meta"> <time  class="dt-published"  datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>
               <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author.display_name }}</span></span>
               </p>
            {% endif %}
