@@ -87,6 +87,21 @@ permalink: "/algorithm-problem-solving-baekjoon-2250/"
 
 ### 문제 파악
 
+| level |      width    |
+|:-----:|:-------------:|
+|   1   |   1           |
+|   2   |  15-3+1 = 13  |
+|   3   |  19-2+1 = 18  |
+|   4   |  18-1+1 = 18  |
+|   5   |  16-4+1 = 13  |
+|   6   |  17-6+1 = 12  |
+
+- 너비가 가장 넓은 너비는 18 이고 레벨은 3,4
+- 레벨이 더 작은 수 출력
+- 답은 3 18 
+- 자식이 없는 경우 -1
+
+
 ### 구현
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2250/Main.java)
