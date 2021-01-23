@@ -12,7 +12,7 @@ categories:
 tags:
 - data structure
 - algorithm
-- dp
+- DP
 meta:
   _edit_last: '2'
 author:
