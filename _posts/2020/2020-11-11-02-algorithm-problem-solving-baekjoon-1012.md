@@ -13,7 +13,7 @@ tags:
 - data structure
 - algorithm
 - baekjoon
-- dfs
+- DFS
 - flood fill
 meta:
   _edit_last: '2'

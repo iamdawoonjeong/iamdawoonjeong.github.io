@@ -13,8 +13,8 @@ tags:
 - data structure
 - algorithm
 - baekjoon
-- dfs
-- bfs
+- DFS
+- BFS
 meta:
   _edit_last: '2'
 author:
