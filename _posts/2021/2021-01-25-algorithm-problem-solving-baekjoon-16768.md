@@ -99,11 +99,11 @@ Please output N lines, describing a picture of the final board state.
 1111111223
 ```
 
-- 1. DFS로 탐색하여 같은 숫자가 K 개 이상인 숫자를 찾음 : dfs()
+- [1] DFS로 탐색하여 같은 숫자가 K 개 이상인 숫자를 찾음 : dfs()
 - arr[3] [6] = 2 는 8개
 - arr[4] [2] = 1 은 10 개  
 
-- 2. K개 이상인 숫자는 DFS로 다시 탐색하여 0으로 바꿔줌 : dfs2()
+- [2] K개 이상인 숫자는 DFS로 다시 탐색하여 0으로 바꿔줌 : dfs2()
 ```java
 0000000000  
 0000000300
@@ -113,7 +113,7 @@ Please output N lines, describing a picture of the final board state.
 0000000003
 ```
 
-- 3. 0인것들을 down 시켜 없애줌
+- [3] 0인것들을 down 시켜 없애줌
 
 ```java
 0000000000  
@@ -124,11 +124,11 @@ Please output N lines, describing a picture of the final board state.
 2254500333
 ```
 
-- 4. while 반복 하여 1. 부터 반복
-- 1. DFS로 탐색하여 같은 숫자가 K 개 이상인 숫자를 찾음 : dfs()
+- [4] while 반복 하여 1. 부터 반복
+- [5] (반복)[1] DFS로 탐색하여 같은 숫자가 K 개 이상인 숫자를 찾음 : dfs()
 - arr[4] [7] = 3 이 4개
 
-- 2. K개 이상인 숫자는 DFS로 다시 탐색하여 0으로 바꿔줌 : dfs2()
+- [6] [1] K개 이상인 숫자는 DFS로 다시 탐색하여 0으로 바꿔줌 : dfs2()
 
 ```java
 0000000000  
@@ -139,7 +139,7 @@ Please output N lines, describing a picture of the final board state.
 2254500000
 ```
 
-- 3. 0인것들을 down 시켜 없애줌
+- [7] 0인것들을 down 시켜 없애줌
 
 ```java
 0000000000  
