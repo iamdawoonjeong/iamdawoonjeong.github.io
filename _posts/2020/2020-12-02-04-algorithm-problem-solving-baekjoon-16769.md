@@ -13,7 +13,7 @@ tags:
 - data structure
 - algorithm
 - baekjoon
-- implemention
+- implementation
 meta:
   _edit_last: '2'
 author:
@@ -75,7 +75,7 @@ Please print three lines of output, giving the final amount of milk in each buck
 
 - 따라주고나면 현재우유양 milk[index], 다음우유 milk[next]를 한 반복문에서 구해주기
 - index = i%3;
-- next = (i+1)%3 
+- next = (i+1)%3
 - 인덱스 위치를 잘 계산해줌
 - 삼항연산식으로 계산하여 풀이했으나, max,min 으로 구하기도 함
 
