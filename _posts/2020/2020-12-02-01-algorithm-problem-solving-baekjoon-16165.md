@@ -99,7 +99,7 @@ blackpink
 ### 분류
 - 구현
 
-## 풀이 
+## 풀이
 
 ### 문제 파악
 
@@ -112,24 +112,24 @@ blackpink
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem16165/Main.java)
 
-- hashmap 으로 팀명 - 멤버명 받아서 구현 
-- hashmap  value 로 key 를 찾으려다 보다 for 문이 두번 사용되고 소스 전체로 봤을때 for문이 3번이나 됨 
+- hashmap 으로 팀명 - 멤버명 받아서 구현
+- hashmap  value 로 key 를 찾으려다 보다 for 문이 두번 사용되고 소스 전체로 봤을때 for문이 3번이나 됨
 
 ```java
 HashMap<String, String[]> map = new HashMap<String, String[]>();
 
 //걸그룹 입력받기
-for (int i = 0; i < N; i++) { 
-    
+for (int i = 0; i < N; i++) {
+
     String team = br.readLine();  //팀의이름
     int number = Integer.parseInt(br.readLine()); //걸그룹 인원수
-    
+
     String[] names = new String[number];
     for (int j = 0; j < number; j++) {
         names[j] = br.readLine();  //멤버들 이름
-     
+
     }
-    
+
     Arrays.sort(names);
     map.put(team, names);
 }
@@ -138,20 +138,20 @@ for (int i = 0; i < N; i++) {
 for (int i = 0; i < M; i++) {
      String problem = br.readLine();
      int type = Integer.parseInt(br.readLine());
-    
-    //팀명제시 : 멤버이름 순차적 
+
+    //팀명제시 : 멤버이름 순차적
     if (type == 0) {
 
         String[] resultNames = map.get(problem);
         for (int j = 0; j < resultNames.length; j++) {
             System.out.println(resultNames[j]);
         }
-    
+
     }else if (type == 1) {
        // 멤버이름 제시 : 팀명 맞추기
         String resultTeam = "";
-        
-        //hashmap value로 key찾기 
+
+        //hashmap value로 key찾기
         for (String key : map.keySet()) {
             String[] names = map.get(key);
             for (String str : names) {
@@ -160,7 +160,7 @@ for (int i = 0; i < M; i++) {
                     System.out.println(resultTeam);
                 }
             }
-            
+
         }
     }
 }// end for
@@ -168,22 +168,22 @@ for (int i = 0; i < M; i++) {
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem16165/Main2.java)
 
-- hashmap 으로 팀명 - 멤버명 받아서 구현 
+- hashmap 으로 팀명 - 멤버명 받아서 구현
 - 두군데 받아야하지만, 찾을때는 확실히 간단
 
 ```java
 //걸그룹 입력받기
-for (int i = 0; i < N; i++) { 
-    
+for (int i = 0; i < N; i++) {
+
     String team = br.readLine();  //팀의이름
     int number = Integer.parseInt(br.readLine()); //걸그룹 인원수
-    
+
     String[] names = new String[number];
     for (int j = 0; j < number; j++) {
         names[j] = br.readLine();  //멤버들 이름
         members.put(names[j], team);
     }
-    
+
     Arrays.sort(names);
     teams.put(team, names);
 }
@@ -192,8 +192,8 @@ for (int i = 0; i < N; i++) {
 for (int i = 0; i < M; i++) {
     String problem = br.readLine();
     int type = Integer.parseInt(br.readLine());
-   
-   //팀명제시 : 멤버이름 순차적 
+
+   //팀명제시 : 멤버이름 순차적
    if (type == 0) {
        String[] resultNames = teams.get(problem);
        for (int j = 0; j < resultNames.length; j++) {
@@ -204,7 +204,7 @@ for (int i = 0; i < M; i++) {
        String resultTeam = members.get(problem);
        System.out.println(resultTeam);
    }
-    
+
 }
 
 ```

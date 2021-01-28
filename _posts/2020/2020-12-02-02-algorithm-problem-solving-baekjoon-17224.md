@@ -131,14 +131,14 @@ APC는 프로그래밍 대회에 익숙하지 않은 학생들과 전공생이 �
 
 ### 문제 파악
 - 어려운 문제를 풀면 140 (쉬운문제푼걸로 함)
-- 쉬운문제풀면 100 
+- 쉬운문제풀면 100
 - 문제풀수있는 갯수는 k개까지 가능
 
 ### 구현
 
 [전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem17224/Main.java)
 
-- 능력치를 기준으로 어려운 문제 풀수 있는 갯수 구하기 (hard) 
+- 능력치를 기준으로 어려운 문제 풀수 있는 갯수 구하기 (hard)
 - 쉬운문제만 풀수있는 경우 갯수 구하기 (easy)
 
 ```java
@@ -149,7 +149,7 @@ int hard = 0;
 
 //풀수있는 문제의 갯수 구하기
 for (int i = 0; i < N; i++) {
-    
+
     //어려운 버전의 난이도 sub2를 풀었을때는 140점 획득
     if (L >= sub2[i]) {
         hard++;
@@ -163,7 +163,7 @@ for (int i = 0; i < N; i++) {
 - 어려운 문제, 쉬운 문제 각각 계산해주기
 
 ```java
-//어려운 문제 점수계산 
+//어려운 문제 점수계산
 int solved = Math.min(K, hard);
 score = solved*140;
 
