@@ -13,6 +13,7 @@ tags:
 - data structure
 - algorithm
 - baekjoon
+- Brute force
 meta:
   _edit_last: '2'
 author:
