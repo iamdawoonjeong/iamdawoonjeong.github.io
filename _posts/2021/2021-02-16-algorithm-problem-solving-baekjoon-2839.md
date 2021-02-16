@@ -27,7 +27,7 @@ permalink: "/algorithm-problem-solving-baekjoon-16675/"
 # [Baekjoon Online Judge] 16675 설탕 배달
 
 ## 문제
-[문제 보기](https://www.acmicpc.net/problem/11675){: target="_blank"}
+[문제 보기](https://www.acmicpc.net/problem/16675){: target="_blank"}
 
 ## 풀이
 
