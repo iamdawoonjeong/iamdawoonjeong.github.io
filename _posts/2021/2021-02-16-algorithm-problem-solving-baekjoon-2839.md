@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Problem Solving - Baekjoon] 16675 설탕 배달"
+title: "[Problem Solving - Baekjoon] 2839 설탕 배달"
 date: 2021-02-16 18:10:00.000000000 +09:00
 type: post
 parent_id: '0'
@@ -22,12 +22,12 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/algorithm-problem-solving-baekjoon-16675/"
+permalink: "/algorithm-problem-solving-baekjoon-2839/"
 ---
-# [Baekjoon Online Judge] 16675 설탕 배달
+# [Baekjoon Online Judge] 2839 설탕 배달
 
 ## 문제
-[문제 보기](https://www.acmicpc.net/problem/16675){: target="_blank"}
+[문제 보기](https://www.acmicpc.net/problem/2839){: target="_blank"}
 
 ## 풀이
 
@@ -37,7 +37,7 @@ permalink: "/algorithm-problem-solving-baekjoon-16675/"
 
 ### 구현
 
-[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem16675/Main.java){: target="_blank"}
+[전체소스보기](https://github.com/iamdawoonjeong/java-datastructure-algorithm/blob/master/java-algorithm-problem-solving/src/baekjoon/problem2839/Main.java){: target="_blank"}
 
 ```java
 int max = n/5; // 5키로 최대 갯수
@@ -78,4 +78,4 @@ if (remain != 0 ) {
 ---
 
 #### references
-<https://www.acmicpc.net/problem/16675>{: target="_blank"}
+<https://www.acmicpc.net/problem/2839>{: target="_blank"}
