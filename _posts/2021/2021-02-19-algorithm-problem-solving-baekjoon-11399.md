@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Problem Solving - Baekjoon] 11399 ATM "
-date: 2021-02-18 18:41:00.000000000 +09:00
+date: 2021-02-19 18:41:00.000000000 +09:00
 type: post
 parent_id: '0'
 published: true
