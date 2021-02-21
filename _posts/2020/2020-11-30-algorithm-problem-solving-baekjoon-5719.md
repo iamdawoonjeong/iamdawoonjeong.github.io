@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Problem Solving - Baekjoon] 5719 거의 최단 경로"
+title: "[Problem Solving - Baekjoon] 5719 거의 최단 경로 - 실패"
 date: 2020-11-30 18:10:00.000000000 +09:00
 type: post
 parent_id: '0'
