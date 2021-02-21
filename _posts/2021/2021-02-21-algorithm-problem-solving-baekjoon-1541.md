@@ -42,6 +42,7 @@ permalink: "/algorithm-problem-solving-baekjoon-1541/"
 
 - "-" 기준으로 피연산자들 구하기
 - [55]   [50+40] 으로 나누어짐
+
 ```java
 String[] input = br.readLine().split("\\-");
 ```
