@@ -20,7 +20,7 @@ author:
   display_name: Dawoon Jeong
   first_name: Dawoon
   last_name: Jeong
-permalink: "/java-oop/"
+permalink: "/java-oop-solid/"
 ---
 # OOP 5대원리  : SOLID (객체 지향 설계)
 
